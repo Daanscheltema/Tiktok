@@ -1,25 +1,33 @@
-import asyncio
 import re
+import time
 from scraper.user import scrape_user
 from scraper.browser import DESKTOP
+from logger import setup_logger
+
+logger = setup_logger()
 
 LINK_REGEX = r"(https?://[^\s]+)"
 HASHTAG_REGEX = r"#(\w+)"
 
-async def search_keyword(search_page, keyword: str, user_page=None, hashtag_page=None):
+async def search_keyword(search_page, keyword: str):
+    start_time = time.time()
+    logger.info(f"SEARCH_START | keyword={keyword}")
+
     search_url = f"https://www.tiktok.com/search?q={keyword}"
     await search_page.goto(search_url, timeout=60000)
     await search_page.wait_for_timeout(5000)
 
-    # Scroll to load more results
+    # Scroll to load results
     for _ in range(3):
         await search_page.mouse.wheel(0, 2000)
         await search_page.wait_for_timeout(2000)
 
     cards = await search_page.query_selector_all("div[id^='grid-item-container-']")
+    logger.info(f"CARDS_FOUND | keyword={keyword} | count={len(cards)}")
+
     results = []
 
-    for card in cards:
+    for idx, card in enumerate(cards, start=1):
         try:
             # Video link
             link_el = await card.query_selector("a[href*='/video/']")
@@ -38,13 +46,9 @@ async def search_keyword(search_page, keyword: str, user_page=None, hashtag_page
             views_el = await card.query_selector("strong[data-e2e='video-views']")
             views = await views_el.inner_text() if views_el else "0"
 
-            # Extract links from description
             desc_links = re.findall(LINK_REGEX, desc)
-
-            # Extract hashtags from description (TEXT ONLY)
             hashtags = re.findall(HASHTAG_REGEX, desc)
 
-            # --- USER PROFILE SCRAPING ---
             bio_links = []
 
             if username:
@@ -53,15 +57,15 @@ async def search_keyword(search_page, keyword: str, user_page=None, hashtag_page
                     new_context = await browser.new_context(**DESKTOP)
                     profile_page = await new_context.new_page()
 
-                    # scrape_user returns: user_info, videos, extracted_links
-                    user_info, _, extracted_links = await scrape_user(profile_page, username)
+                    user_info, _, extracted_links = await scrape_user(
+                        profile_page,
+                        username
+                    )
 
-                    # Add extracted links from profile
                     for link in extracted_links:
                         if link not in bio_links:
                             bio_links.append(link)
 
-                    # Add official TikTok bioLink if SIGI_STATE worked
                     if user_info:
                         bio = user_info.get("bioLink", {})
                         official_link = bio.get("link")
@@ -70,10 +74,11 @@ async def search_keyword(search_page, keyword: str, user_page=None, hashtag_page
 
                     await new_context.close()
 
-                except Exception:
-                    pass
+                except Exception as e:
+                    logger.warning(
+                        f"PROFILE_FAIL | user={username} | error={e}"
+                    )
 
-            # Append final result
             results.append({
                 "keyword": keyword,
                 "video_id": video_id,
@@ -82,10 +87,24 @@ async def search_keyword(search_page, keyword: str, user_page=None, hashtag_page
                 "author": username,
                 "desc_links": desc_links,
                 "bio_links": bio_links,
-                "hashtags": hashtags   # <-- NOW JUST TEXT LIST
+                "hashtags": hashtags
             })
 
-        except Exception:
+            logger.info(
+                f"VIDEO_OK | kw={keyword} | "
+                f"idx={idx} | id={video_id} | user={username} | views={views}"
+            )
+
+        except Exception as e:
+            logger.exception(
+                f"VIDEO_ERROR | kw={keyword} | idx={idx} | error={e}"
+            )
             continue
+
+    duration = round(time.time() - start_time, 2)
+    logger.info(
+        f"SEARCH_DONE | keyword={keyword} | "
+        f"results={len(results)} | duration={duration}s"
+    )
 
     return results

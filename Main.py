@@ -1,9 +1,17 @@
 import asyncio
+import time
+import os
 from scraper.browser import get_browser
 from scraper.search import search_keyword
 from config import PROXY
+from logger import setup_logger
+
+print("cwd", os.getcwd())
+
+logger = setup_logger()
 
 async def run():
+    logger.info("SCRAPER_START")
     print("Starting browser...")
 
     playwright, browser, context, search_page = await get_browser(
@@ -11,37 +19,51 @@ async def run():
         browser_type="chromium"
     )
 
+    logger.info("BROWSER_STARTED")
     print("Browser started.")
-
-    # Extra pages voor user-profielen en hashtags
-    user_page = await context.new_page()
-    hashtag_page = await context.new_page()
 
     keywords = [
         "Bastion"
     ]
 
     for kw in keywords:
+        logger.info(f"KEYWORD_START | keyword={kw}")
         print(f"\n🔎 Searching for keyword: {kw}")
-        results = await search_keyword(
-            search_page,
-            kw,
-            user_page,
-            hashtag_page
+
+        start_time = time.time()
+
+        try:
+            results = await search_keyword(search_page, kw)
+
+            if not results:
+                logger.warning(f"KEYWORD_EMPTY | keyword={kw}")
+                continue
+
+            logger.info(
+                f"KEYWORD_OK | keyword={kw} | results={len(results)}"
+            )
+
+            for r in results:
+                print(
+                    f"- Video {r['video_id']} | "
+                    f"Views: {r['views']} | "
+                    f"User: {r['author']} | "
+                    f"Desc links: {r['desc_links']} | "
+                    f"Bio links: {r['bio_links']} | "
+                    f"Hashtags: {r['hashtags']}"
+                )
+
+        except Exception as e:
+            logger.exception(f"KEYWORD_ERROR | keyword={kw} | error={e}")
+
+        duration = round(time.time() - start_time, 2)
+        logger.info(
+            f"KEYWORD_DONE | keyword={kw} | duration={duration}s"
         )
 
-        if not results:
-            print("No results returned.")
-            continue
-
-        for r in results:
-            print(
-                f"- Video {r['video_id']} | Views: {r['views']} | User: {r['author']} | "
-                f"Desc links: {r['desc_links']} | Bio links: {r['bio_links']} | Hashtags: {r['hashtags']}"
-            )
+    logger.info("SCRAPER_SHUTDOWN")
 
     await browser.close()
     await playwright.stop()
 
 asyncio.run(run())
-
