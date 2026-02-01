@@ -1,0 +1,19 @@
+2026/02/01-15:48:55.492 9938 Reusing MANIFEST C:\Users\daans\PycharmProjects\Tiktok\tiktok_session\Default\Local Storage\leveldb/MANIFEST-000001
+2026/02/01-15:48:55.496 9938 Recovering log #15
+2026/02/01-15:48:55.496 9938 Level-0 table #18: started
+2026/02/01-15:48:55.503 9938 Level-0 table #18: 48894 bytes OK
+2026/02/01-15:48:55.503 9938 Recovering log #18
+2026/02/01-15:48:55.505 9938 Reusing old log C:\Users\daans\PycharmProjects\Tiktok\tiktok_session\Default\Local Storage\leveldb/000018.log 
+2026/02/01-15:48:55.508 9938 Delete type=0 #15
+2026/02/01-15:48:55.508 9938 Delete type=2 #19
+2026/02/01-15:48:55.509 87cc Compacting 4@0 + 1@1 files
+2026/02/01-15:48:55.517 87cc Generated table #19@0: 36 keys, 163280 bytes
+2026/02/01-15:48:55.517 87cc Compacted 4@0 + 1@1 files => 163280 bytes
+2026/02/01-15:48:55.519 87cc compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/02/01-15:48:55.520 87cc Delete type=2 #8
+2026/02/01-15:48:55.520 87cc Delete type=2 #11
+2026/02/01-15:48:55.520 87cc Delete type=2 #14
+2026/02/01-15:48:55.520 87cc Delete type=2 #16
+2026/02/01-15:48:55.520 87cc Delete type=2 #18
+2026/02/01-15:49:25.413 9938 Level-0 table #21: started
+2026/02/01-15:49:25.420 9938 Level-0 table #21: 50021 bytes OK
