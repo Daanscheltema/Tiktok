@@ -23,7 +23,7 @@ async def run():
     print("Browser started.")
 
     keywords = [
-        "Glock switch"
+        "G switch"
     ]
 
     for kw in keywords:
@@ -33,7 +33,7 @@ async def run():
         start_time = time.time()
 
         try:
-            results = await search_keyword(search_page, kw)
+            results = await search_keyword(search_page, kw, max_videos=30, max_profiles=30)
 
             if not results:
                 logger.warning(f"KEYWORD_EMPTY | keyword={kw}")

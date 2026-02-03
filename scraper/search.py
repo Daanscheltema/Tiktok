@@ -1,7 +1,6 @@
 import re
 import time
 from scraper.user import scrape_user
-from scraper.browser import DESKTOP
 from logger import setup_logger
 
 logger = setup_logger()
@@ -9,25 +8,70 @@ logger = setup_logger()
 LINK_REGEX = r"(https?://[^\s]+)"
 HASHTAG_REGEX = r"#(\w+)"
 
-async def search_keyword(search_page, keyword: str):
+
+# -----------------------------
+# Dynamisch scrollen (CDP‑Chrome compatible)
+# -----------------------------
+async def scroll_until_no_new_results(page, max_scrolls=30, wait=1500):
+    last_height = 0
+
+    for i in range(max_scrolls):
+        # Echte scroll in Chrome
+        await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
+        await page.wait_for_timeout(wait)
+
+        height = await page.evaluate("document.body.scrollHeight")
+
+        if height == last_height:
+            print(f"🔚 Geen nieuwe resultaten na {i} scrolls.")
+            break
+
+        last_height = height
+
+
+# -----------------------------
+# Hoofd scraping functie
+# -----------------------------
+async def search_keyword(search_page, keyword: str, max_videos=None, max_profiles=None):
     start_time = time.time()
     logger.info(f"SEARCH_START | keyword={keyword}")
 
     search_url = f"https://www.tiktok.com/search?q={keyword}"
     await search_page.goto(search_url, timeout=60000)
-    await search_page.wait_for_timeout(5000)
+    await search_page.wait_for_timeout(3000)
 
-    # Scroll to load results
-    for _ in range(3):
-        await search_page.mouse.wheel(0, 2000)
-        await search_page.wait_for_timeout(2000)
+    # Scroll tot er geen nieuwe resultaten meer zijn
+    await scroll_until_no_new_results(search_page)
 
-    cards = await search_page.query_selector_all("div[id^='grid-item-container-']")
+    # Fallback selectors voor TikTok DOM varianten
+    selectors = [
+        "div[id^='grid-item-container-']",
+        "div[data-e2e='search-card']",
+        "div[data-e2e='search-item']",
+        "div[data-e2e='search-video-card']"
+    ]
+
+    cards = []
+    for sel in selectors:
+        cards = await search_page.query_selector_all(sel)
+        if cards:
+            break
+
     logger.info(f"CARDS_FOUND | keyword={keyword} | count={len(cards)}")
 
     results = []
+    profile_count = 0
+
+    # Echte Chrome context
+    chrome_context = search_page.context
 
     for idx, card in enumerate(cards, start=1):
+
+        # Video limiet
+        if max_videos and idx > max_videos:
+            print("⛔ Video limiet bereikt.")
+            break
+
         try:
             # Video link
             link_el = await card.query_selector("a[href*='/video/']")
@@ -51,34 +95,46 @@ async def search_keyword(search_page, keyword: str):
 
             bio_links = []
 
+            # -----------------------------
+            # Profielbezoek bij elke video
+            # -----------------------------
             if username:
-                try:
-                    browser = search_page.context.browser
-                    new_context = await browser.new_context(**DESKTOP)
-                    profile_page = await new_context.new_page()
 
-                    user_info, _, extracted_links = await scrape_user(
-                        profile_page,
-                        username
-                    )
+                # Profiel limiet
+                if max_profiles and profile_count >= max_profiles:
+                    print("⛔ Profiel limiet bereikt.")
+                else:
+                    profile_count += 1
 
-                    for link in extracted_links:
-                        if link not in bio_links:
-                            bio_links.append(link)
+                    try:
+                        # NIEUW: open tabblad in echte Chrome context
+                        profile_page = await chrome_context.new_page()
 
-                    if user_info:
-                        bio = user_info.get("bioLink", {})
-                        official_link = bio.get("link")
-                        if official_link and official_link not in bio_links:
-                            bio_links.append(official_link)
+                        user_info, _, extracted_links = await scrape_user(
+                            profile_page,
+                            username
+                        )
 
-                    await new_context.close()
+                        for link in extracted_links:
+                            if link not in bio_links:
+                                bio_links.append(link)
 
-                except Exception as e:
-                    logger.warning(
-                        f"PROFILE_FAIL | user={username} | error={e}"
-                    )
+                        if user_info:
+                            bio = user_info.get("bioLink", {})
+                            official_link = bio.get("link")
+                            if official_link and official_link not in bio_links:
+                                bio_links.append(official_link)
 
+                        await profile_page.close()
+
+                    except Exception as e:
+                        logger.warning(
+                            f"PROFILE_FAIL | user={username} | error={e}"
+                        )
+
+            # -----------------------------
+            # Resultaat opslaan
+            # -----------------------------
             results.append({
                 "keyword": keyword,
                 "video_id": video_id,
