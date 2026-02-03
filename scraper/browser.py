@@ -1,4 +1,3 @@
-# scraper/browser.py
 from playwright.async_api import async_playwright
 
 DESKTOP = {
@@ -13,10 +12,25 @@ DESKTOP = {
     )
 }
 
+CHROME_CDP_URL = "http://localhost:9222"
+
 async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
     playwright = await async_playwright().start()
 
-    # --- Browser Launch (stealth-friendly) ---
+    # Speciaal pad: gebruik bestaande echte Chrome via CDP
+    if browser_type == "cdp-chrome":
+        browser = await playwright.chromium.connect_over_cdp(CHROME_CDP_URL)
+
+        # Pak eerste bestaande context (Chrome-profiel)
+        if browser.contexts:
+            context = browser.contexts[0]
+        else:
+            context = await browser.new_context(**DESKTOP)
+
+        page = await context.new_page()
+        return playwright, browser, context, page
+
+    # --- Oud pad: normale Playwright-launch ---
     launch_args = [
         "--disable-blink-features=AutomationControlled",
         "--disable-web-security",
@@ -47,7 +61,6 @@ async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
             proxy={"server": proxy} if proxy else None
         )
 
-    # --- Context (human-like environment) ---
     context = await browser.new_context(
         **DESKTOP,
         locale="en-US",
@@ -56,35 +69,17 @@ async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
         permissions=["geolocation"],
     )
 
-    # --- Stealth patches ---
     await context.add_init_script("""
-        // Remove webdriver flag
         Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-
-        // Fake plugins
-        Object.defineProperty(navigator, 'plugins', {
-            get: () => [1, 2, 3, 4, 5]
-        });
-
-        // Fake languages
-        Object.defineProperty(navigator, 'languages', {
-            get: () => ['en-US', 'en']
-        });
-
-        // Fake platform
-        Object.defineProperty(navigator, 'platform', {
-            get: () => 'Win32'
-        });
-
-        // Fix permissions
+        Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
+        Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
+        Object.defineProperty(navigator, 'platform', { get: () => 'Win32' });
         const originalQuery = window.navigator.permissions.query;
         window.navigator.permissions.query = (parameters) => (
             parameters.name === 'notifications'
                 ? Promise.resolve({ state: Notification.permission })
                 : originalQuery(parameters)
         );
-
-        // WebGL fingerprint patch
         const getParameter = WebGLRenderingContext.prototype.getParameter;
         WebGLRenderingContext.prototype.getParameter = function(parameter) {
             if (parameter === 37445) return 'Intel Inc.';

@@ -16,14 +16,14 @@ async def run():
 
     playwright, browser, context, search_page = await get_browser(
         PROXY,
-        browser_type="chromium"
+        browser_type="cdp-chrome"
     )
 
     logger.info("BROWSER_STARTED")
     print("Browser started.")
 
     keywords = [
-        "Bastion"
+        "Glock switch"
     ]
 
     for kw in keywords:
