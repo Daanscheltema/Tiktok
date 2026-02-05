@@ -5,7 +5,6 @@ from logger import setup_logger
 
 logger = setup_logger()
 
-LINK_REGEX = r"(https?://[^\s]+)"
 HASHTAG_REGEX = r"#(\w+)"
 
 
@@ -16,7 +15,6 @@ async def scroll_until_no_new_results(page, max_scrolls=30, wait=1500):
     last_height = 0
 
     for i in range(max_scrolls):
-        # Echte scroll in Chrome
         await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
         await page.wait_for_timeout(wait)
 
@@ -78,7 +76,7 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
             href = await link_el.get_attribute("href") if link_el else None
             video_id = href.split("/")[-1] if href else None
 
-            # Description
+            # Description (volledige tekst)
             desc_el = await card.query_selector("div[data-e2e='search-card-video-caption']")
             desc = await desc_el.inner_text() if desc_el else ""
 
@@ -90,7 +88,11 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
             views_el = await card.query_selector("strong[data-e2e='video-views']")
             views = await views_el.inner_text() if views_el else "0"
 
-            desc_links = re.findall(LINK_REGEX, desc)
+            # Likes
+            likes_el = await card.query_selector("strong[data-e2e='like-count']")
+            likes = await likes_el.inner_text() if likes_el else "0"
+
+            # Hashtags
             hashtags = re.findall(HASHTAG_REGEX, desc)
 
             bio_links = []
@@ -138,17 +140,17 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
             results.append({
                 "keyword": keyword,
                 "video_id": video_id,
-                "desc": desc,
+                "desc": desc,            # volledige description
                 "views": views,
+                "likes": likes,          # NIEUW
                 "author": username,
-                "desc_links": desc_links,
                 "bio_links": bio_links,
                 "hashtags": hashtags
             })
 
             logger.info(
                 f"VIDEO_OK | kw={keyword} | "
-                f"idx={idx} | id={video_id} | user={username} | views={views}"
+                f"idx={idx} | id={video_id} | user={username} | views={views} | likes={likes}"
             )
 
         except Exception as e:

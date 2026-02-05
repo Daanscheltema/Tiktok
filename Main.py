@@ -23,7 +23,7 @@ async def run():
     print("Browser started.")
 
     keywords = [
-        "G switch"
+        "Meow"
     ]
 
     for kw in keywords:
