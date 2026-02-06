@@ -10,6 +10,7 @@ print("cwd", os.getcwd())
 
 logger = setup_logger()
 
+
 async def run():
     logger.info("SCRAPER_START")
     print("Starting browser...")
@@ -23,7 +24,7 @@ async def run():
     print("Browser started.")
 
     keywords = [
-        "Meow"
+        "Buttons"
     ]
 
     for kw in keywords:
@@ -33,24 +34,33 @@ async def run():
         start_time = time.time()
 
         try:
-            results = await search_keyword(search_page, kw, max_videos=30, max_profiles=30)
+            results = await search_keyword(
+                search_page,
+                kw,
+                max_videos=30,
+                max_profiles=30
+            )
 
             if not results:
                 logger.warning(f"KEYWORD_EMPTY | keyword={kw}")
+                print("⚠ No results returned")
                 continue
 
             logger.info(
                 f"KEYWORD_OK | keyword={kw} | results={len(results)}"
             )
 
+            print("\n========== RESULTS ==========")
+            print(f"Total: {len(results)}\n")
+
             for r in results:
                 print(
-                    f"- Video {r['video_id']} | "
-                    f"Views: {r['views']} | "
-                    f"User: {r['author']} | "
-                    f"Desc links: {r['desc_links']} | "
-                    f"Bio links: {r['bio_links']} | "
-                    f"Hashtags: {r['hashtags']}"
+                    f"- Video {r.get('video_id')} | "
+                    f"Views: {r.get('views')} | "
+                    f"Likes: {r.get('likes')} | "
+                    f"User: {r.get('author')} | "
+                    f"Bio links: {r.get('bio_links')} | "
+                    f"Hashtags: {r.get('hashtags')}"
                 )
 
         except Exception as e:
@@ -65,5 +75,6 @@ async def run():
 
     await browser.close()
     await playwright.stop()
+
 
 asyncio.run(run())

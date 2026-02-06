@@ -9,7 +9,7 @@ HASHTAG_REGEX = r"#(\w+)"
 
 
 # -----------------------------
-# Dynamisch scrollen (CDP‑Chrome compatible)
+# Scroll helper
 # -----------------------------
 async def scroll_until_no_new_results(page, max_scrolls=30, wait=1500):
     last_height = 0
@@ -21,148 +21,175 @@ async def scroll_until_no_new_results(page, max_scrolls=30, wait=1500):
         height = await page.evaluate("document.body.scrollHeight")
 
         if height == last_height:
-            print(f"🔚 Geen nieuwe resultaten na {i} scrolls.")
+            logger.info(f"🔚 No new results after {i} scrolls")
             break
 
         last_height = height
 
 
 # -----------------------------
-# Hoofd scraping functie
+# Safe text helper
+# -----------------------------
+async def safe_text(el):
+    if not el:
+        return ""
+    try:
+        return await el.inner_text()
+    except:
+        return ""
+
+
+# -----------------------------
+# Main search function
 # -----------------------------
 async def search_keyword(search_page, keyword: str, max_videos=None, max_profiles=None):
+
     start_time = time.time()
     logger.info(f"SEARCH_START | keyword={keyword}")
 
     search_url = f"https://www.tiktok.com/search?q={keyword}"
-    await search_page.goto(search_url, timeout=60000)
-    await search_page.wait_for_timeout(3000)
 
-    # Scroll tot er geen nieuwe resultaten meer zijn
+    await search_page.goto(search_url, timeout=60000)
+    await search_page.wait_for_timeout(4000)
+
     await scroll_until_no_new_results(search_page)
 
-    # Fallback selectors voor TikTok DOM varianten
+    # Updated selectors (TikTok rotates DOM often)
     selectors = [
-        "div[id^='grid-item-container-']",
         "div[data-e2e='search-card']",
-        "div[data-e2e='search-item']",
-        "div[data-e2e='search-video-card']"
+        "div[data-e2e='search-video-card']",
+        "div[id^='grid-item-container-']",
+        "div[data-e2e='search-item']"
     ]
 
     cards = []
     for sel in selectors:
         cards = await search_page.query_selector_all(sel)
         if cards:
+            logger.info(f"Selector matched: {sel}")
             break
 
     logger.info(f"CARDS_FOUND | keyword={keyword} | count={len(cards)}")
 
     results = []
     profile_count = 0
-
-    # Echte Chrome context
     chrome_context = search_page.context
 
     for idx, card in enumerate(cards, start=1):
 
-        # Video limiet
         if max_videos and idx > max_videos:
-            print("⛔ Video limiet bereikt.")
+            logger.info("VIDEO LIMIT reached")
             break
 
         try:
-            # Video link
+
+            # -----------------------------
+            # VIDEO LINK
+            # -----------------------------
             link_el = await card.query_selector("a[href*='/video/']")
             href = await link_el.get_attribute("href") if link_el else None
-            video_id = href.split("/")[-1] if href else None
 
-            # Description (volledige tekst)
-            desc_el = await card.query_selector("div[data-e2e='search-card-video-caption']")
-            desc = await desc_el.inner_text() if desc_el else ""
+            if not href:
+                logger.warning(f"No video link found idx={idx}")
+                continue
 
-            # Username
-            user_el = await card.query_selector("p[data-e2e='search-card-user-unique-id']")
-            username = await user_el.inner_text() if user_el else ""
+            if href.startswith("/"):
+                href = "https://www.tiktok.com" + href
 
-            # Views
-            views_el = await card.query_selector("strong[data-e2e='video-views']")
-            views = await views_el.inner_text() if views_el else "0"
+            video_id = href.split("/video/")[-1].split("?")[0]
 
-            # Likes
-            likes_el = await card.query_selector("strong[data-e2e='like-count']")
-            likes = await likes_el.inner_text() if likes_el else "0"
+            # -----------------------------
+            # TEXT DATA
+            # -----------------------------
+            desc = await safe_text(
+                await card.query_selector("[data-e2e='search-card-video-caption']")
+            )
 
-            # Hashtags
+            if not desc:
+                # fallback caption selector
+                desc = await safe_text(await card.query_selector("span"))
+
+            username = await safe_text(
+                await card.query_selector("[data-e2e='search-card-user-unique-id']")
+            )
+
+            if not username:
+                # fallback from href
+                try:
+                    username = href.split("@")[1].split("/")[0]
+                except:
+                    username = ""
+
+            views = await safe_text(
+                await card.query_selector("[data-e2e='video-views']")
+            )
+
+            likes = await safe_text(
+                await card.query_selector("[data-e2e='like-count']")
+            )
+
             hashtags = re.findall(HASHTAG_REGEX, desc)
 
             bio_links = []
 
             # -----------------------------
-            # Profielbezoek bij elke video
+            # PROFILE SCRAPE (SAFE)
             # -----------------------------
-            if username:
+            if username and (not max_profiles or profile_count < max_profiles):
 
-                # Profiel limiet
-                if max_profiles and profile_count >= max_profiles:
-                    print("⛔ Profiel limiet bereikt.")
-                else:
-                    profile_count += 1
+                profile_count += 1
 
-                    try:
-                        # NIEUW: open tabblad in echte Chrome context
-                        profile_page = await chrome_context.new_page()
+                try:
+                    profile_page = await chrome_context.new_page()
 
-                        user_info, _, extracted_links = await scrape_user(
-                            profile_page,
-                            username
-                        )
+                    user_info, _, extracted_links = await scrape_user(
+                        profile_page,
+                        username
+                    )
 
-                        for link in extracted_links:
-                            if link not in bio_links:
-                                bio_links.append(link)
+                    if extracted_links:
+                        bio_links.extend(list(set(extracted_links)))
 
-                        if user_info:
-                            bio = user_info.get("bioLink", {})
-                            official_link = bio.get("link")
-                            if official_link and official_link not in bio_links:
-                                bio_links.append(official_link)
+                    if user_info:
+                        bio = user_info.get("bioLink", {})
+                        official_link = bio.get("link")
+                        if official_link:
+                            bio_links.append(official_link)
 
-                        await profile_page.close()
+                    await profile_page.close()
 
-                    except Exception as e:
-                        logger.warning(
-                            f"PROFILE_FAIL | user={username} | error={e}"
-                        )
+                except Exception as e:
+                    logger.warning(f"PROFILE_FAIL | {username} | {e}")
 
             # -----------------------------
-            # Resultaat opslaan
+            # SAVE RESULT
             # -----------------------------
-            results.append({
+            result = {
                 "keyword": keyword,
                 "video_id": video_id,
-                "desc": desc,            # volledige description
+                "video_url": href,
+                "desc": desc,
                 "views": views,
-                "likes": likes,          # NIEUW
+                "likes": likes,
                 "author": username,
-                "bio_links": bio_links,
+                "bio_links": list(set(bio_links)),
                 "hashtags": hashtags
-            })
+            }
+
+            results.append(result)
 
             logger.info(
-                f"VIDEO_OK | kw={keyword} | "
-                f"idx={idx} | id={video_id} | user={username} | views={views} | likes={likes}"
+                f"VIDEO_OK | idx={idx} | id={video_id} | user={username}"
             )
 
         except Exception as e:
-            logger.exception(
-                f"VIDEO_ERROR | kw={keyword} | idx={idx} | error={e}"
-            )
+            logger.exception(f"VIDEO_ERROR | idx={idx} | {e}")
             continue
 
     duration = round(time.time() - start_time, 2)
+
     logger.info(
-        f"SEARCH_DONE | keyword={keyword} | "
-        f"results={len(results)} | duration={duration}s"
+        f"SEARCH_DONE | keyword={keyword} | results={len(results)} | duration={duration}s"
     )
 
     return results
