@@ -9,28 +9,63 @@ DESKTOP = {
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/120.0.0.0 Safari/537.36"
-    )
+    ),
 }
 
 CHROME_CDP_URL = "http://localhost:9222"
 
+
 async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
     playwright = await async_playwright().start()
 
-    # Speciaal pad: gebruik bestaande echte Chrome via CDP
+    # --- Attach to real Chrome via CDP ---
     if browser_type == "cdp-chrome":
+        print("Connecting to existing Chrome via CDP...")
         browser = await playwright.chromium.connect_over_cdp(CHROME_CDP_URL)
 
-        # Pak eerste bestaande context (Chrome-profiel)
-        if browser.contexts:
-            context = browser.contexts[0]
-        else:
-            context = await browser.new_context(**DESKTOP)
+        print(f"Contexts found: {len(browser.contexts)}")
+        if not browser.contexts:
+            raise Exception(
+                "❌ No Chrome contexts found.\n"
+                "Start Chrome with:\n"
+                '  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" '
+                '--remote-debugging-port=9222 '
+                '--user-data-dir="C:\\tiktok_chrome_profile"\n'
+                "and open TikTok before running the scraper."
+            )
 
-        page = await context.new_page()
+        context = browser.contexts[0]
+        print(f"Using context: {context}")
+
+        print(f"Pages in context: {len(context.pages)}")
+        for i, p in enumerate(context.pages):
+            try:
+                title = await p.title()
+            except Exception:
+                title = "<no title>"
+            print(f" - Page {i}: {title} | URL: {p.url}")
+
+        # Prefer a TikTok tab if present, else new tab
+        tiktok_pages = [p for p in context.pages if "tiktok.com" in p.url.lower()]
+        if tiktok_pages:
+            page = tiktok_pages[-1]
+            print(f"✔ Using TikTok tab: {page.url}")
+        else:
+            page = await context.new_page()
+            print("⚠ No TikTok tab found, opened a new one.")
+
+        cookies = await context.cookies()
+        cookie_names = [c["name"] for c in cookies]
+        print("Cookies in context:", cookie_names)
+
+        if any(name in cookie_names for name in ["sessionid", "sid_tt", "ttwid"]):
+            print("✔ TikTok login cookies detected — you ARE logged in.")
+        else:
+            print("⚠ No TikTok login cookies detected — TikTok may treat this as logged out.")
+
         return playwright, browser, context, page
 
-    # --- Oud pad: normale Playwright-launch ---
+    # --- Normal Playwright launch path ---
     launch_args = [
         "--disable-blink-features=AutomationControlled",
         "--disable-web-security",
@@ -42,24 +77,11 @@ async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
         "--disable-gpu",
     ]
 
-    if browser_type == "chromium":
-        browser = await playwright.chromium.launch(
-            headless=False,
-            args=launch_args,
-            proxy={"server": proxy} if proxy else None
-        )
-    elif browser_type == "firefox":
-        browser = await playwright.firefox.launch(
-            headless=False,
-            args=launch_args,
-            proxy={"server": proxy} if proxy else None
-        )
-    else:
-        browser = await playwright.webkit.launch(
-            headless=False,
-            args=launch_args,
-            proxy={"server": proxy} if proxy else None
-        )
+    browser = await playwright.chromium.launch(
+        headless=False,  # visible
+        args=launch_args,
+        proxy={"server": proxy} if proxy else None,
+    )
 
     context = await browser.new_context(
         **DESKTOP,
@@ -69,7 +91,8 @@ async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
         permissions=["geolocation"],
     )
 
-    await context.add_init_script("""
+    await context.add_init_script(
+        """
         Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
         Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
         Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
@@ -86,7 +109,8 @@ async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
             if (parameter === 37446) return 'Intel Iris OpenGL Engine';
             return getParameter(parameter);
         };
-    """)
+        """
+    )
 
     page = await context.new_page()
     return playwright, browser, context, page

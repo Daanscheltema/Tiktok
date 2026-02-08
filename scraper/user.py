@@ -1,9 +1,6 @@
 # scraper/user.py
-import json
-import asyncio
 import re
 import urllib.parse
-
 
 # Regex for URLs inside bio text
 BIO_LINK_REGEX = (
@@ -17,46 +14,15 @@ BIO_LINK_REGEX = (
 )
 
 
-async def scrape_user(page, username: str):
-    print(f"\n🔥 SCRAPING PROFILE: {username}")
+async def scrape_user_single_tab(page):
+    """
+    Scrapes a TikTok profile using the SAME tab (no new pages).
+    Returns only extracted links, because SIGI_STATE is not reliable on profiles.
+    """
 
-    url = f"https://www.tiktok.com/@{username}"
-    print(f"--- Opening profile: {url} ---")
-
-    # Open profile page
-    try:
-        await page.goto(url, timeout=60000)
-    except Exception:
-        print("⚠ Could not open profile")
-        return None, [], []
-
-    # Try to load SIGI_STATE (user info + videos)
-    state = {}
-    try:
-        await page.wait_for_selector("script[id='SIGI_STATE']", timeout=8000)
-        data = await page.evaluate("document.querySelector('#SIGI_STATE').textContent")
-        state = json.loads(data)
-
-        print("\n--- DEBUG: SIGI_STATE UserModule ---")
-        print(json.dumps(state.get("UserModule", {}), indent=2))
-        print("--- END SIGI_STATE ---\n")
-
-    except Exception:
-        print("⚠ SIGI_STATE could not be loaded")
-
-    # Extract user info
-    user_info = (
-        state.get("UserModule", {})
-             .get("users", {})
-             .get(username.lower())
-    )
-
-    # Extract videos
-    videos = list(
-        state.get("ItemModule", {}).values()
-    ) if "ItemModule" in state else []
-
-    # Extract bio text (DOM)
+    # -----------------------------
+    # Extract bio text
+    # -----------------------------
     bio_text = ""
     bio_selectors = [
         "h2[data-e2e='user-bio']",
@@ -67,18 +33,18 @@ async def scrape_user(page, username: str):
 
     for sel in bio_selectors:
         try:
-            bio_text = await page.inner_text(sel)
-            if bio_text.strip():
-                print("\n--- BIO TEXT FOUND ---")
-                print(bio_text)
-                print("--- END BIO TEXT ---\n")
+            text = await page.inner_text(sel)
+            if text.strip():
+                bio_text = text.strip()
                 break
         except:
             continue
 
     extracted_links = []
 
+    # -----------------------------
     # Extract URLs from bio text
+    # -----------------------------
     if bio_text:
         found_links = re.findall(BIO_LINK_REGEX, bio_text)
         for link in found_links:
@@ -87,7 +53,9 @@ async def scrape_user(page, username: str):
             if link not in extracted_links:
                 extracted_links.append(link)
 
-    # Extract official TikTok bio links (e.g., t.me/rebounder77b)
+    # -----------------------------
+    # Extract TikTok "official" bio links (wrapped links)
+    # -----------------------------
     try:
         link_elements = await page.query_selector_all("a[data-e2e='user-link']")
         for el in link_elements:
@@ -114,6 +82,22 @@ async def scrape_user(page, username: str):
     except Exception:
         pass
 
-    print(f"✅ Extracted links for {username}: {extracted_links}")
+    # -----------------------------
+    # Extract any visible <a> links in profile
+    # -----------------------------
+    try:
+        anchors = await page.query_selector_all("a")
+        for a in anchors:
+            href = await a.get_attribute("href")
+            if href and (
+                "http" in href
+                or "t.me" in href
+                or "linktr.ee" in href
+                or "discord" in href
+            ):
+                if href not in extracted_links:
+                    extracted_links.append(href)
+    except:
+        pass
 
-    return user_info, videos, extracted_links
+    return list(set(extracted_links))
