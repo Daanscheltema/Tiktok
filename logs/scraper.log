@@ -8132,3 +8132,2336 @@ playwright._impl._errors.Error: ElementHandle.query_selector: Protocol error (DO
 2026-02-08 01:40:53 | INFO | KEYWORD_DONE | keyword=3D auto sear | duration=372.12s
 2026-02-08 01:40:53 | INFO | SCRAPER_SHUTDOWN
 2026-02-08 01:40:53 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:08:08 | INFO | SCRAPER_START
+2026-02-08 12:08:08 | INFO | SCRAPER_START
+2026-02-08 12:10:14 | INFO | SCRAPER_START
+2026-02-08 12:10:14 | INFO | SCRAPER_START
+2026-02-08 12:10:15 | INFO | BROWSER_STARTED
+2026-02-08 12:10:15 | INFO | BROWSER_STARTED
+2026-02-08 12:10:15 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:10:15 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:10:15 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 12:10:15 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 12:10:26 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 12:10:26 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 12:10:26 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:10:26 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:10:26 | INFO | CARDS_FOUND | keyword=Buttons | count=12
+2026-02-08 12:10:26 | INFO | CARDS_FOUND | keyword=Buttons | count=12
+2026-02-08 12:13:46 | INFO | SCRAPER_START
+2026-02-08 12:13:46 | INFO | SCRAPER_START
+2026-02-08 12:13:47 | INFO | BROWSER_STARTED
+2026-02-08 12:13:47 | INFO | BROWSER_STARTED
+2026-02-08 12:13:47 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:13:47 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:13:47 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 12:13:47 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 12:13:56 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 12:13:56 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 12:13:56 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:13:56 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:13:56 | INFO | CARDS_FOUND | keyword=Buttons | count=12
+2026-02-08 12:13:56 | INFO | CARDS_FOUND | keyword=Buttons | count=12
+2026-02-08 12:14:18 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:14:18 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:14:37 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:14:37 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:14:55 | INFO | VIDEO_OK | idx=3 | id=7540033751913434381 | user=nxlimitttt
+2026-02-08 12:14:55 | INFO | VIDEO_OK | idx=3 | id=7540033751913434381 | user=nxlimitttt
+2026-02-08 12:15:16 | INFO | VIDEO_OK | idx=4 | id=7593342935320595734 | user=lexipooxo
+2026-02-08 12:15:16 | INFO | VIDEO_OK | idx=4 | id=7593342935320595734 | user=lexipooxo
+2026-02-08 12:15:34 | INFO | VIDEO_OK | idx=5 | id=7539982149282204958 | user=fullyautoplug7.62
+2026-02-08 12:15:34 | INFO | VIDEO_OK | idx=5 | id=7539982149282204958 | user=fullyautoplug7.62
+2026-02-08 12:15:52 | INFO | VIDEO_OK | idx=6 | id=7566366575167638839 | user=varietymagazine
+2026-02-08 12:15:52 | INFO | VIDEO_OK | idx=6 | id=7566366575167638839 | user=varietymagazine
+2026-02-08 12:16:11 | INFO | VIDEO_OK | idx=7 | id=7550237416989265159 | user=lovebuttons1boo
+2026-02-08 12:16:11 | INFO | VIDEO_OK | idx=7 | id=7550237416989265159 | user=lovebuttons1boo
+2026-02-08 12:16:31 | INFO | VIDEO_OK | idx=8 | id=7560796027184237837 | user=jadenisbored
+2026-02-08 12:16:31 | INFO | VIDEO_OK | idx=8 | id=7560796027184237837 | user=jadenisbored
+2026-02-08 12:16:48 | INFO | VIDEO_OK | idx=9 | id=7596814984999341342 | user=nbcsnl
+2026-02-08 12:16:48 | INFO | VIDEO_OK | idx=9 | id=7596814984999341342 | user=nbcsnl
+2026-02-08 12:17:06 | INFO | VIDEO_OK | idx=10 | id=7560340661992525078 | user=bottomless.banditz
+2026-02-08 12:17:06 | INFO | VIDEO_OK | idx=10 | id=7560340661992525078 | user=bottomless.banditz
+2026-02-08 12:17:24 | INFO | VIDEO_OK | idx=11 | id=7590540524747099422 | user=jasonsappy
+2026-02-08 12:17:24 | INFO | VIDEO_OK | idx=11 | id=7590540524747099422 | user=jasonsappy
+2026-02-08 12:17:39 | INFO | VIDEO_OK | idx=12 | id=7596512937821408534 | user=callumskillen1
+2026-02-08 12:17:39 | INFO | VIDEO_OK | idx=12 | id=7596512937821408534 | user=callumskillen1
+2026-02-08 12:17:39 | INFO | SEARCH_DONE | keyword=Buttons | results=12 | duration=232.63s
+2026-02-08 12:17:39 | INFO | SEARCH_DONE | keyword=Buttons | results=12 | duration=232.63s
+2026-02-08 12:17:39 | INFO | KEYWORD_OK | keyword=Buttons | results=12
+2026-02-08 12:17:39 | INFO | KEYWORD_OK | keyword=Buttons | results=12
+2026-02-08 12:17:40 | INFO | KEYWORD_DONE | keyword=Buttons | duration=232.7s
+2026-02-08 12:17:40 | INFO | KEYWORD_DONE | keyword=Buttons | duration=232.7s
+2026-02-08 12:17:40 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:17:40 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:17:40 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 12:17:40 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 12:17:48 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 12:17:48 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 12:17:48 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:17:48 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:17:48 | INFO | CARDS_FOUND | keyword=Glock Switch | count=12
+2026-02-08 12:17:48 | INFO | CARDS_FOUND | keyword=Glock Switch | count=12
+2026-02-08 12:18:11 | INFO | VIDEO_OK | idx=1 | id=7583001878540094750 | user=traylittle
+2026-02-08 12:18:11 | INFO | VIDEO_OK | idx=1 | id=7583001878540094750 | user=traylittle
+2026-02-08 12:18:33 | INFO | VIDEO_OK | idx=2 | id=7495788553499086111 | user=traylittle
+2026-02-08 12:18:33 | INFO | VIDEO_OK | idx=2 | id=7495788553499086111 | user=traylittle
+2026-02-08 12:18:53 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:18:53 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:19:43 | INFO | VIDEO_OK | idx=4 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:19:43 | INFO | VIDEO_OK | idx=4 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:20:06 | INFO | VIDEO_OK | idx=5 | id=7590522474937191711 | user=traylittle
+2026-02-08 12:20:06 | INFO | VIDEO_OK | idx=5 | id=7590522474937191711 | user=traylittle
+2026-02-08 12:20:27 | INFO | VIDEO_OK | idx=6 | id=7449061572158180651 | user=salihateyou
+2026-02-08 12:20:27 | INFO | VIDEO_OK | idx=6 | id=7449061572158180651 | user=salihateyou
+2026-02-08 12:21:21 | INFO | VIDEO_OK | idx=7 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 12:21:21 | INFO | VIDEO_OK | idx=7 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 12:21:41 | INFO | VIDEO_OK | idx=8 | id=7576440739865971999 | user=traylittle
+2026-02-08 12:21:41 | INFO | VIDEO_OK | idx=8 | id=7576440739865971999 | user=traylittle
+2026-02-08 12:21:58 | INFO | VIDEO_OK | idx=9 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 12:21:58 | INFO | VIDEO_OK | idx=9 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 12:22:18 | INFO | VIDEO_OK | idx=10 | id=7493740633539169582 | user=nixstah
+2026-02-08 12:22:18 | INFO | VIDEO_OK | idx=10 | id=7493740633539169582 | user=nixstah
+2026-02-08 12:22:40 | INFO | VIDEO_OK | idx=11 | id=7496535306502458655 | user=traylittle
+2026-02-08 12:22:40 | INFO | VIDEO_OK | idx=11 | id=7496535306502458655 | user=traylittle
+2026-02-08 12:22:59 | INFO | VIDEO_OK | idx=12 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 12:22:59 | INFO | VIDEO_OK | idx=12 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 12:22:59 | INFO | SEARCH_DONE | keyword=Glock Switch | results=12 | duration=319.52s
+2026-02-08 12:22:59 | INFO | SEARCH_DONE | keyword=Glock Switch | results=12 | duration=319.52s
+2026-02-08 12:22:59 | INFO | KEYWORD_OK | keyword=Glock Switch | results=12
+2026-02-08 12:22:59 | INFO | KEYWORD_OK | keyword=Glock Switch | results=12
+2026-02-08 12:22:59 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=319.55s
+2026-02-08 12:22:59 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=319.55s
+2026-02-08 12:22:59 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:22:59 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:33:09 | INFO | SCRAPER_START
+2026-02-08 12:33:09 | INFO | SCRAPER_START
+2026-02-08 12:33:11 | INFO | BROWSER_STARTED
+2026-02-08 12:33:11 | INFO | BROWSER_STARTED
+2026-02-08 12:33:11 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:33:11 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:33:11 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 12:33:11 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 12:33:21 | INFO | SCROLL 0 | cards=12
+2026-02-08 12:33:21 | INFO | SCROLL 0 | cards=12
+2026-02-08 12:33:24 | INFO | SCROLL 1 | cards=12
+2026-02-08 12:33:24 | INFO | SCROLL 1 | cards=12
+2026-02-08 12:33:25 | INFO | SCROLL 2 | cards=12
+2026-02-08 12:33:25 | INFO | SCROLL 2 | cards=12
+2026-02-08 12:33:27 | INFO | SCROLL 3 | cards=12
+2026-02-08 12:33:27 | INFO | SCROLL 3 | cards=12
+2026-02-08 12:33:27 | INFO | 🔚 Geen nieuwe resultaten meer — scroll stopt
+2026-02-08 12:33:27 | INFO | 🔚 Geen nieuwe resultaten meer — scroll stopt
+2026-02-08 12:33:27 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:33:27 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:33:27 | INFO | CARDS_FOUND | keyword=Buttons | count=12
+2026-02-08 12:33:27 | INFO | CARDS_FOUND | keyword=Buttons | count=12
+2026-02-08 12:33:45 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:33:45 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:34:03 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:34:03 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:34:23 | INFO | VIDEO_OK | idx=3 | id=7593342935320595734 | user=lexipooxo
+2026-02-08 12:34:23 | INFO | VIDEO_OK | idx=3 | id=7593342935320595734 | user=lexipooxo
+2026-02-08 12:34:39 | INFO | VIDEO_OK | idx=4 | id=7540033751913434381 | user=nxlimitttt
+2026-02-08 12:34:39 | INFO | VIDEO_OK | idx=4 | id=7540033751913434381 | user=nxlimitttt
+2026-02-08 12:34:56 | INFO | VIDEO_OK | idx=5 | id=7539982149282204958 | user=fullyautoplug7.62
+2026-02-08 12:34:56 | INFO | VIDEO_OK | idx=5 | id=7539982149282204958 | user=fullyautoplug7.62
+2026-02-08 12:35:17 | INFO | VIDEO_OK | idx=6 | id=7566366575167638839 | user=varietymagazine
+2026-02-08 12:35:17 | INFO | VIDEO_OK | idx=6 | id=7566366575167638839 | user=varietymagazine
+2026-02-08 12:36:09 | INFO | VIDEO_OK | idx=7 | id=7590540524747099422 | user=jasonsappy
+2026-02-08 12:36:09 | INFO | VIDEO_OK | idx=7 | id=7590540524747099422 | user=jasonsappy
+2026-02-08 12:36:28 | INFO | VIDEO_OK | idx=8 | id=7560796027184237837 | user=jadenisbored
+2026-02-08 12:36:28 | INFO | VIDEO_OK | idx=8 | id=7560796027184237837 | user=jadenisbored
+2026-02-08 12:36:45 | INFO | VIDEO_OK | idx=9 | id=7324123428938681643 | user=marcqwuanreid
+2026-02-08 12:36:45 | INFO | VIDEO_OK | idx=9 | id=7324123428938681643 | user=marcqwuanreid
+2026-02-08 12:37:00 | INFO | VIDEO_OK | idx=10 | id=7596512937821408534 | user=callumskillen1
+2026-02-08 12:37:00 | INFO | VIDEO_OK | idx=10 | id=7596512937821408534 | user=callumskillen1
+2026-02-08 12:37:19 | INFO | VIDEO_OK | idx=11 | id=7590094918593432863 | user=ry_rysecret
+2026-02-08 12:37:19 | INFO | VIDEO_OK | idx=11 | id=7590094918593432863 | user=ry_rysecret
+2026-02-08 12:37:39 | INFO | VIDEO_OK | idx=12 | id=7589927928478141726 | user=fruitgurl777
+2026-02-08 12:37:39 | INFO | VIDEO_OK | idx=12 | id=7589927928478141726 | user=fruitgurl777
+2026-02-08 12:37:39 | INFO | SEARCH_DONE | keyword=Buttons | results=12 | duration=267.53s
+2026-02-08 12:37:39 | INFO | SEARCH_DONE | keyword=Buttons | results=12 | duration=267.53s
+2026-02-08 12:37:39 | INFO | KEYWORD_OK | keyword=Buttons | results=12
+2026-02-08 12:37:39 | INFO | KEYWORD_OK | keyword=Buttons | results=12
+2026-02-08 12:37:39 | INFO | KEYWORD_DONE | keyword=Buttons | duration=267.58s
+2026-02-08 12:37:39 | INFO | KEYWORD_DONE | keyword=Buttons | duration=267.58s
+2026-02-08 12:37:39 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:37:39 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:37:39 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 12:37:39 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 12:37:45 | INFO | SCROLL 0 | cards=12
+2026-02-08 12:37:45 | INFO | SCROLL 0 | cards=12
+2026-02-08 12:37:49 | INFO | SCROLL 1 | cards=12
+2026-02-08 12:37:49 | INFO | SCROLL 1 | cards=12
+2026-02-08 12:37:50 | INFO | SCROLL 2 | cards=12
+2026-02-08 12:37:50 | INFO | SCROLL 2 | cards=12
+2026-02-08 12:37:52 | INFO | SCROLL 3 | cards=12
+2026-02-08 12:37:52 | INFO | SCROLL 3 | cards=12
+2026-02-08 12:37:52 | INFO | 🔚 Geen nieuwe resultaten meer — scroll stopt
+2026-02-08 12:37:52 | INFO | 🔚 Geen nieuwe resultaten meer — scroll stopt
+2026-02-08 12:37:52 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:37:52 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 12:37:52 | INFO | CARDS_FOUND | keyword=Glock Switch | count=12
+2026-02-08 12:37:52 | INFO | CARDS_FOUND | keyword=Glock Switch | count=12
+2026-02-08 12:38:14 | INFO | VIDEO_OK | idx=1 | id=7583001878540094750 | user=traylittle
+2026-02-08 12:38:14 | INFO | VIDEO_OK | idx=1 | id=7583001878540094750 | user=traylittle
+2026-02-08 12:38:43 | INFO | VIDEO_OK | idx=2 | id=7495788553499086111 | user=traylittle
+2026-02-08 12:38:43 | INFO | VIDEO_OK | idx=2 | id=7495788553499086111 | user=traylittle
+2026-02-08 12:39:16 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:39:16 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 12:39:45 | INFO | VIDEO_OK | idx=4 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:39:45 | INFO | VIDEO_OK | idx=4 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 12:40:21 | INFO | VIDEO_OK | idx=5 | id=7493740633539169582 | user=nixstah
+2026-02-08 12:40:21 | INFO | VIDEO_OK | idx=5 | id=7493740633539169582 | user=nixstah
+2026-02-08 12:40:59 | INFO | VIDEO_OK | idx=6 | id=7590522474937191711 | user=traylittle
+2026-02-08 12:40:59 | INFO | VIDEO_OK | idx=6 | id=7590522474937191711 | user=traylittle
+2026-02-08 12:41:34 | INFO | VIDEO_OK | idx=7 | id=7449061572158180651 | user=salihateyou
+2026-02-08 12:41:34 | INFO | VIDEO_OK | idx=7 | id=7449061572158180651 | user=salihateyou
+2026-02-08 12:42:12 | INFO | VIDEO_OK | idx=8 | id=7576440739865971999 | user=traylittle
+2026-02-08 12:42:12 | INFO | VIDEO_OK | idx=8 | id=7576440739865971999 | user=traylittle
+2026-02-08 12:42:46 | INFO | VIDEO_OK | idx=9 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 12:42:46 | INFO | VIDEO_OK | idx=9 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 12:43:17 | INFO | VIDEO_OK | idx=10 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 12:43:17 | INFO | VIDEO_OK | idx=10 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 12:43:54 | INFO | VIDEO_OK | idx=11 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 12:43:54 | INFO | VIDEO_OK | idx=11 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 12:44:29 | INFO | VIDEO_OK | idx=12 | id=7496535306502458655 | user=traylittle
+2026-02-08 12:44:29 | INFO | VIDEO_OK | idx=12 | id=7496535306502458655 | user=traylittle
+2026-02-08 12:44:29 | INFO | SEARCH_DONE | keyword=Glock Switch | results=12 | duration=410.47s
+2026-02-08 12:44:29 | INFO | SEARCH_DONE | keyword=Glock Switch | results=12 | duration=410.47s
+2026-02-08 12:44:29 | INFO | KEYWORD_OK | keyword=Glock Switch | results=12
+2026-02-08 12:44:29 | INFO | KEYWORD_OK | keyword=Glock Switch | results=12
+2026-02-08 12:44:30 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=410.54s
+2026-02-08 12:44:30 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=410.54s
+2026-02-08 12:44:30 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:44:30 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:52:22 | INFO | SCRAPER_START
+2026-02-08 12:52:22 | INFO | SCRAPER_START
+2026-02-08 12:52:23 | INFO | BROWSER_STARTED
+2026-02-08 12:52:23 | INFO | BROWSER_STARTED
+2026-02-08 12:52:23 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:52:23 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:52:23 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:52:23 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:52:23 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:52:23 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:52:26 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 63, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:52:26 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 63, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:52:26 | INFO | KEYWORD_DONE | keyword=Buttons | duration=2.44s
+2026-02-08 12:52:26 | INFO | KEYWORD_DONE | keyword=Buttons | duration=2.44s
+2026-02-08 12:52:26 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:52:26 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:52:26 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:52:26 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:52:26 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:52:26 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:52:28 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 63, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:52:28 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 63, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:52:28 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=2.21s
+2026-02-08 12:52:28 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=2.21s
+2026-02-08 12:52:28 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:52:28 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:55:28 | INFO | SCRAPER_START
+2026-02-08 12:55:28 | INFO | SCRAPER_START
+2026-02-08 12:55:30 | INFO | BROWSER_STARTED
+2026-02-08 12:55:30 | INFO | BROWSER_STARTED
+2026-02-08 12:55:30 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:55:30 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:55:30 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:55:30 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:55:35 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:55:35 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:55:38 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:55:38 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:55:38 | INFO | KEYWORD_DONE | keyword=Buttons | duration=8.08s
+2026-02-08 12:55:38 | INFO | KEYWORD_DONE | keyword=Buttons | duration=8.08s
+2026-02-08 12:55:38 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:55:38 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:55:38 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:55:38 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:55:42 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:55:42 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:55:45 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:55:45 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:55:45 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=7.38s
+2026-02-08 12:55:45 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=7.38s
+2026-02-08 12:55:45 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:55:45 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:57:17 | INFO | SCRAPER_START
+2026-02-08 12:57:17 | INFO | SCRAPER_START
+2026-02-08 12:57:19 | INFO | BROWSER_STARTED
+2026-02-08 12:57:19 | INFO | BROWSER_STARTED
+2026-02-08 12:57:19 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:57:19 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:57:19 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:57:19 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:57:23 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:57:23 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:57:25 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:57:25 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:57:25 | INFO | KEYWORD_DONE | keyword=Buttons | duration=6.57s
+2026-02-08 12:57:25 | INFO | KEYWORD_DONE | keyword=Buttons | duration=6.57s
+2026-02-08 12:57:25 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:57:25 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:57:25 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:57:25 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:57:28 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:57:28 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:57:32 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:57:32 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 106, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 64, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 12:57:32 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=6.45s
+2026-02-08 12:57:32 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=6.45s
+2026-02-08 12:57:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:57:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:58:45 | INFO | SCRAPER_START
+2026-02-08 12:58:45 | INFO | SCRAPER_START
+2026-02-08 12:58:46 | INFO | BROWSER_STARTED
+2026-02-08 12:58:46 | INFO | BROWSER_STARTED
+2026-02-08 12:58:46 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:58:46 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 12:58:46 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:58:46 | INFO | SEARCH_START_API | keyword=Buttons
+2026-02-08 12:58:51 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:58:51 | INFO | API_BATCH | keyword=Buttons | offset=0
+2026-02-08 12:58:52 | WARNING | API_FAIL | offset=0 | data={'error': True, 'message': "SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input"}
+2026-02-08 12:58:52 | WARNING | API_FAIL | offset=0 | data={'error': True, 'message': "SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input"}
+2026-02-08 12:58:52 | INFO | NO_MORE_ITEMS | keyword=Buttons | offset=0
+2026-02-08 12:58:52 | INFO | NO_MORE_ITEMS | keyword=Buttons | offset=0
+2026-02-08 12:58:52 | INFO | SEARCH_DONE_API | keyword=Buttons | results=0 | duration=6.18s
+2026-02-08 12:58:52 | INFO | SEARCH_DONE_API | keyword=Buttons | results=0 | duration=6.18s
+2026-02-08 12:58:52 | WARNING | KEYWORD_EMPTY | keyword=Buttons
+2026-02-08 12:58:52 | WARNING | KEYWORD_EMPTY | keyword=Buttons
+2026-02-08 12:58:52 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:58:52 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 12:58:52 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:58:52 | INFO | SEARCH_START_API | keyword=Glock Switch
+2026-02-08 12:58:56 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:58:56 | INFO | API_BATCH | keyword=Glock Switch | offset=0
+2026-02-08 12:58:57 | WARNING | API_FAIL | offset=0 | data={'error': True, 'message': "SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input"}
+2026-02-08 12:58:57 | WARNING | API_FAIL | offset=0 | data={'error': True, 'message': "SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input"}
+2026-02-08 12:58:57 | INFO | NO_MORE_ITEMS | keyword=Glock Switch | offset=0
+2026-02-08 12:58:57 | INFO | NO_MORE_ITEMS | keyword=Glock Switch | offset=0
+2026-02-08 12:58:57 | INFO | SEARCH_DONE_API | keyword=Glock Switch | results=0 | duration=5.08s
+2026-02-08 12:58:57 | INFO | SEARCH_DONE_API | keyword=Glock Switch | results=0 | duration=5.08s
+2026-02-08 12:58:57 | WARNING | KEYWORD_EMPTY | keyword=Glock Switch
+2026-02-08 12:58:57 | WARNING | KEYWORD_EMPTY | keyword=Glock Switch
+2026-02-08 12:58:57 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 12:58:57 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:00:45 | INFO | SCRAPER_START
+2026-02-08 13:00:45 | INFO | SCRAPER_START
+2026-02-08 13:00:46 | INFO | BROWSER_STARTED
+2026-02-08 13:00:46 | INFO | BROWSER_STARTED
+2026-02-08 13:00:46 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 13:00:46 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 13:00:46 | INFO | SEARCH_START_API_XHR | keyword=Buttons
+2026-02-08 13:00:46 | INFO | SEARCH_START_API_XHR | keyword=Buttons
+2026-02-08 13:00:52 | INFO | API_XHR | keyword=Buttons | offset=0
+2026-02-08 13:00:52 | INFO | API_XHR | keyword=Buttons | offset=0
+2026-02-08 13:00:54 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 68, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:00:54 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 68, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:00:54 | INFO | KEYWORD_DONE | keyword=Buttons | duration=8.41s
+2026-02-08 13:00:54 | INFO | KEYWORD_DONE | keyword=Buttons | duration=8.41s
+2026-02-08 13:00:54 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 13:00:54 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 13:00:54 | INFO | SEARCH_START_API_XHR | keyword=Glock Switch
+2026-02-08 13:00:54 | INFO | SEARCH_START_API_XHR | keyword=Glock Switch
+2026-02-08 13:00:59 | INFO | API_XHR | keyword=Glock Switch | offset=0
+2026-02-08 13:00:59 | INFO | API_XHR | keyword=Glock Switch | offset=0
+2026-02-08 13:01:02 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 68, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:01:02 | ERROR | KEYWORD_ERROR | keyword=Glock Switch | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 99, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 68, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:01:02 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=7.47s
+2026-02-08 13:01:02 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=7.47s
+2026-02-08 13:01:02 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:01:02 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:06:09 | INFO | SCRAPER_START
+2026-02-08 13:06:09 | INFO | SCRAPER_START
+2026-02-08 13:06:10 | INFO | BROWSER_STARTED
+2026-02-08 13:06:10 | INFO | BROWSER_STARTED
+2026-02-08 13:06:10 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 13:06:10 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 13:06:10 | INFO | SEARCH_START_API_XHR | keyword=Buttons
+2026-02-08 13:06:10 | INFO | SEARCH_START_API_XHR | keyword=Buttons
+2026-02-08 13:06:17 | INFO | API_XHR | keyword=Buttons | offset=0
+2026-02-08 13:06:17 | INFO | API_XHR | keyword=Buttons | offset=0
+2026-02-08 13:06:20 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:06:20 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:06:20 | INFO | KEYWORD_DONE | keyword=Buttons | duration=9.75s
+2026-02-08 13:06:20 | INFO | KEYWORD_DONE | keyword=Buttons | duration=9.75s
+2026-02-08 13:06:20 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:06:20 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:06:20 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:06:20 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:06:29 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:06:29 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:06:32 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:06:32 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 41, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:06:32 | INFO | KEYWORD_DONE | keyword=Meow | duration=11.78s
+2026-02-08 13:06:32 | INFO | KEYWORD_DONE | keyword=Meow | duration=11.78s
+2026-02-08 13:06:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:06:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:07:15 | INFO | SCRAPER_START
+2026-02-08 13:07:15 | INFO | SCRAPER_START
+2026-02-08 13:07:16 | INFO | BROWSER_STARTED
+2026-02-08 13:07:16 | INFO | BROWSER_STARTED
+2026-02-08 13:07:16 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 13:07:16 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 13:07:16 | INFO | SEARCH_START_API_XHR | keyword=Buttons
+2026-02-08 13:07:16 | INFO | SEARCH_START_API_XHR | keyword=Buttons
+2026-02-08 13:07:22 | INFO | API_XHR | keyword=Buttons | offset=0
+2026-02-08 13:07:22 | INFO | API_XHR | keyword=Buttons | offset=0
+2026-02-08 13:07:24 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 45, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:07:24 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 45, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:07:24 | INFO | KEYWORD_DONE | keyword=Buttons | duration=8.58s
+2026-02-08 13:07:24 | INFO | KEYWORD_DONE | keyword=Buttons | duration=8.58s
+2026-02-08 13:07:24 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:07:24 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:07:24 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:07:24 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:07:30 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:07:30 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:07:33 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 45, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:07:33 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 45, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 102, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 71, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:07:33 | INFO | KEYWORD_DONE | keyword=Meow | duration=8.95s
+2026-02-08 13:07:33 | INFO | KEYWORD_DONE | keyword=Meow | duration=8.95s
+2026-02-08 13:07:33 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:07:33 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:48:43 | INFO | SCRAPER_START
+2026-02-08 13:48:43 | INFO | SCRAPER_START
+2026-02-08 13:48:44 | INFO | BROWSER_STARTED
+2026-02-08 13:48:44 | INFO | BROWSER_STARTED
+2026-02-08 13:48:44 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:48:44 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:48:44 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:48:44 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:48:50 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:48:50 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:48:50 | INFO | API_XHR_RAW | offset=0 | keys=['error', 'message']
+2026-02-08 13:48:50 | INFO | API_XHR_RAW | offset=0 | keys=['error', 'message']
+2026-02-08 13:48:50 | WARNING | API_XHR_FAIL | offset=0 | data={'error': True, 'message': 'SyntaxError: Unexpected end of JSON input'}
+2026-02-08 13:48:50 | WARNING | API_XHR_FAIL | offset=0 | data={'error': True, 'message': 'SyntaxError: Unexpected end of JSON input'}
+2026-02-08 13:48:50 | INFO | NO_MORE_ITEMS | keyword=Meow | offset=0
+2026-02-08 13:48:50 | INFO | NO_MORE_ITEMS | keyword=Meow | offset=0
+2026-02-08 13:48:50 | INFO | SEARCH_DONE_API_XHR | keyword=Meow | results=0 | duration=5.7s
+2026-02-08 13:48:50 | INFO | SEARCH_DONE_API_XHR | keyword=Meow | results=0 | duration=5.7s
+2026-02-08 13:48:50 | WARNING | KEYWORD_EMPTY | keyword=Meow
+2026-02-08 13:48:50 | WARNING | KEYWORD_EMPTY | keyword=Meow
+2026-02-08 13:48:50 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:48:50 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:49:00 | INFO | SCRAPER_START
+2026-02-08 13:49:00 | INFO | SCRAPER_START
+2026-02-08 13:49:01 | INFO | BROWSER_STARTED
+2026-02-08 13:49:01 | INFO | BROWSER_STARTED
+2026-02-08 13:49:01 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:49:01 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:49:01 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:49:01 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:49:06 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:49:06 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:49:07 | INFO | API_XHR_RAW | offset=0 | keys=['error', 'message']
+2026-02-08 13:49:07 | INFO | API_XHR_RAW | offset=0 | keys=['error', 'message']
+2026-02-08 13:49:07 | WARNING | API_XHR_FAIL | offset=0 | data={'error': True, 'message': 'SyntaxError: Unexpected end of JSON input'}
+2026-02-08 13:49:07 | WARNING | API_XHR_FAIL | offset=0 | data={'error': True, 'message': 'SyntaxError: Unexpected end of JSON input'}
+2026-02-08 13:49:07 | INFO | NO_MORE_ITEMS | keyword=Meow | offset=0
+2026-02-08 13:49:07 | INFO | NO_MORE_ITEMS | keyword=Meow | offset=0
+2026-02-08 13:49:07 | INFO | SEARCH_DONE_API_XHR | keyword=Meow | results=0 | duration=5.99s
+2026-02-08 13:49:07 | INFO | SEARCH_DONE_API_XHR | keyword=Meow | results=0 | duration=5.99s
+2026-02-08 13:49:07 | WARNING | KEYWORD_EMPTY | keyword=Meow
+2026-02-08 13:49:07 | WARNING | KEYWORD_EMPTY | keyword=Meow
+2026-02-08 13:49:07 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:49:07 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:52:32 | INFO | SCRAPER_START
+2026-02-08 13:52:32 | INFO | SCRAPER_START
+2026-02-08 13:52:33 | INFO | BROWSER_STARTED
+2026-02-08 13:52:33 | INFO | BROWSER_STARTED
+2026-02-08 13:52:33 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:52:33 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:52:33 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:52:33 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:52:39 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:52:39 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:52:41 | INFO | API_XHR_RAW | offset=0 | keys=['status_code', 'data', 'qc', 'cursor', 'has_more', 'ad_info', 'extra', 'log_pb', 'global_doodle_config', 'backtrace']
+2026-02-08 13:52:41 | INFO | API_XHR_RAW | offset=0 | keys=['status_code', 'data', 'qc', 'cursor', 'has_more', 'ad_info', 'extra', 'log_pb', 'global_doodle_config', 'backtrace']
+2026-02-08 13:52:41 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 45, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 104, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 73, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:52:41 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 45, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 104, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 73, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:52:41 | INFO | KEYWORD_DONE | keyword=Meow | duration=8.79s
+2026-02-08 13:52:41 | INFO | KEYWORD_DONE | keyword=Meow | duration=8.79s
+2026-02-08 13:52:41 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:52:41 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:54:38 | INFO | SCRAPER_START
+2026-02-08 13:54:38 | INFO | SCRAPER_START
+2026-02-08 13:54:39 | INFO | BROWSER_STARTED
+2026-02-08 13:54:39 | INFO | BROWSER_STARTED
+2026-02-08 13:54:43 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:54:43 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:54:43 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:54:43 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:54:48 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:54:48 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:54:50 | INFO | API_XHR_RAW | offset=0 | keys=['status_code', 'data', 'qc', 'cursor', 'has_more', 'ad_info', 'extra', 'log_pb', 'global_doodle_config', 'backtrace']
+2026-02-08 13:54:50 | INFO | API_XHR_RAW | offset=0 | keys=['status_code', 'data', 'qc', 'cursor', 'has_more', 'ad_info', 'extra', 'log_pb', 'global_doodle_config', 'backtrace']
+2026-02-08 13:54:50 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 57, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 104, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 73, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:54:50 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 57, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 104, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 73, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:54:50 | INFO | KEYWORD_DONE | keyword=Meow | duration=7.11s
+2026-02-08 13:54:50 | INFO | KEYWORD_DONE | keyword=Meow | duration=7.11s
+2026-02-08 13:54:50 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:54:50 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:56:22 | INFO | SCRAPER_START
+2026-02-08 13:56:22 | INFO | SCRAPER_START
+2026-02-08 13:56:23 | INFO | BROWSER_STARTED
+2026-02-08 13:56:23 | INFO | BROWSER_STARTED
+2026-02-08 13:56:29 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:56:29 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 13:56:29 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:56:29 | INFO | SEARCH_START_API_XHR | keyword=Meow
+2026-02-08 13:56:35 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:56:35 | INFO | API_XHR | keyword=Meow | offset=0
+2026-02-08 13:56:37 | INFO | API_XHR_RAW | offset=0 | keys=['status_code', 'data', 'qc', 'cursor', 'has_more', 'ad_info', 'extra', 'log_pb', 'global_doodle_config', 'backtrace']
+2026-02-08 13:56:37 | INFO | API_XHR_RAW | offset=0 | keys=['status_code', 'data', 'qc', 'cursor', 'has_more', 'ad_info', 'extra', 'log_pb', 'global_doodle_config', 'backtrace']
+2026-02-08 13:56:37 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 53, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 104, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 73, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:56:37 | ERROR | KEYWORD_ERROR | keyword=Meow | error='list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 53, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 104, in search_keyword
+    items = await fetch_search_batch(search_page, keyword, offset=offset, count=batch_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 73, in fetch_search_batch
+    data.get("data", {}).get("item_list")
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2026-02-08 13:56:37 | INFO | KEYWORD_DONE | keyword=Meow | duration=7.96s
+2026-02-08 13:56:37 | INFO | KEYWORD_DONE | keyword=Meow | duration=7.96s
+2026-02-08 13:56:37 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 13:56:37 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 14:15:00 | INFO | SCRAPER_START
+2026-02-08 14:15:00 | INFO | SCRAPER_START
+2026-02-08 14:15:01 | INFO | BROWSER_STARTED
+2026-02-08 14:15:01 | INFO | BROWSER_STARTED
+2026-02-08 14:15:01 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 14:15:01 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-08 14:15:01 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 14:15:01 | INFO | SEARCH_START | keyword=Buttons
+2026-02-08 14:15:20 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 14:15:20 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 14:15:21 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 14:15:21 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 14:15:21 | INFO | CARDS_FOUND | keyword=Buttons | count=24
+2026-02-08 14:15:21 | INFO | CARDS_FOUND | keyword=Buttons | count=24
+2026-02-08 14:15:58 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 14:15:58 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 14:16:32 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 14:16:32 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 14:17:20 | INFO | VIDEO_OK | idx=3 | id=7540033751913434381 | user=nxlimitttt
+2026-02-08 14:17:20 | INFO | VIDEO_OK | idx=3 | id=7540033751913434381 | user=nxlimitttt
+2026-02-08 14:18:14 | INFO | VIDEO_OK | idx=4 | id=7539982149282204958 | user=fullyautoplug7.62
+2026-02-08 14:18:14 | INFO | VIDEO_OK | idx=4 | id=7539982149282204958 | user=fullyautoplug7.62
+2026-02-08 14:19:00 | INFO | VIDEO_OK | idx=5 | id=7566366575167638839 | user=varietymagazine
+2026-02-08 14:19:00 | INFO | VIDEO_OK | idx=5 | id=7566366575167638839 | user=varietymagazine
+2026-02-08 14:19:55 | INFO | VIDEO_OK | idx=6 | id=7560796027184237837 | user=jadenisbored
+2026-02-08 14:19:55 | INFO | VIDEO_OK | idx=6 | id=7560796027184237837 | user=jadenisbored
+2026-02-08 14:20:38 | INFO | VIDEO_OK | idx=7 | id=7563395129386568982 | user=kayangeli
+2026-02-08 14:20:38 | INFO | VIDEO_OK | idx=7 | id=7563395129386568982 | user=kayangeli
+2026-02-08 14:21:21 | INFO | VIDEO_OK | idx=8 | id=7589927928478141726 | user=fruitgurl777
+2026-02-08 14:21:21 | INFO | VIDEO_OK | idx=8 | id=7589927928478141726 | user=fruitgurl777
+2026-02-08 14:22:30 | INFO | VIDEO_OK | idx=9 | id=7590540524747099422 | user=jasonsappy
+2026-02-08 14:22:30 | INFO | VIDEO_OK | idx=9 | id=7590540524747099422 | user=jasonsappy
+2026-02-08 14:22:59 | INFO | VIDEO_OK | idx=10 | id=7324123428938681643 | user=marcqwuanreid
+2026-02-08 14:22:59 | INFO | VIDEO_OK | idx=10 | id=7324123428938681643 | user=marcqwuanreid
+2026-02-08 14:23:24 | INFO | VIDEO_OK | idx=11 | id=7550237416989265159 | user=lovebuttons1boo
+2026-02-08 14:23:24 | INFO | VIDEO_OK | idx=11 | id=7550237416989265159 | user=lovebuttons1boo
+2026-02-08 14:23:47 | INFO | VIDEO_OK | idx=12 | id=7569220979210128696 | user=lovebuttons1boo
+2026-02-08 14:23:47 | INFO | VIDEO_OK | idx=12 | id=7569220979210128696 | user=lovebuttons1boo
+2026-02-08 14:24:10 | INFO | VIDEO_OK | idx=13 | id=7596512937821408534 | user=callumskillen1
+2026-02-08 14:24:10 | INFO | VIDEO_OK | idx=13 | id=7596512937821408534 | user=callumskillen1
+2026-02-08 14:24:38 | INFO | VIDEO_OK | idx=14 | id=7596814984999341342 | user=nbcsnl
+2026-02-08 14:24:38 | INFO | VIDEO_OK | idx=14 | id=7596814984999341342 | user=nbcsnl
+2026-02-08 14:25:14 | INFO | VIDEO_OK | idx=15 | id=7552108000723340562 | user=lovebuttons1boo
+2026-02-08 14:25:14 | INFO | VIDEO_OK | idx=15 | id=7552108000723340562 | user=lovebuttons1boo
+2026-02-08 14:25:46 | INFO | VIDEO_OK | idx=16 | id=7591595824258239766 | user=olliehdsn
+2026-02-08 14:25:46 | INFO | VIDEO_OK | idx=16 | id=7591595824258239766 | user=olliehdsn
+2026-02-08 14:26:06 | INFO | VIDEO_OK | idx=17 | id=7589771307969940766 | user=mostly_mags
+2026-02-08 14:26:06 | INFO | VIDEO_OK | idx=17 | id=7589771307969940766 | user=mostly_mags
+2026-02-08 14:26:39 | INFO | VIDEO_OK | idx=18 | id=7590094918593432863 | user=ry_rysecret
+2026-02-08 14:26:39 | INFO | VIDEO_OK | idx=18 | id=7590094918593432863 | user=ry_rysecret
+2026-02-08 14:27:09 | INFO | VIDEO_OK | idx=19 | id=7424290658237615391 | user=thetattooedveganjen_
+2026-02-08 14:27:09 | INFO | VIDEO_OK | idx=19 | id=7424290658237615391 | user=thetattooedveganjen_
+2026-02-08 14:27:45 | INFO | VIDEO_OK | idx=20 | id=7484727116911742230 | user=williamhansonetiquette
+2026-02-08 14:27:45 | INFO | VIDEO_OK | idx=20 | id=7484727116911742230 | user=williamhansonetiquette
+2026-02-08 14:28:13 | INFO | VIDEO_OK | idx=21 | id=7580372586001992982 | user=xprayztv
+2026-02-08 14:28:13 | INFO | VIDEO_OK | idx=21 | id=7580372586001992982 | user=xprayztv
+2026-02-08 14:28:43 | INFO | VIDEO_OK | idx=22 | id=7367758967319137569 | user=memeus45
+2026-02-08 14:28:43 | INFO | VIDEO_OK | idx=22 | id=7367758967319137569 | user=memeus45
+2026-02-08 14:29:20 | INFO | VIDEO_OK | idx=23 | id=7597531255835495694 | user=amari1zy
+2026-02-08 14:29:20 | INFO | VIDEO_OK | idx=23 | id=7597531255835495694 | user=amari1zy
+2026-02-08 14:29:54 | INFO | VIDEO_OK | idx=24 | id=7560340661992525078 | user=bottomless.banditz
+2026-02-08 14:29:54 | INFO | VIDEO_OK | idx=24 | id=7560340661992525078 | user=bottomless.banditz
+2026-02-08 14:29:54 | INFO | SEARCH_DONE | keyword=Buttons | results=24 | duration=892.64s
+2026-02-08 14:29:54 | INFO | SEARCH_DONE | keyword=Buttons | results=24 | duration=892.64s
+2026-02-08 14:29:54 | INFO | KEYWORD_OK | keyword=Buttons | results=24
+2026-02-08 14:29:54 | INFO | KEYWORD_OK | keyword=Buttons | results=24
+2026-02-08 14:29:54 | INFO | KEYWORD_DONE | keyword=Buttons | duration=892.71s
+2026-02-08 14:29:54 | INFO | KEYWORD_DONE | keyword=Buttons | duration=892.71s
+2026-02-08 14:29:54 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 14:29:54 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 14:29:54 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 14:29:54 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 14:30:12 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 14:30:12 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 14:30:14 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 14:30:14 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 14:30:14 | INFO | CARDS_FOUND | keyword=Glock Switch | count=24
+2026-02-08 14:30:14 | INFO | CARDS_FOUND | keyword=Glock Switch | count=24
+2026-02-08 14:31:05 | INFO | VIDEO_OK | idx=1 | id=7583001878540094750 | user=traylittle
+2026-02-08 14:31:05 | INFO | VIDEO_OK | idx=1 | id=7583001878540094750 | user=traylittle
+2026-02-08 14:31:33 | INFO | VIDEO_OK | idx=2 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 14:31:33 | INFO | VIDEO_OK | idx=2 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 14:32:02 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 14:32:02 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 14:32:35 | INFO | VIDEO_OK | idx=4 | id=7495788553499086111 | user=traylittle
+2026-02-08 14:32:35 | INFO | VIDEO_OK | idx=4 | id=7495788553499086111 | user=traylittle
+2026-02-08 14:33:10 | INFO | VIDEO_OK | idx=5 | id=7590522474937191711 | user=traylittle
+2026-02-08 14:33:10 | INFO | VIDEO_OK | idx=5 | id=7590522474937191711 | user=traylittle
+2026-02-08 14:33:37 | INFO | VIDEO_OK | idx=6 | id=7449061572158180651 | user=salihateyou
+2026-02-08 14:33:37 | INFO | VIDEO_OK | idx=6 | id=7449061572158180651 | user=salihateyou
+2026-02-08 14:33:52 | INFO | VIDEO_OK | idx=7 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 14:33:52 | INFO | VIDEO_OK | idx=7 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 14:34:06 | INFO | VIDEO_OK | idx=8 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 14:34:06 | INFO | VIDEO_OK | idx=8 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 14:34:19 | INFO | VIDEO_OK | idx=9 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 14:34:19 | INFO | VIDEO_OK | idx=9 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 14:34:36 | INFO | VIDEO_OK | idx=10 | id=7493740633539169582 | user=nixstah
+2026-02-08 14:34:36 | INFO | VIDEO_OK | idx=10 | id=7493740633539169582 | user=nixstah
+2026-02-08 14:34:55 | INFO | VIDEO_OK | idx=11 | id=7576440739865971999 | user=traylittle
+2026-02-08 14:34:55 | INFO | VIDEO_OK | idx=11 | id=7576440739865971999 | user=traylittle
+2026-02-08 14:35:40 | INFO | VIDEO_OK | idx=12 | id=7560548901930011934 | user=traylittle
+2026-02-08 14:35:40 | INFO | VIDEO_OK | idx=12 | id=7560548901930011934 | user=traylittle
+2026-02-08 14:35:55 | INFO | VIDEO_OK | idx=13 | id=7551531419432979743 | user=traylittle
+2026-02-08 14:35:55 | INFO | VIDEO_OK | idx=13 | id=7551531419432979743 | user=traylittle
+2026-02-08 14:36:09 | INFO | VIDEO_OK | idx=14 | id=7468124796241333550 | user=traylittletakeover
+2026-02-08 14:36:09 | INFO | VIDEO_OK | idx=14 | id=7468124796241333550 | user=traylittletakeover
+2026-02-08 14:36:25 | INFO | VIDEO_OK | idx=15 | id=7496535306502458655 | user=traylittle
+2026-02-08 14:36:25 | INFO | VIDEO_OK | idx=15 | id=7496535306502458655 | user=traylittle
+2026-02-08 14:36:40 | INFO | VIDEO_OK | idx=16 | id=7603446051332263198 | user=traylittle
+2026-02-08 14:36:40 | INFO | VIDEO_OK | idx=16 | id=7603446051332263198 | user=traylittle
+2026-02-08 14:36:55 | INFO | VIDEO_OK | idx=17 | id=7498781001502575903 | user=traylittle
+2026-02-08 14:36:55 | INFO | VIDEO_OK | idx=17 | id=7498781001502575903 | user=traylittle
+2026-02-08 14:37:10 | INFO | VIDEO_OK | idx=18 | id=7576057832647281950 | user=traylittle
+2026-02-08 14:37:10 | INFO | VIDEO_OK | idx=18 | id=7576057832647281950 | user=traylittle
+2026-02-08 14:37:25 | INFO | VIDEO_OK | idx=19 | id=7245801782071414059 | user=vondamartyr
+2026-02-08 14:37:25 | INFO | VIDEO_OK | idx=19 | id=7245801782071414059 | user=vondamartyr
+2026-02-08 14:37:39 | INFO | VIDEO_OK | idx=20 | id=7583525014201208095 | user=traylittle
+2026-02-08 14:37:39 | INFO | VIDEO_OK | idx=20 | id=7583525014201208095 | user=traylittle
+2026-02-08 14:37:55 | INFO | VIDEO_OK | idx=21 | id=7506927924835011871 | user=traylittle
+2026-02-08 14:37:55 | INFO | VIDEO_OK | idx=21 | id=7506927924835011871 | user=traylittle
+2026-02-08 14:38:11 | INFO | VIDEO_OK | idx=22 | id=7565270809552489759 | user=traylittle
+2026-02-08 14:38:11 | INFO | VIDEO_OK | idx=22 | id=7565270809552489759 | user=traylittle
+2026-02-08 14:38:25 | INFO | VIDEO_OK | idx=23 | id=7567466407856721182 | user=traylittle
+2026-02-08 14:38:25 | INFO | VIDEO_OK | idx=23 | id=7567466407856721182 | user=traylittle
+2026-02-08 14:38:39 | INFO | VIDEO_OK | idx=24 | id=7076276145284566314 | user=isthatsinn0
+2026-02-08 14:38:39 | INFO | VIDEO_OK | idx=24 | id=7076276145284566314 | user=isthatsinn0
+2026-02-08 14:38:39 | INFO | SEARCH_DONE | keyword=Glock Switch | results=24 | duration=524.94s
+2026-02-08 14:38:39 | INFO | SEARCH_DONE | keyword=Glock Switch | results=24 | duration=524.94s
+2026-02-08 14:38:39 | INFO | KEYWORD_OK | keyword=Glock Switch | results=24
+2026-02-08 14:38:39 | INFO | KEYWORD_OK | keyword=Glock Switch | results=24
+2026-02-08 14:38:39 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=524.94s
+2026-02-08 14:38:39 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=524.94s
+2026-02-08 14:38:39 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 14:38:39 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 16:00:14 | INFO | SCRAPER_START
+2026-02-08 16:00:14 | INFO | SCRAPER_START
+2026-02-08 16:00:16 | INFO | BROWSER_STARTED
+2026-02-08 16:00:16 | INFO | BROWSER_STARTED
+2026-02-08 16:00:16 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 16:00:16 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 16:00:16 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 16:00:16 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 16:00:25 | INFO | [SCROLL] Iteratie 0 | kaarten: 24
+2026-02-08 16:00:25 | INFO | [SCROLL] Iteratie 0 | kaarten: 24
+2026-02-08 16:00:26 | INFO | [SCROLL] Iteratie 1 | kaarten: 24
+2026-02-08 16:00:26 | INFO | [SCROLL] Iteratie 1 | kaarten: 24
+2026-02-08 16:00:28 | INFO | [SCROLL] Iteratie 2 | kaarten: 24
+2026-02-08 16:00:28 | INFO | [SCROLL] Iteratie 2 | kaarten: 24
+2026-02-08 16:00:29 | INFO | [SCROLL] Iteratie 3 | kaarten: 24
+2026-02-08 16:00:29 | INFO | [SCROLL] Iteratie 3 | kaarten: 24
+2026-02-08 16:00:31 | INFO | [SCROLL] Iteratie 4 | kaarten: 24
+2026-02-08 16:00:31 | INFO | [SCROLL] Iteratie 4 | kaarten: 24
+2026-02-08 16:00:31 | INFO | 🔚 Geen nieuwe resultaten meer — scroll stopt.
+2026-02-08 16:00:31 | INFO | 🔚 Geen nieuwe resultaten meer — scroll stopt.
+2026-02-08 16:00:31 | INFO | ✔ Scroll klaar — totaal gevonden kaarten: 24
+2026-02-08 16:00:31 | INFO | ✔ Scroll klaar — totaal gevonden kaarten: 24
+2026-02-08 16:00:31 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 16:00:31 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 16:00:31 | INFO | CARDS_FOUND | keyword=Glock Switch | count=24
+2026-02-08 16:00:31 | INFO | CARDS_FOUND | keyword=Glock Switch | count=24
+2026-02-08 16:01:00 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 16:01:00 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 16:01:14 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 16:01:14 | INFO | VIDEO_OK | idx=2 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 16:01:28 | INFO | VIDEO_OK | idx=3 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 16:01:28 | INFO | VIDEO_OK | idx=3 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 16:01:42 | INFO | VIDEO_OK | idx=4 | id=7583001878540094750 | user=traylittle
+2026-02-08 16:01:42 | INFO | VIDEO_OK | idx=4 | id=7583001878540094750 | user=traylittle
+2026-02-08 16:01:58 | INFO | VIDEO_OK | idx=5 | id=7495788553499086111 | user=traylittle
+2026-02-08 16:01:58 | INFO | VIDEO_OK | idx=5 | id=7495788553499086111 | user=traylittle
+2026-02-08 16:02:11 | INFO | VIDEO_OK | idx=6 | id=7493740633539169582 | user=nixstah
+2026-02-08 16:02:11 | INFO | VIDEO_OK | idx=6 | id=7493740633539169582 | user=nixstah
+2026-02-08 16:02:26 | INFO | VIDEO_OK | idx=7 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 16:02:26 | INFO | VIDEO_OK | idx=7 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 16:03:06 | INFO | VIDEO_OK | idx=8 | id=7278134485281951019 | user=anthonyraysmithbr
+2026-02-08 16:03:06 | INFO | VIDEO_OK | idx=8 | id=7278134485281951019 | user=anthonyraysmithbr
+2026-02-08 16:03:21 | INFO | VIDEO_OK | idx=9 | id=7590522474937191711 | user=traylittle
+2026-02-08 16:03:21 | INFO | VIDEO_OK | idx=9 | id=7590522474937191711 | user=traylittle
+2026-02-08 16:03:35 | INFO | VIDEO_OK | idx=10 | id=7245801782071414059 | user=vondamartyr
+2026-02-08 16:03:35 | INFO | VIDEO_OK | idx=10 | id=7245801782071414059 | user=vondamartyr
+2026-02-08 16:03:48 | INFO | VIDEO_OK | idx=11 | id=7587254016875171084 | user=drayvapeauthor
+2026-02-08 16:03:48 | INFO | VIDEO_OK | idx=11 | id=7587254016875171084 | user=drayvapeauthor
+2026-02-08 16:04:03 | INFO | VIDEO_OK | idx=12 | id=7603446051332263198 | user=traylittle
+2026-02-08 16:04:03 | INFO | VIDEO_OK | idx=12 | id=7603446051332263198 | user=traylittle
+2026-02-08 16:04:18 | INFO | VIDEO_OK | idx=13 | id=7496535306502458655 | user=traylittle
+2026-02-08 16:04:18 | INFO | VIDEO_OK | idx=13 | id=7496535306502458655 | user=traylittle
+2026-02-08 16:04:31 | INFO | VIDEO_OK | idx=14 | id=7449061572158180651 | user=salihateyou
+2026-02-08 16:04:31 | INFO | VIDEO_OK | idx=14 | id=7449061572158180651 | user=salihateyou
+2026-02-08 16:04:47 | INFO | VIDEO_OK | idx=15 | id=7576440739865971999 | user=traylittle
+2026-02-08 16:04:47 | INFO | VIDEO_OK | idx=15 | id=7576440739865971999 | user=traylittle
+2026-02-08 16:05:02 | INFO | VIDEO_OK | idx=16 | id=7576057832647281950 | user=traylittle
+2026-02-08 16:05:02 | INFO | VIDEO_OK | idx=16 | id=7576057832647281950 | user=traylittle
+2026-02-08 16:05:16 | INFO | VIDEO_OK | idx=17 | id=7468124796241333550 | user=traylittletakeover
+2026-02-08 16:05:16 | INFO | VIDEO_OK | idx=17 | id=7468124796241333550 | user=traylittletakeover
+2026-02-08 16:05:31 | INFO | VIDEO_OK | idx=18 | id=7551531419432979743 | user=traylittle
+2026-02-08 16:05:31 | INFO | VIDEO_OK | idx=18 | id=7551531419432979743 | user=traylittle
+2026-02-08 16:05:45 | INFO | VIDEO_OK | idx=19 | id=7498781001502575903 | user=traylittle
+2026-02-08 16:05:45 | INFO | VIDEO_OK | idx=19 | id=7498781001502575903 | user=traylittle
+2026-02-08 16:06:03 | INFO | VIDEO_OK | idx=20 | id=7583525014201208095 | user=traylittle
+2026-02-08 16:06:03 | INFO | VIDEO_OK | idx=20 | id=7583525014201208095 | user=traylittle
+2026-02-08 16:06:18 | INFO | VIDEO_OK | idx=21 | id=7560548901930011934 | user=traylittle
+2026-02-08 16:06:18 | INFO | VIDEO_OK | idx=21 | id=7560548901930011934 | user=traylittle
+2026-02-08 16:06:32 | INFO | VIDEO_OK | idx=22 | id=7539617231584431383 | user=johnny.miller91
+2026-02-08 16:06:32 | INFO | VIDEO_OK | idx=22 | id=7539617231584431383 | user=johnny.miller91
+2026-02-08 16:06:47 | INFO | VIDEO_OK | idx=23 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 16:06:47 | INFO | VIDEO_OK | idx=23 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 16:07:00 | INFO | VIDEO_OK | idx=24 | id=7076276145284566314 | user=isthatsinn0
+2026-02-08 16:07:00 | INFO | VIDEO_OK | idx=24 | id=7076276145284566314 | user=isthatsinn0
+2026-02-08 16:07:00 | INFO | SEARCH_DONE | keyword=Glock Switch | results=24 | duration=404.5s
+2026-02-08 16:07:00 | INFO | SEARCH_DONE | keyword=Glock Switch | results=24 | duration=404.5s
+2026-02-08 16:07:00 | INFO | KEYWORD_OK | keyword=Glock Switch | results=24
+2026-02-08 16:07:00 | INFO | KEYWORD_OK | keyword=Glock Switch | results=24
+2026-02-08 16:07:00 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=404.54s
+2026-02-08 16:07:00 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=404.54s
+2026-02-08 16:07:00 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 16:07:00 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 16:27:20 | INFO | SCRAPER_START
+2026-02-08 16:27:20 | INFO | SCRAPER_START
+2026-02-08 16:27:23 | INFO | BROWSER_STARTED
+2026-02-08 16:27:23 | INFO | BROWSER_STARTED
+2026-02-08 16:27:23 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 16:27:23 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-08 16:27:23 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 16:27:23 | INFO | SEARCH_START | keyword=Glock Switch
+2026-02-08 16:27:30 | INFO | [SCROLL] Iteratie 1/40
+2026-02-08 16:27:30 | INFO | [SCROLL] Iteratie 1/40
+2026-02-08 16:27:33 | INFO | [SCROLL] Iteratie 2/40
+2026-02-08 16:27:33 | INFO | [SCROLL] Iteratie 2/40
+2026-02-08 16:27:35 | INFO | [SCROLL] Iteratie 3/40
+2026-02-08 16:27:35 | INFO | [SCROLL] Iteratie 3/40
+2026-02-08 16:27:37 | INFO | [SCROLL] Iteratie 4/40
+2026-02-08 16:27:37 | INFO | [SCROLL] Iteratie 4/40
+2026-02-08 16:27:40 | INFO | [SCROLL] Iteratie 5/40
+2026-02-08 16:27:40 | INFO | [SCROLL] Iteratie 5/40
+2026-02-08 16:27:42 | INFO | [SCROLL] Iteratie 6/40
+2026-02-08 16:27:42 | INFO | [SCROLL] Iteratie 6/40
+2026-02-08 16:27:45 | INFO | [SCROLL] Iteratie 7/40
+2026-02-08 16:27:45 | INFO | [SCROLL] Iteratie 7/40
+2026-02-08 16:27:47 | INFO | [SCROLL] Iteratie 8/40
+2026-02-08 16:27:47 | INFO | [SCROLL] Iteratie 8/40
+2026-02-08 16:27:50 | INFO | [SCROLL] Iteratie 9/40
+2026-02-08 16:27:50 | INFO | [SCROLL] Iteratie 9/40
+2026-02-08 16:27:52 | INFO | [SCROLL] Iteratie 10/40
+2026-02-08 16:27:52 | INFO | [SCROLL] Iteratie 10/40
+2026-02-08 16:27:55 | INFO | [SCROLL] Iteratie 11/40
+2026-02-08 16:27:55 | INFO | [SCROLL] Iteratie 11/40
+2026-02-08 16:27:57 | INFO | [SCROLL] Iteratie 12/40
+2026-02-08 16:27:57 | INFO | [SCROLL] Iteratie 12/40
+2026-02-08 16:27:59 | INFO | [SCROLL] Iteratie 13/40
+2026-02-08 16:27:59 | INFO | [SCROLL] Iteratie 13/40
+2026-02-08 16:28:02 | INFO | [SCROLL] Iteratie 14/40
+2026-02-08 16:28:02 | INFO | [SCROLL] Iteratie 14/40
+2026-02-08 16:28:04 | INFO | [SCROLL] Iteratie 15/40
+2026-02-08 16:28:04 | INFO | [SCROLL] Iteratie 15/40
+2026-02-08 16:28:07 | INFO | [SCROLL] Iteratie 16/40
+2026-02-08 16:28:07 | INFO | [SCROLL] Iteratie 16/40
+2026-02-08 16:28:09 | INFO | [SCROLL] Iteratie 17/40
+2026-02-08 16:28:09 | INFO | [SCROLL] Iteratie 17/40
+2026-02-08 16:28:12 | INFO | [SCROLL] Iteratie 18/40
+2026-02-08 16:28:12 | INFO | [SCROLL] Iteratie 18/40
+2026-02-08 16:28:14 | INFO | [SCROLL] Iteratie 19/40
+2026-02-08 16:28:14 | INFO | [SCROLL] Iteratie 19/40
+2026-02-08 16:28:17 | INFO | [SCROLL] Iteratie 20/40
+2026-02-08 16:28:17 | INFO | [SCROLL] Iteratie 20/40
+2026-02-08 16:28:19 | INFO | [SCROLL] Iteratie 21/40
+2026-02-08 16:28:19 | INFO | [SCROLL] Iteratie 21/40
+2026-02-08 16:28:21 | INFO | [SCROLL] Iteratie 22/40
+2026-02-08 16:28:21 | INFO | [SCROLL] Iteratie 22/40
+2026-02-08 16:28:24 | INFO | [SCROLL] Iteratie 23/40
+2026-02-08 16:28:24 | INFO | [SCROLL] Iteratie 23/40
+2026-02-08 16:28:26 | INFO | [SCROLL] Iteratie 24/40
+2026-02-08 16:28:26 | INFO | [SCROLL] Iteratie 24/40
+2026-02-08 16:28:29 | INFO | [SCROLL] Iteratie 25/40
+2026-02-08 16:28:29 | INFO | [SCROLL] Iteratie 25/40
+2026-02-08 16:28:31 | INFO | [SCROLL] Iteratie 26/40
+2026-02-08 16:28:31 | INFO | [SCROLL] Iteratie 26/40
+2026-02-08 16:28:34 | INFO | [SCROLL] Iteratie 27/40
+2026-02-08 16:28:34 | INFO | [SCROLL] Iteratie 27/40
+2026-02-08 16:28:36 | INFO | [SCROLL] Iteratie 28/40
+2026-02-08 16:28:36 | INFO | [SCROLL] Iteratie 28/40
+2026-02-08 16:28:38 | INFO | [SCROLL] Iteratie 29/40
+2026-02-08 16:28:38 | INFO | [SCROLL] Iteratie 29/40
+2026-02-08 16:28:41 | INFO | [SCROLL] Iteratie 30/40
+2026-02-08 16:28:41 | INFO | [SCROLL] Iteratie 30/40
+2026-02-08 16:28:43 | INFO | [SCROLL] Iteratie 31/40
+2026-02-08 16:28:43 | INFO | [SCROLL] Iteratie 31/40
+2026-02-08 16:28:46 | INFO | [SCROLL] Iteratie 32/40
+2026-02-08 16:28:46 | INFO | [SCROLL] Iteratie 32/40
+2026-02-08 16:28:48 | INFO | [SCROLL] Iteratie 33/40
+2026-02-08 16:28:48 | INFO | [SCROLL] Iteratie 33/40
+2026-02-08 16:28:51 | INFO | [SCROLL] Iteratie 34/40
+2026-02-08 16:28:51 | INFO | [SCROLL] Iteratie 34/40
+2026-02-08 16:28:53 | INFO | [SCROLL] Iteratie 35/40
+2026-02-08 16:28:53 | INFO | [SCROLL] Iteratie 35/40
+2026-02-08 16:28:56 | INFO | [SCROLL] Iteratie 36/40
+2026-02-08 16:28:56 | INFO | [SCROLL] Iteratie 36/40
+2026-02-08 16:28:58 | INFO | [SCROLL] Iteratie 37/40
+2026-02-08 16:28:58 | INFO | [SCROLL] Iteratie 37/40
+2026-02-08 16:29:00 | INFO | [SCROLL] Iteratie 38/40
+2026-02-08 16:29:00 | INFO | [SCROLL] Iteratie 38/40
+2026-02-08 16:29:03 | INFO | [SCROLL] Iteratie 39/40
+2026-02-08 16:29:03 | INFO | [SCROLL] Iteratie 39/40
+2026-02-08 16:29:05 | INFO | [SCROLL] Iteratie 40/40
+2026-02-08 16:29:05 | INFO | [SCROLL] Iteratie 40/40
+2026-02-08 16:29:08 | INFO | ✔ Scroll klaar — brute mode (tijd/gebaseerd)
+2026-02-08 16:29:08 | INFO | ✔ Scroll klaar — brute mode (tijd/gebaseerd)
+2026-02-08 16:29:08 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 16:29:08 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 16:29:08 | INFO | CARDS_FOUND | keyword=Glock Switch | count=24
+2026-02-08 16:29:08 | INFO | CARDS_FOUND | keyword=Glock Switch | count=24
+2026-02-08 16:29:33 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 16:29:33 | INFO | VIDEO_OK | idx=1 | id=7553645584066825480 | user=lovebuttons1boo
+2026-02-08 16:29:55 | INFO | VIDEO_OK | idx=2 | id=7583001878540094750 | user=traylittle
+2026-02-08 16:29:55 | INFO | VIDEO_OK | idx=2 | id=7583001878540094750 | user=traylittle
+2026-02-08 16:30:20 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 16:30:20 | INFO | VIDEO_OK | idx=3 | id=7542348518434868487 | user=lovebuttons1boo
+2026-02-08 16:30:43 | INFO | VIDEO_OK | idx=4 | id=7343796087263808814 | user=quanodag
+2026-02-08 16:30:43 | INFO | VIDEO_OK | idx=4 | id=7343796087263808814 | user=quanodag
+2026-02-08 16:31:16 | INFO | VIDEO_OK | idx=5 | id=7590522474937191711 | user=traylittle
+2026-02-08 16:31:16 | INFO | VIDEO_OK | idx=5 | id=7590522474937191711 | user=traylittle
+2026-02-08 16:31:39 | INFO | VIDEO_OK | idx=6 | id=7495788553499086111 | user=traylittle
+2026-02-08 16:31:39 | INFO | VIDEO_OK | idx=6 | id=7495788553499086111 | user=traylittle
+2026-02-08 16:31:57 | INFO | VIDEO_OK | idx=7 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 16:31:57 | INFO | VIDEO_OK | idx=7 | id=7267653576716061994 | user=wetterweaponry
+2026-02-08 16:32:13 | INFO | VIDEO_OK | idx=8 | id=7449061572158180651 | user=salihateyou
+2026-02-08 16:32:13 | INFO | VIDEO_OK | idx=8 | id=7449061572158180651 | user=salihateyou
+2026-02-08 16:32:30 | INFO | VIDEO_OK | idx=9 | id=7493740633539169582 | user=nixstah
+2026-02-08 16:32:30 | INFO | VIDEO_OK | idx=9 | id=7493740633539169582 | user=nixstah
+2026-02-08 16:32:47 | INFO | VIDEO_OK | idx=10 | id=7587254016875171084 | user=drayvapeauthor
+2026-02-08 16:32:47 | INFO | VIDEO_OK | idx=10 | id=7587254016875171084 | user=drayvapeauthor
+2026-02-08 16:33:04 | INFO | VIDEO_OK | idx=11 | id=7278134485281951019 | user=anthonyraysmithbr
+2026-02-08 16:33:04 | INFO | VIDEO_OK | idx=11 | id=7278134485281951019 | user=anthonyraysmithbr
+2026-02-08 16:33:23 | INFO | VIDEO_OK | idx=12 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 16:33:23 | INFO | VIDEO_OK | idx=12 | id=7224953291283696938 | user=tdfsimba
+2026-02-08 16:33:39 | INFO | VIDEO_OK | idx=13 | id=7468124796241333550 | user=traylittletakeover
+2026-02-08 16:33:39 | INFO | VIDEO_OK | idx=13 | id=7468124796241333550 | user=traylittletakeover
+2026-02-08 16:34:06 | INFO | VIDEO_OK | idx=14 | id=7245801782071414059 | user=vondamartyr
+2026-02-08 16:34:06 | INFO | VIDEO_OK | idx=14 | id=7245801782071414059 | user=vondamartyr
+2026-02-08 16:34:34 | INFO | VIDEO_OK | idx=15 | id=7496535306502458655 | user=traylittle
+2026-02-08 16:34:34 | INFO | VIDEO_OK | idx=15 | id=7496535306502458655 | user=traylittle
+2026-02-08 16:34:54 | INFO | VIDEO_OK | idx=16 | id=7603446051332263198 | user=traylittle
+2026-02-08 16:34:54 | INFO | VIDEO_OK | idx=16 | id=7603446051332263198 | user=traylittle
+2026-02-08 16:35:16 | INFO | VIDEO_OK | idx=17 | id=7576057832647281950 | user=traylittle
+2026-02-08 16:35:16 | INFO | VIDEO_OK | idx=17 | id=7576057832647281950 | user=traylittle
+2026-02-08 16:35:33 | INFO | VIDEO_OK | idx=18 | id=7560548901930011934 | user=traylittle
+2026-02-08 16:35:33 | INFO | VIDEO_OK | idx=18 | id=7560548901930011934 | user=traylittle
+2026-02-08 16:35:51 | INFO | VIDEO_OK | idx=19 | id=7551531419432979743 | user=traylittle
+2026-02-08 16:35:51 | INFO | VIDEO_OK | idx=19 | id=7551531419432979743 | user=traylittle
+2026-02-08 16:36:07 | INFO | VIDEO_OK | idx=20 | id=7498781001502575903 | user=traylittle
+2026-02-08 16:36:07 | INFO | VIDEO_OK | idx=20 | id=7498781001502575903 | user=traylittle
+2026-02-08 16:36:24 | INFO | VIDEO_OK | idx=21 | id=7583525014201208095 | user=traylittle
+2026-02-08 16:36:24 | INFO | VIDEO_OK | idx=21 | id=7583525014201208095 | user=traylittle
+2026-02-08 16:36:43 | INFO | VIDEO_OK | idx=22 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 16:36:43 | INFO | VIDEO_OK | idx=22 | id=7571212943900069150 | user=tacticalkota
+2026-02-08 16:37:04 | INFO | VIDEO_OK | idx=23 | id=7506927924835011871 | user=traylittle
+2026-02-08 16:37:04 | INFO | VIDEO_OK | idx=23 | id=7506927924835011871 | user=traylittle
+2026-02-08 16:37:22 | INFO | VIDEO_OK | idx=24 | id=7539617231584431383 | user=johnny.miller91
+2026-02-08 16:37:22 | INFO | VIDEO_OK | idx=24 | id=7539617231584431383 | user=johnny.miller91
+2026-02-08 16:37:22 | INFO | SEARCH_DONE | keyword=Glock Switch | results=24 | duration=599.48s
+2026-02-08 16:37:22 | INFO | SEARCH_DONE | keyword=Glock Switch | results=24 | duration=599.48s
+2026-02-08 16:37:22 | INFO | KEYWORD_OK | keyword=Glock Switch | results=24
+2026-02-08 16:37:22 | INFO | KEYWORD_OK | keyword=Glock Switch | results=24
+2026-02-08 16:37:22 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=599.58s
+2026-02-08 16:37:22 | INFO | KEYWORD_DONE | keyword=Glock Switch | duration=599.58s
+2026-02-08 16:37:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 16:37:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 18:02:51 | INFO | SCRAPER_START
+2026-02-08 18:02:54 | INFO | BROWSER_STARTED
+2026-02-08 18:02:54 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 18:25:22 | INFO | SCRAPER_START
+2026-02-08 18:25:22 | INFO | SCRAPER_START
+2026-02-08 18:25:23 | INFO | BROWSER_STARTED
+2026-02-08 18:25:23 | INFO | BROWSER_STARTED
+2026-02-08 18:25:23 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 18:25:23 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 18:25:23 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 18:25:23 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 18:25:30 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 18:25:30 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 18:25:32 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 18:25:32 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 18:25:32 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 18:25:32 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 18:25:35 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 18:25:35 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 18:25:35 | INFO | TUX_EXTRACT_START
+2026-02-08 18:25:35 | INFO | TUX_EXTRACT_START
+2026-02-08 18:26:58 | INFO | SCRAPER_START
+2026-02-08 18:26:58 | INFO | SCRAPER_START
+2026-02-08 18:27:00 | INFO | BROWSER_STARTED
+2026-02-08 18:27:00 | INFO | BROWSER_STARTED
+2026-02-08 18:27:00 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 18:27:00 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 18:27:00 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 18:27:00 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 18:27:07 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 18:27:07 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 18:27:11 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 18:27:11 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 18:27:11 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 18:27:11 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 18:27:15 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 18:27:15 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 18:27:15 | INFO | TUX_EXTRACT_START
+2026-02-08 18:27:15 | INFO | TUX_EXTRACT_START
+2026-02-08 18:57:01 | INFO | SCRAPER_START
+2026-02-08 18:57:01 | INFO | SCRAPER_START
+2026-02-08 18:57:02 | INFO | BROWSER_STARTED
+2026-02-08 18:57:02 | INFO | BROWSER_STARTED
+2026-02-08 18:57:02 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 18:57:02 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 18:57:02 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 18:57:02 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 18:57:09 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 18:57:09 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 18:57:10 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 18:57:10 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 18:57:10 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 18:57:10 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 18:57:13 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 18:57:13 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 18:57:13 | INFO | TUX_EXTRACT_START
+2026-02-08 18:57:13 | INFO | TUX_EXTRACT_START
+2026-02-08 19:01:45 | INFO | SCRAPER_START
+2026-02-08 19:01:45 | INFO | SCRAPER_START
+2026-02-08 19:01:46 | INFO | BROWSER_STARTED
+2026-02-08 19:01:46 | INFO | BROWSER_STARTED
+2026-02-08 19:01:46 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 19:01:46 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 19:01:46 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 19:01:46 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 19:01:51 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 19:01:51 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 19:01:53 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 19:01:53 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 19:01:53 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 19:01:53 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 19:01:56 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 19:01:56 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 19:01:56 | INFO | TUX_EXTRACT_START
+2026-02-08 19:01:56 | INFO | TUX_EXTRACT_START
+2026-02-08 19:07:58 | INFO | SCRAPER_START
+2026-02-08 19:07:58 | INFO | SCRAPER_START
+2026-02-08 19:08:01 | INFO | BROWSER_STARTED
+2026-02-08 19:08:01 | INFO | BROWSER_STARTED
+2026-02-08 19:08:01 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 19:08:01 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 19:08:01 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 19:08:01 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 19:08:09 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 19:08:09 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 19:08:12 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 19:08:12 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 19:08:12 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 19:08:12 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 19:08:15 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 19:08:15 | INFO | TUX_SCROLL_MAX_REACHED | count=365
+2026-02-08 19:08:15 | INFO | TUX_ANCHOR_COLLECT_START
+2026-02-08 19:08:15 | INFO | TUX_ANCHOR_COLLECT_START
+2026-02-08 19:08:15 | INFO | TUX_ANCHOR_COLLECT_DONE | items=24
+2026-02-08 19:08:15 | INFO | TUX_ANCHOR_COLLECT_DONE | items=24
+2026-02-08 19:08:15 | INFO | TUX_FLOW_OK | keyword=Meow | items=24
+2026-02-08 19:08:15 | INFO | TUX_FLOW_OK | keyword=Meow | items=24
+2026-02-08 19:08:15 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@shloopityboopity7/video/7570543714624457997
+2026-02-08 19:08:15 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@shloopityboopity7/video/7570543714624457997
+2026-02-08 19:08:25 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:08:25 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:08:37 | INFO | VIDEO_OK | idx=1 | id=7570543714624457997 | user=shloopityboopity7
+2026-02-08 19:08:37 | INFO | VIDEO_OK | idx=1 | id=7570543714624457997 | user=shloopityboopity7
+2026-02-08 19:08:37 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cellow111/video/7589029323961634061
+2026-02-08 19:08:37 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cellow111/video/7589029323961634061
+2026-02-08 19:08:47 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:08:47 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:08:59 | INFO | VIDEO_OK | idx=2 | id=7589029323961634061 | user=cellow111
+2026-02-08 19:08:59 | INFO | VIDEO_OK | idx=2 | id=7589029323961634061 | user=cellow111
+2026-02-08 19:08:59 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@youstilldontknowme82/video/7574136267865132343
+2026-02-08 19:08:59 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@youstilldontknowme82/video/7574136267865132343
+2026-02-08 19:09:08 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:09:08 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:09:17 | INFO | VIDEO_OK | idx=3 | id=7574136267865132343 | user=youstilldontknowme82
+2026-02-08 19:09:17 | INFO | VIDEO_OK | idx=3 | id=7574136267865132343 | user=youstilldontknowme82
+2026-02-08 19:09:17 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sabilicioussab/video/7571968577150962966
+2026-02-08 19:09:17 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sabilicioussab/video/7571968577150962966
+2026-02-08 19:09:27 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:09:27 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:09:36 | INFO | VIDEO_OK | idx=4 | id=7571968577150962966 | user=sabilicioussab
+2026-02-08 19:09:36 | INFO | VIDEO_OK | idx=4 | id=7571968577150962966 | user=sabilicioussab
+2026-02-08 19:09:37 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@littlepolishangel1/video/7574070105492016439
+2026-02-08 19:09:37 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@littlepolishangel1/video/7574070105492016439
+2026-02-08 19:09:46 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:09:46 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:09:55 | INFO | VIDEO_OK | idx=5 | id=7574070105492016439 | user=littlepolishangel1
+2026-02-08 19:09:55 | INFO | VIDEO_OK | idx=5 | id=7574070105492016439 | user=littlepolishangel1
+2026-02-08 19:09:55 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_peetan/video/7478282070805007658
+2026-02-08 19:09:55 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_peetan/video/7478282070805007658
+2026-02-08 19:10:02 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:02 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:09 | INFO | VIDEO_OK | idx=6 | id=7478282070805007658 | user=cat_peetan
+2026-02-08 19:10:09 | INFO | VIDEO_OK | idx=6 | id=7478282070805007658 | user=cat_peetan
+2026-02-08 19:10:09 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sheyb_0725/video/7579373576348765495
+2026-02-08 19:10:09 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sheyb_0725/video/7579373576348765495
+2026-02-08 19:10:17 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:17 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:27 | INFO | VIDEO_OK | idx=7 | id=7579373576348765495 | user=sheyb_0725
+2026-02-08 19:10:27 | INFO | VIDEO_OK | idx=7 | id=7579373576348765495 | user=sheyb_0725
+2026-02-08 19:10:27 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@eden.gross/video/7574862015055858958
+2026-02-08 19:10:27 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@eden.gross/video/7574862015055858958
+2026-02-08 19:10:34 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:34 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:42 | INFO | VIDEO_OK | idx=8 | id=7574862015055858958 | user=eden.gross
+2026-02-08 19:10:42 | INFO | VIDEO_OK | idx=8 | id=7574862015055858958 | user=eden.gross
+2026-02-08 19:10:43 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@official.mrhungry/video/7576366881116818702
+2026-02-08 19:10:43 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@official.mrhungry/video/7576366881116818702
+2026-02-08 19:10:52 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:52 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:10:59 | INFO | VIDEO_OK | idx=9 | id=7576366881116818702 | user=official.mrhungry
+2026-02-08 19:10:59 | INFO | VIDEO_OK | idx=9 | id=7576366881116818702 | user=official.mrhungry
+2026-02-08 19:10:59 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@remithekat/video/7583560451129085197
+2026-02-08 19:10:59 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@remithekat/video/7583560451129085197
+2026-02-08 19:11:06 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:11:06 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:11:17 | INFO | VIDEO_OK | idx=10 | id=7583560451129085197 | user=remithekat
+2026-02-08 19:11:17 | INFO | VIDEO_OK | idx=10 | id=7583560451129085197 | user=remithekat
+2026-02-08 19:11:17 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@moon.shen/video/7400458236735835409
+2026-02-08 19:11:17 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@moon.shen/video/7400458236735835409
+2026-02-08 19:11:27 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:11:27 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:11:34 | INFO | VIDEO_OK | idx=11 | id=7400458236735835409 | user=moon.shen
+2026-02-08 19:11:34 | INFO | VIDEO_OK | idx=11 | id=7400458236735835409 | user=moon.shen
+2026-02-08 19:11:34 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bellapoarch/video/6876097532733246725
+2026-02-08 19:11:34 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bellapoarch/video/6876097532733246725
+2026-02-08 19:11:44 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:11:44 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:11:51 | INFO | VIDEO_OK | idx=12 | id=6876097532733246725 | user=bellapoarch
+2026-02-08 19:11:51 | INFO | VIDEO_OK | idx=12 | id=6876097532733246725 | user=bellapoarch
+2026-02-08 19:11:51 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_noise/video/7541751102480469278
+2026-02-08 19:11:51 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_noise/video/7541751102480469278
+2026-02-08 19:11:59 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:11:59 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:12:06 | INFO | VIDEO_OK | idx=13 | id=7541751102480469278 | user=cat_noise
+2026-02-08 19:12:06 | INFO | VIDEO_OK | idx=13 | id=7541751102480469278 | user=cat_noise
+2026-02-08 19:12:06 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@rebeliousbelikenoone/video/7468542962977426734
+2026-02-08 19:12:06 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@rebeliousbelikenoone/video/7468542962977426734
+2026-02-08 19:12:15 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:12:15 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:12:23 | INFO | VIDEO_OK | idx=14 | id=7468542962977426734 | user=rebeliousbelikenoone
+2026-02-08 19:12:23 | INFO | VIDEO_OK | idx=14 | id=7468542962977426734 | user=rebeliousbelikenoone
+2026-02-08 19:12:23 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brazillian.baddie/video/7576773603518139670
+2026-02-08 19:12:23 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brazillian.baddie/video/7576773603518139670
+2026-02-08 19:12:33 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:12:33 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:12:40 | INFO | VIDEO_OK | idx=15 | id=7576773603518139670 | user=brazillian.baddie
+2026-02-08 19:12:40 | INFO | VIDEO_OK | idx=15 | id=7576773603518139670 | user=brazillian.baddie
+2026-02-08 19:12:40 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@camrynfisheerr/video/7585314761701608759
+2026-02-08 19:12:40 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@camrynfisheerr/video/7585314761701608759
+2026-02-08 19:12:50 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:12:50 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:00 | INFO | VIDEO_OK | idx=16 | id=7585314761701608759 | user=camrynfisheerr
+2026-02-08 19:13:00 | INFO | VIDEO_OK | idx=16 | id=7585314761701608759 | user=camrynfisheerr
+2026-02-08 19:13:00 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@jsschillbruh/video/7572220366580354337
+2026-02-08 19:13:00 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@jsschillbruh/video/7572220366580354337
+2026-02-08 19:13:07 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:07 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:14 | INFO | VIDEO_OK | idx=17 | id=7572220366580354337 | user=jsschillbruh
+2026-02-08 19:13:14 | INFO | VIDEO_OK | idx=17 | id=7572220366580354337 | user=jsschillbruh
+2026-02-08 19:13:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@antipsivision/video/7251809573525261614
+2026-02-08 19:13:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@antipsivision/video/7251809573525261614
+2026-02-08 19:13:23 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:23 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:28 | INFO | VIDEO_OK | idx=18 | id=7251809573525261614 | user=antipsivision
+2026-02-08 19:13:28 | INFO | VIDEO_OK | idx=18 | id=7251809573525261614 | user=antipsivision
+2026-02-08 19:13:28 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@longliveai/video/7572588903748734230
+2026-02-08 19:13:28 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@longliveai/video/7572588903748734230
+2026-02-08 19:13:37 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:37 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:44 | INFO | VIDEO_OK | idx=19 | id=7572588903748734230 | user=longliveai
+2026-02-08 19:13:44 | INFO | VIDEO_OK | idx=19 | id=7572588903748734230 | user=longliveai
+2026-02-08 19:13:44 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brooke.deluccia/video/7595311981343673631
+2026-02-08 19:13:44 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brooke.deluccia/video/7595311981343673631
+2026-02-08 19:13:53 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:13:53 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:14:02 | INFO | VIDEO_OK | idx=20 | id=7595311981343673631 | user=brooke.deluccia
+2026-02-08 19:14:02 | INFO | VIDEO_OK | idx=20 | id=7595311981343673631 | user=brooke.deluccia
+2026-02-08 19:14:02 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@romeo_twi/video/7586406745321295137
+2026-02-08 19:14:02 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@romeo_twi/video/7586406745321295137
+2026-02-08 19:14:11 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:14:11 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:14:22 | INFO | VIDEO_OK | idx=21 | id=7586406745321295137 | user=romeo_twi
+2026-02-08 19:14:22 | INFO | VIDEO_OK | idx=21 | id=7586406745321295137 | user=romeo_twi
+2026-02-08 19:14:22 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@superboopa/video/7567925134753828127
+2026-02-08 19:14:22 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@superboopa/video/7567925134753828127
+2026-02-08 19:14:31 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:14:31 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:14:40 | INFO | VIDEO_OK | idx=22 | id=7567925134753828127 | user=superboopa
+2026-02-08 19:14:40 | INFO | VIDEO_OK | idx=22 | id=7567925134753828127 | user=superboopa
+2026-02-08 19:14:40 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@elina2008s/video/7590768090519014677
+2026-02-08 19:14:40 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@elina2008s/video/7590768090519014677
+2026-02-08 19:14:49 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:14:49 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:14:59 | INFO | VIDEO_OK | idx=23 | id=7590768090519014677 | user=elina2008s
+2026-02-08 19:14:59 | INFO | VIDEO_OK | idx=23 | id=7590768090519014677 | user=elina2008s
+2026-02-08 19:14:59 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bad_girl_2k6/video/7573902133720878343
+2026-02-08 19:14:59 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bad_girl_2k6/video/7573902133720878343
+2026-02-08 19:15:07 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:15:07 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 19:15:18 | INFO | VIDEO_OK | idx=24 | id=7573902133720878343 | user=bad_girl_2k6
+2026-02-08 19:15:18 | INFO | VIDEO_OK | idx=24 | id=7573902133720878343 | user=bad_girl_2k6
+2026-02-08 19:15:18 | INFO | SEARCH_DONE | keyword=Meow | results=24 | duration=437.43s
+2026-02-08 19:15:18 | INFO | SEARCH_DONE | keyword=Meow | results=24 | duration=437.43s
+2026-02-08 19:15:18 | INFO | KEYWORD_OK | keyword=Meow | results=24
+2026-02-08 19:15:18 | INFO | KEYWORD_OK | keyword=Meow | results=24
+2026-02-08 19:15:18 | INFO | KEYWORD_DONE | keyword=Meow | duration=437.48s
+2026-02-08 19:15:18 | INFO | KEYWORD_DONE | keyword=Meow | duration=437.48s
+2026-02-08 19:15:18 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 19:15:18 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:11:16 | INFO | SCRAPER_START
+2026-02-08 20:11:16 | INFO | SCRAPER_START
+2026-02-08 20:11:22 | INFO | BROWSER_STARTED
+2026-02-08 20:11:22 | INFO | BROWSER_STARTED
+2026-02-08 20:11:22 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 20:11:22 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 20:11:22 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 20:11:22 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 20:11:32 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 20:11:32 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 20:11:33 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 20:11:33 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 20:11:33 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 20:11:33 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 20:11:41 | INFO | TUX_ANCHOR_COLLECT_START
+2026-02-08 20:11:41 | INFO | TUX_ANCHOR_COLLECT_START
+2026-02-08 20:11:41 | INFO | TUX_ANCHOR_COLLECT_DONE | items=24
+2026-02-08 20:11:41 | INFO | TUX_ANCHOR_COLLECT_DONE | items=24
+2026-02-08 20:11:41 | INFO | TUX_FLOW_OK | keyword=Meow | items=24
+2026-02-08 20:11:41 | INFO | TUX_FLOW_OK | keyword=Meow | items=24
+2026-02-08 20:11:41 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@shloopityboopity7/video/7570543714624457997
+2026-02-08 20:11:41 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@shloopityboopity7/video/7570543714624457997
+2026-02-08 20:11:49 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:11:49 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:11:56 | INFO | VIDEO_OK | idx=1 | id=7570543714624457997 | user=shloopityboopity7
+2026-02-08 20:11:56 | INFO | VIDEO_OK | idx=1 | id=7570543714624457997 | user=shloopityboopity7
+2026-02-08 20:11:56 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cellow111/video/7589029323961634061
+2026-02-08 20:11:56 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cellow111/video/7589029323961634061
+2026-02-08 20:12:04 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:04 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:10 | INFO | VIDEO_OK | idx=2 | id=7589029323961634061 | user=cellow111
+2026-02-08 20:12:10 | INFO | VIDEO_OK | idx=2 | id=7589029323961634061 | user=cellow111
+2026-02-08 20:12:10 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@youstilldontknowme82/video/7574136267865132343
+2026-02-08 20:12:10 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@youstilldontknowme82/video/7574136267865132343
+2026-02-08 20:12:19 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:19 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:24 | INFO | VIDEO_OK | idx=3 | id=7574136267865132343 | user=youstilldontknowme82
+2026-02-08 20:12:24 | INFO | VIDEO_OK | idx=3 | id=7574136267865132343 | user=youstilldontknowme82
+2026-02-08 20:12:24 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@littlepolishangel1/video/7574070105492016439
+2026-02-08 20:12:24 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@littlepolishangel1/video/7574070105492016439
+2026-02-08 20:12:33 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:33 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:39 | INFO | VIDEO_OK | idx=4 | id=7574070105492016439 | user=littlepolishangel1
+2026-02-08 20:12:39 | INFO | VIDEO_OK | idx=4 | id=7574070105492016439 | user=littlepolishangel1
+2026-02-08 20:12:39 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sabilicioussab/video/7571968577150962966
+2026-02-08 20:12:39 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sabilicioussab/video/7571968577150962966
+2026-02-08 20:12:47 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:47 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:12:53 | INFO | VIDEO_OK | idx=5 | id=7571968577150962966 | user=sabilicioussab
+2026-02-08 20:12:53 | INFO | VIDEO_OK | idx=5 | id=7571968577150962966 | user=sabilicioussab
+2026-02-08 20:12:53 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sheyb_0725/video/7579373576348765495
+2026-02-08 20:12:53 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sheyb_0725/video/7579373576348765495
+2026-02-08 20:13:01 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:01 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:07 | INFO | VIDEO_OK | idx=6 | id=7579373576348765495 | user=sheyb_0725
+2026-02-08 20:13:07 | INFO | VIDEO_OK | idx=6 | id=7579373576348765495 | user=sheyb_0725
+2026-02-08 20:13:07 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_noise/video/7541751102480469278
+2026-02-08 20:13:07 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_noise/video/7541751102480469278
+2026-02-08 20:13:15 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:15 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:21 | INFO | VIDEO_OK | idx=7 | id=7541751102480469278 | user=cat_noise
+2026-02-08 20:13:21 | INFO | VIDEO_OK | idx=7 | id=7541751102480469278 | user=cat_noise
+2026-02-08 20:13:21 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bellapoarch/video/6876097532733246725
+2026-02-08 20:13:21 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bellapoarch/video/6876097532733246725
+2026-02-08 20:13:29 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:29 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:35 | INFO | VIDEO_OK | idx=8 | id=6876097532733246725 | user=bellapoarch
+2026-02-08 20:13:35 | INFO | VIDEO_OK | idx=8 | id=6876097532733246725 | user=bellapoarch
+2026-02-08 20:13:35 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_peetan/video/7478282070805007658
+2026-02-08 20:13:35 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_peetan/video/7478282070805007658
+2026-02-08 20:13:43 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:43 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:50 | INFO | VIDEO_OK | idx=9 | id=7478282070805007658 | user=cat_peetan
+2026-02-08 20:13:50 | INFO | VIDEO_OK | idx=9 | id=7478282070805007658 | user=cat_peetan
+2026-02-08 20:13:50 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@official.mrhungry/video/7576366881116818702
+2026-02-08 20:13:50 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@official.mrhungry/video/7576366881116818702
+2026-02-08 20:13:58 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:13:58 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:01 | INFO | VIDEO_OK | idx=10 | id=7576366881116818702 | user=official.mrhungry
+2026-02-08 20:14:01 | INFO | VIDEO_OK | idx=10 | id=7576366881116818702 | user=official.mrhungry
+2026-02-08 20:14:01 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@camrynfisheerr/video/7585314761701608759
+2026-02-08 20:14:01 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@camrynfisheerr/video/7585314761701608759
+2026-02-08 20:14:09 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:09 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:14 | INFO | VIDEO_OK | idx=11 | id=7585314761701608759 | user=camrynfisheerr
+2026-02-08 20:14:14 | INFO | VIDEO_OK | idx=11 | id=7585314761701608759 | user=camrynfisheerr
+2026-02-08 20:14:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@eden.gross/video/7574862015055858958
+2026-02-08 20:14:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@eden.gross/video/7574862015055858958
+2026-02-08 20:14:22 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:22 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:27 | INFO | VIDEO_OK | idx=12 | id=7574862015055858958 | user=eden.gross
+2026-02-08 20:14:27 | INFO | VIDEO_OK | idx=12 | id=7574862015055858958 | user=eden.gross
+2026-02-08 20:14:27 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brooke.deluccia/video/7595311981343673631
+2026-02-08 20:14:27 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brooke.deluccia/video/7595311981343673631
+2026-02-08 20:14:35 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:35 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:41 | INFO | VIDEO_OK | idx=13 | id=7595311981343673631 | user=brooke.deluccia
+2026-02-08 20:14:41 | INFO | VIDEO_OK | idx=13 | id=7595311981343673631 | user=brooke.deluccia
+2026-02-08 20:14:41 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brazillian.baddie/video/7576773603518139670
+2026-02-08 20:14:41 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brazillian.baddie/video/7576773603518139670
+2026-02-08 20:14:49 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:49 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:14:55 | INFO | VIDEO_OK | idx=14 | id=7576773603518139670 | user=brazillian.baddie
+2026-02-08 20:14:55 | INFO | VIDEO_OK | idx=14 | id=7576773603518139670 | user=brazillian.baddie
+2026-02-08 20:14:55 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@reactpurrs/video/7599259865340579094
+2026-02-08 20:14:55 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@reactpurrs/video/7599259865340579094
+2026-02-08 20:15:01 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:01 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:07 | INFO | VIDEO_OK | idx=15 | id=7599259865340579094 | user=reactpurrs
+2026-02-08 20:15:07 | INFO | VIDEO_OK | idx=15 | id=7599259865340579094 | user=reactpurrs
+2026-02-08 20:15:07 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@remithekat/video/7583560451129085197
+2026-02-08 20:15:07 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@remithekat/video/7583560451129085197
+2026-02-08 20:15:15 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:15 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:21 | INFO | VIDEO_OK | idx=16 | id=7583560451129085197 | user=remithekat
+2026-02-08 20:15:21 | INFO | VIDEO_OK | idx=16 | id=7583560451129085197 | user=remithekat
+2026-02-08 20:15:21 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@rebeliousbelikenoone/video/7468542962977426734
+2026-02-08 20:15:21 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@rebeliousbelikenoone/video/7468542962977426734
+2026-02-08 20:15:28 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:28 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:34 | INFO | VIDEO_OK | idx=17 | id=7468542962977426734 | user=rebeliousbelikenoone
+2026-02-08 20:15:34 | INFO | VIDEO_OK | idx=17 | id=7468542962977426734 | user=rebeliousbelikenoone
+2026-02-08 20:15:34 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@antipsivision/video/7251809573525261614
+2026-02-08 20:15:34 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@antipsivision/video/7251809573525261614
+2026-02-08 20:15:42 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:42 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:46 | INFO | VIDEO_OK | idx=18 | id=7251809573525261614 | user=antipsivision
+2026-02-08 20:15:46 | INFO | VIDEO_OK | idx=18 | id=7251809573525261614 | user=antipsivision
+2026-02-08 20:15:46 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@jsschillbruh/video/7572220366580354337
+2026-02-08 20:15:46 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@jsschillbruh/video/7572220366580354337
+2026-02-08 20:15:54 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:15:54 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:00 | INFO | VIDEO_OK | idx=19 | id=7572220366580354337 | user=jsschillbruh
+2026-02-08 20:16:00 | INFO | VIDEO_OK | idx=19 | id=7572220366580354337 | user=jsschillbruh
+2026-02-08 20:16:01 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@guangdang005/video/7401378809003396383
+2026-02-08 20:16:01 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@guangdang005/video/7401378809003396383
+2026-02-08 20:16:08 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:08 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:14 | INFO | VIDEO_OK | idx=20 | id=7401378809003396383 | user=guangdang005
+2026-02-08 20:16:14 | INFO | VIDEO_OK | idx=20 | id=7401378809003396383 | user=guangdang005
+2026-02-08 20:16:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@superboopa/video/7567925134753828127
+2026-02-08 20:16:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@superboopa/video/7567925134753828127
+2026-02-08 20:16:23 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:23 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:29 | INFO | VIDEO_OK | idx=21 | id=7567925134753828127 | user=superboopa
+2026-02-08 20:16:29 | INFO | VIDEO_OK | idx=21 | id=7567925134753828127 | user=superboopa
+2026-02-08 20:16:29 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@romeo_twi/video/7586406745321295137
+2026-02-08 20:16:29 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@romeo_twi/video/7586406745321295137
+2026-02-08 20:16:37 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:37 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:43 | INFO | VIDEO_OK | idx=22 | id=7586406745321295137 | user=romeo_twi
+2026-02-08 20:16:43 | INFO | VIDEO_OK | idx=22 | id=7586406745321295137 | user=romeo_twi
+2026-02-08 20:16:43 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@moon.shen/video/7400458236735835409
+2026-02-08 20:16:43 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@moon.shen/video/7400458236735835409
+2026-02-08 20:16:51 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:51 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:16:57 | INFO | VIDEO_OK | idx=23 | id=7400458236735835409 | user=moon.shen
+2026-02-08 20:16:57 | INFO | VIDEO_OK | idx=23 | id=7400458236735835409 | user=moon.shen
+2026-02-08 20:16:57 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@longliveai/video/7572588903748734230
+2026-02-08 20:16:57 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@longliveai/video/7572588903748734230
+2026-02-08 20:17:06 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:17:06 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:17:12 | INFO | VIDEO_OK | idx=24 | id=7572588903748734230 | user=longliveai
+2026-02-08 20:17:12 | INFO | VIDEO_OK | idx=24 | id=7572588903748734230 | user=longliveai
+2026-02-08 20:17:12 | INFO | SEARCH_DONE | keyword=Meow | results=24 | duration=349.94s
+2026-02-08 20:17:12 | INFO | SEARCH_DONE | keyword=Meow | results=24 | duration=349.94s
+2026-02-08 20:17:12 | INFO | KEYWORD_OK | keyword=Meow | results=24
+2026-02-08 20:17:12 | INFO | KEYWORD_OK | keyword=Meow | results=24
+2026-02-08 20:17:12 | INFO | KEYWORD_DONE | keyword=Meow | duration=349.98s
+2026-02-08 20:17:12 | INFO | KEYWORD_DONE | keyword=Meow | duration=349.98s
+2026-02-08 20:17:12 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:17:12 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:23:33 | INFO | SCRAPER_START
+2026-02-08 20:23:33 | INFO | SCRAPER_START
+2026-02-08 20:23:34 | INFO | BROWSER_STARTED
+2026-02-08 20:23:34 | INFO | BROWSER_STARTED
+2026-02-08 20:23:34 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 20:23:34 | INFO | KEYWORD_START | keyword=Meow
+2026-02-08 20:23:34 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 20:23:34 | INFO | SEARCH_START | keyword=Meow
+2026-02-08 20:23:40 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 20:23:40 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 20:23:43 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 20:23:43 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 20:24:13 | WARNING | TUX_FLOW_FAIL | keyword=Meow | error=Locator.evaluate: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div[data-e2e=\"search-video-grid\"], div[data-e2e=\"search-video-item-list\"], div[class*=\"DivVideoFeedContainer\"]").first
+
+2026-02-08 20:24:13 | WARNING | TUX_FLOW_FAIL | keyword=Meow | error=Locator.evaluate: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div[data-e2e=\"search-video-grid\"], div[data-e2e=\"search-video-item-list\"], div[class*=\"DivVideoFeedContainer\"]").first
+
+2026-02-08 20:24:16 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 20:24:16 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 20:24:16 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 20:24:16 | INFO | Selector matched: div[id^='grid-item-container-']
+2026-02-08 20:24:16 | INFO | CARDS_FOUND | keyword=Meow | count=24
+2026-02-08 20:24:16 | INFO | CARDS_FOUND | keyword=Meow | count=24
+2026-02-08 20:24:18 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@shloopityboopity7/video/7570543714624457997
+2026-02-08 20:24:18 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@shloopityboopity7/video/7570543714624457997
+2026-02-08 20:24:28 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:24:28 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:24:35 | INFO | VIDEO_OK | idx=1 | id=7570543714624457997 | user=shloopityboopity7
+2026-02-08 20:24:35 | INFO | VIDEO_OK | idx=1 | id=7570543714624457997 | user=shloopityboopity7
+2026-02-08 20:24:35 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@youstilldontknowme82/video/7574136267865132343
+2026-02-08 20:24:35 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@youstilldontknowme82/video/7574136267865132343
+2026-02-08 20:24:44 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:24:44 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:24:50 | INFO | VIDEO_OK | idx=2 | id=7574136267865132343 | user=youstilldontknowme82
+2026-02-08 20:24:50 | INFO | VIDEO_OK | idx=2 | id=7574136267865132343 | user=youstilldontknowme82
+2026-02-08 20:24:50 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cellow111/video/7589029323961634061
+2026-02-08 20:24:50 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cellow111/video/7589029323961634061
+2026-02-08 20:24:58 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:24:58 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:06 | INFO | VIDEO_OK | idx=3 | id=7589029323961634061 | user=cellow111
+2026-02-08 20:25:06 | INFO | VIDEO_OK | idx=3 | id=7589029323961634061 | user=cellow111
+2026-02-08 20:25:06 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sabilicioussab/video/7571968577150962966
+2026-02-08 20:25:06 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sabilicioussab/video/7571968577150962966
+2026-02-08 20:25:14 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:14 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:20 | INFO | VIDEO_OK | idx=4 | id=7571968577150962966 | user=sabilicioussab
+2026-02-08 20:25:20 | INFO | VIDEO_OK | idx=4 | id=7571968577150962966 | user=sabilicioussab
+2026-02-08 20:25:20 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sheyb_0725/video/7579373576348765495
+2026-02-08 20:25:20 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@sheyb_0725/video/7579373576348765495
+2026-02-08 20:25:28 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:28 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:34 | INFO | VIDEO_OK | idx=5 | id=7579373576348765495 | user=sheyb_0725
+2026-02-08 20:25:34 | INFO | VIDEO_OK | idx=5 | id=7579373576348765495 | user=sheyb_0725
+2026-02-08 20:25:34 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cantomalu/video/7575213543797165325
+2026-02-08 20:25:34 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cantomalu/video/7575213543797165325
+2026-02-08 20:25:42 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:42 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:48 | INFO | VIDEO_OK | idx=6 | id=7575213543797165325 | user=cantomalu
+2026-02-08 20:25:48 | INFO | VIDEO_OK | idx=6 | id=7575213543797165325 | user=cantomalu
+2026-02-08 20:25:48 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@littlepolishangel1/video/7574070105492016439
+2026-02-08 20:25:48 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@littlepolishangel1/video/7574070105492016439
+2026-02-08 20:25:57 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:25:57 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:03 | INFO | VIDEO_OK | idx=7 | id=7574070105492016439 | user=littlepolishangel1
+2026-02-08 20:26:03 | INFO | VIDEO_OK | idx=7 | id=7574070105492016439 | user=littlepolishangel1
+2026-02-08 20:26:03 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bellapoarch/video/6876097532733246725
+2026-02-08 20:26:03 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@bellapoarch/video/6876097532733246725
+2026-02-08 20:26:11 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:11 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:17 | INFO | VIDEO_OK | idx=8 | id=6876097532733246725 | user=bellapoarch
+2026-02-08 20:26:17 | INFO | VIDEO_OK | idx=8 | id=6876097532733246725 | user=bellapoarch
+2026-02-08 20:26:17 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@eden.gross/video/7574862015055858958
+2026-02-08 20:26:17 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@eden.gross/video/7574862015055858958
+2026-02-08 20:26:25 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:25 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:31 | INFO | VIDEO_OK | idx=9 | id=7574862015055858958 | user=eden.gross
+2026-02-08 20:26:31 | INFO | VIDEO_OK | idx=9 | id=7574862015055858958 | user=eden.gross
+2026-02-08 20:26:31 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_peetan/video/7478282070805007658
+2026-02-08 20:26:31 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_peetan/video/7478282070805007658
+2026-02-08 20:26:40 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:40 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:46 | INFO | VIDEO_OK | idx=10 | id=7478282070805007658 | user=cat_peetan
+2026-02-08 20:26:46 | INFO | VIDEO_OK | idx=10 | id=7478282070805007658 | user=cat_peetan
+2026-02-08 20:26:46 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@camrynfisheerr/video/7585314761701608759
+2026-02-08 20:26:46 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@camrynfisheerr/video/7585314761701608759
+2026-02-08 20:26:54 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:54 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:26:57 | INFO | VIDEO_OK | idx=11 | id=7585314761701608759 | user=camrynfisheerr
+2026-02-08 20:26:57 | INFO | VIDEO_OK | idx=11 | id=7585314761701608759 | user=camrynfisheerr
+2026-02-08 20:26:57 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@official.mrhungry/video/7576366881116818702
+2026-02-08 20:26:57 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@official.mrhungry/video/7576366881116818702
+2026-02-08 20:27:06 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:06 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:12 | INFO | VIDEO_OK | idx=12 | id=7576366881116818702 | user=official.mrhungry
+2026-02-08 20:27:12 | INFO | VIDEO_OK | idx=12 | id=7576366881116818702 | user=official.mrhungry
+2026-02-08 20:27:12 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@rixx_se/video/7516966909405891846
+2026-02-08 20:27:12 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@rixx_se/video/7516966909405891846
+2026-02-08 20:27:19 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:19 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:27 | INFO | VIDEO_OK | idx=13 | id=7516966909405891846 | user=rixx_se
+2026-02-08 20:27:27 | INFO | VIDEO_OK | idx=13 | id=7516966909405891846 | user=rixx_se
+2026-02-08 20:27:27 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@antipsivision/video/7251809573525261614
+2026-02-08 20:27:27 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@antipsivision/video/7251809573525261614
+2026-02-08 20:27:35 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:35 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:38 | INFO | VIDEO_OK | idx=14 | id=7251809573525261614 | user=antipsivision
+2026-02-08 20:27:38 | INFO | VIDEO_OK | idx=14 | id=7251809573525261614 | user=antipsivision
+2026-02-08 20:27:38 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brooke.deluccia/video/7595311981343673631
+2026-02-08 20:27:38 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brooke.deluccia/video/7595311981343673631
+2026-02-08 20:27:46 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:46 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:50 | INFO | VIDEO_OK | idx=15 | id=7595311981343673631 | user=brooke.deluccia
+2026-02-08 20:27:50 | INFO | VIDEO_OK | idx=15 | id=7595311981343673631 | user=brooke.deluccia
+2026-02-08 20:27:50 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@jsschillbruh/video/7572220366580354337
+2026-02-08 20:27:50 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@jsschillbruh/video/7572220366580354337
+2026-02-08 20:27:58 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:27:58 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:04 | INFO | VIDEO_OK | idx=16 | id=7572220366580354337 | user=jsschillbruh
+2026-02-08 20:28:04 | INFO | VIDEO_OK | idx=16 | id=7572220366580354337 | user=jsschillbruh
+2026-02-08 20:28:04 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@moon.shen/video/7400458236735835409
+2026-02-08 20:28:04 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@moon.shen/video/7400458236735835409
+2026-02-08 20:28:12 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:12 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:19 | INFO | VIDEO_OK | idx=17 | id=7400458236735835409 | user=moon.shen
+2026-02-08 20:28:19 | INFO | VIDEO_OK | idx=17 | id=7400458236735835409 | user=moon.shen
+2026-02-08 20:28:19 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brazillian.baddie/video/7576773603518139670
+2026-02-08 20:28:19 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@brazillian.baddie/video/7576773603518139670
+2026-02-08 20:28:27 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:27 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:33 | INFO | VIDEO_OK | idx=18 | id=7576773603518139670 | user=brazillian.baddie
+2026-02-08 20:28:33 | INFO | VIDEO_OK | idx=18 | id=7576773603518139670 | user=brazillian.baddie
+2026-02-08 20:28:33 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_noise/video/7541751102480469278
+2026-02-08 20:28:33 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@cat_noise/video/7541751102480469278
+2026-02-08 20:28:41 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:41 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:46 | INFO | VIDEO_OK | idx=19 | id=7541751102480469278 | user=cat_noise
+2026-02-08 20:28:46 | INFO | VIDEO_OK | idx=19 | id=7541751102480469278 | user=cat_noise
+2026-02-08 20:28:46 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@daa_doge/video/7312039239405849874
+2026-02-08 20:28:46 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@daa_doge/video/7312039239405849874
+2026-02-08 20:28:54 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:28:54 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:00 | INFO | VIDEO_OK | idx=20 | id=7312039239405849874 | user=daa_doge
+2026-02-08 20:29:00 | INFO | VIDEO_OK | idx=20 | id=7312039239405849874 | user=daa_doge
+2026-02-08 20:29:00 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@guangdang005/video/7401378809003396383
+2026-02-08 20:29:00 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@guangdang005/video/7401378809003396383
+2026-02-08 20:29:08 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:08 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:14 | INFO | VIDEO_OK | idx=21 | id=7401378809003396383 | user=guangdang005
+2026-02-08 20:29:14 | INFO | VIDEO_OK | idx=21 | id=7401378809003396383 | user=guangdang005
+2026-02-08 20:29:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@superboopa/video/7567925134753828127
+2026-02-08 20:29:14 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@superboopa/video/7567925134753828127
+2026-02-08 20:29:23 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:23 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:29 | INFO | VIDEO_OK | idx=22 | id=7567925134753828127 | user=superboopa
+2026-02-08 20:29:29 | INFO | VIDEO_OK | idx=22 | id=7567925134753828127 | user=superboopa
+2026-02-08 20:29:29 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@fullguap/video/7564155187808472334
+2026-02-08 20:29:29 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@fullguap/video/7564155187808472334
+2026-02-08 20:29:37 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:37 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:42 | INFO | VIDEO_OK | idx=23 | id=7564155187808472334 | user=fullguap
+2026-02-08 20:29:42 | INFO | VIDEO_OK | idx=23 | id=7564155187808472334 | user=fullguap
+2026-02-08 20:29:42 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@elina2008s/video/7590768090519014677
+2026-02-08 20:29:42 | INFO | VIDEO_STATS_START | url=https://www.tiktok.com/@elina2008s/video/7590768090519014677
+2026-02-08 20:29:50 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:50 | INFO | VIDEO_STATS_FALLBACK_USED
+2026-02-08 20:29:54 | INFO | VIDEO_OK | idx=24 | id=7590768090519014677 | user=elina2008s
+2026-02-08 20:29:54 | INFO | VIDEO_OK | idx=24 | id=7590768090519014677 | user=elina2008s
+2026-02-08 20:29:54 | INFO | SEARCH_DONE | keyword=Meow | results=24 | duration=379.7s
+2026-02-08 20:29:54 | INFO | SEARCH_DONE | keyword=Meow | results=24 | duration=379.7s
+2026-02-08 20:29:54 | INFO | KEYWORD_OK | keyword=Meow | results=24
+2026-02-08 20:29:54 | INFO | KEYWORD_OK | keyword=Meow | results=24
+2026-02-08 20:29:54 | INFO | KEYWORD_DONE | keyword=Meow | duration=379.78s
+2026-02-08 20:29:54 | INFO | KEYWORD_DONE | keyword=Meow | duration=379.78s
+2026-02-08 20:29:54 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:29:54 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:38:21 | INFO | SCRAPER_START
+2026-02-08 20:38:21 | INFO | SCRAPER_START
+2026-02-08 20:38:51 | INFO | SCRAPER_START
+2026-02-08 20:38:51 | INFO | SCRAPER_START
+2026-02-08 20:38:52 | INFO | BROWSER_STARTED
+2026-02-08 20:38:52 | INFO | BROWSER_STARTED
+2026-02-08 20:38:52 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 20:38:52 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 20:52:23 | INFO | SCRAPER_START
+2026-02-08 20:52:23 | INFO | SCRAPER_START
+2026-02-08 20:52:24 | INFO | BROWSER_STARTED
+2026-02-08 20:52:24 | INFO | BROWSER_STARTED
+2026-02-08 20:52:24 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 20:52:24 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 20:52:24 | INFO | SEARCH_START | keyword=Ado Den Haag
+2026-02-08 20:52:24 | INFO | SEARCH_START | keyword=Ado Den Haag
+2026-02-08 20:52:27 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 408, in search_keyword
+    await search_page.wait_for_timeout(4000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-08 20:52:27 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 408, in search_keyword
+    await search_page.wait_for_timeout(4000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-08 20:52:27 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=3.52s
+2026-02-08 20:52:27 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=3.52s
+2026-02-08 20:52:27 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:52:27 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:52:55 | INFO | SCRAPER_START
+2026-02-08 20:52:55 | INFO | SCRAPER_START
+2026-02-08 20:52:55 | INFO | BROWSER_STARTED
+2026-02-08 20:52:55 | INFO | BROWSER_STARTED
+2026-02-08 20:52:55 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 20:52:55 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 20:52:55 | INFO | SEARCH_START | keyword=Ado Den Haag
+2026-02-08 20:52:55 | INFO | SEARCH_START | keyword=Ado Den Haag
+2026-02-08 20:53:01 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 20:53:01 | INFO | TUX_CLICK_VIDEO_TAB_START
+2026-02-08 20:53:02 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 20:53:02 | INFO | TUX_CLICK_VIDEO_TAB_OK
+2026-02-08 20:53:02 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 20:53:02 | INFO | TUX_SCROLL_START | max_videos=200
+2026-02-08 20:53:06 | INFO | TUX_SCROLL_STABLE_STOP
+2026-02-08 20:53:06 | INFO | TUX_SCROLL_STABLE_STOP
+2026-02-08 20:53:06 | INFO | TUX_ANCHOR_COLLECT_START
+2026-02-08 20:53:06 | INFO | TUX_ANCHOR_COLLECT_START
+2026-02-08 20:53:06 | INFO | TUX_FLOW_OK | keyword=Ado Den Haag | items=0
+2026-02-08 20:53:06 | INFO | TUX_FLOW_OK | keyword=Ado Den Haag | items=0
+2026-02-08 20:53:09 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 20:53:09 | INFO | 🔚 No new results after 1 scrolls
+2026-02-08 20:53:09 | INFO | CARDS_FOUND | keyword=Ado Den Haag | count=0
+2026-02-08 20:53:09 | INFO | CARDS_FOUND | keyword=Ado Den Haag | count=0
+2026-02-08 20:53:09 | INFO | SEARCH_DONE | keyword=Ado Den Haag | results=0 | duration=13.5s
+2026-02-08 20:53:09 | INFO | SEARCH_DONE | keyword=Ado Den Haag | results=0 | duration=13.5s
+2026-02-08 20:53:09 | WARNING | KEYWORD_EMPTY | keyword=Ado Den Haag
+2026-02-08 20:53:09 | WARNING | KEYWORD_EMPTY | keyword=Ado Den Haag
+2026-02-08 20:53:09 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 20:53:09 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 21:02:16 | INFO | SCRAPER_START
+2026-02-08 21:02:16 | INFO | SCRAPER_START
+2026-02-08 21:02:18 | INFO | BROWSER_STARTED
+2026-02-08 21:02:18 | INFO | BROWSER_STARTED
+2026-02-08 21:02:18 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 21:02:18 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 21:02:20 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ado%20Den%20Haag", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 330, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ado%20Den%20Haag", waiting until "load"
+
+2026-02-08 21:02:20 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ado%20Den%20Haag", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 330, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ado%20Den%20Haag", waiting until "load"
+
+2026-02-08 21:02:20 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=1.55s
+2026-02-08 21:02:20 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=1.55s
+2026-02-08 21:02:20 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 21:02:20 | INFO | SCRAPER_SHUTDOWN
+2026-02-08 21:03:40 | INFO | SCRAPER_START
+2026-02-08 21:03:40 | INFO | SCRAPER_START
+2026-02-08 21:03:41 | INFO | BROWSER_STARTED
+2026-02-08 21:03:41 | INFO | BROWSER_STARTED
+2026-02-08 21:03:41 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 21:03:41 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 21:13:19 | INFO | SCRAPER_START
+2026-02-08 21:13:19 | INFO | SCRAPER_START
+2026-02-08 21:13:20 | INFO | BROWSER_STARTED
+2026-02-08 21:13:20 | INFO | BROWSER_STARTED
+2026-02-08 21:13:20 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-08 21:13:20 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 08:50:27 | INFO | SCRAPER_START
+2026-02-09 08:50:27 | INFO | SCRAPER_START
+2026-02-09 08:50:28 | INFO | BROWSER_STARTED
+2026-02-09 08:50:28 | INFO | BROWSER_STARTED
+2026-02-09 08:50:28 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 08:50:28 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:03:23 | INFO | SCRAPER_START
+2026-02-09 09:03:23 | INFO | SCRAPER_START
+2026-02-09 09:03:24 | INFO | BROWSER_STARTED
+2026-02-09 09:03:24 | INFO | BROWSER_STARTED
+2026-02-09 09:03:24 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:03:24 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:04:33 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@thimo.haas/video/7208921154214497542", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 327, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 253, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@thimo.haas/video/7208921154214497542", waiting until "load"
+
+2026-02-09 09:04:33 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@thimo.haas/video/7208921154214497542", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 327, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 253, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@thimo.haas/video/7208921154214497542", waiting until "load"
+
+2026-02-09 09:04:33 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=69.3s
+2026-02-09 09:04:33 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=69.3s
+2026-02-09 09:04:33 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:04:33 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:10:29 | INFO | SCRAPER_START
+2026-02-09 09:10:29 | INFO | SCRAPER_START
+2026-02-09 09:10:29 | INFO | BROWSER_STARTED
+2026-02-09 09:10:29 | INFO | BROWSER_STARTED
+2026-02-09 09:10:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:10:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:10:46 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 307, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 77, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-09 09:10:46 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 307, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 77, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-09 09:10:46 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=17.16s
+2026-02-09 09:10:46 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=17.16s
+2026-02-09 09:10:46 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:10:46 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:11:44 | INFO | SCRAPER_START
+2026-02-09 09:11:44 | INFO | SCRAPER_START
+2026-02-09 09:11:45 | INFO | BROWSER_STARTED
+2026-02-09 09:11:45 | INFO | BROWSER_STARTED
+2026-02-09 09:11:45 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:11:45 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:12:26 | INFO | SCRAPER_START
+2026-02-09 09:12:26 | INFO | SCRAPER_START
+2026-02-09 09:12:29 | INFO | BROWSER_STARTED
+2026-02-09 09:12:29 | INFO | BROWSER_STARTED
+2026-02-09 09:12:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:12:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:27:24 | INFO | SCRAPER_START
+2026-02-09 09:27:24 | INFO | SCRAPER_START
+2026-02-09 09:27:29 | INFO | BROWSER_STARTED
+2026-02-09 09:27:29 | INFO | BROWSER_STARTED
+2026-02-09 09:27:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:27:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:27:37 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error='NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 326, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 85, in scroll_until_all_videos_loaded
+    click_x = viewport["width"] - 5
+              ~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-02-09 09:27:37 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error='NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 326, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 85, in scroll_until_all_videos_loaded
+    click_x = viewport["width"] - 5
+              ~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-02-09 09:27:37 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=8.53s
+2026-02-09 09:27:37 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=8.53s
+2026-02-09 09:27:37 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:27:37 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:28:05 | INFO | SCRAPER_START
+2026-02-09 09:28:05 | INFO | SCRAPER_START
+2026-02-09 09:28:05 | INFO | BROWSER_STARTED
+2026-02-09 09:28:05 | INFO | BROWSER_STARTED
+2026-02-09 09:28:05 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:28:05 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:28:12 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error='NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 326, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 85, in scroll_until_all_videos_loaded
+    click_x = viewport["width"] - 5
+              ~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-02-09 09:28:12 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error='NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 326, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 85, in scroll_until_all_videos_loaded
+    click_x = viewport["width"] - 5
+              ~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-02-09 09:28:12 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=6.54s
+2026-02-09 09:28:12 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=6.54s
+2026-02-09 09:28:12 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:28:12 | INFO | SCRAPER_SHUTDOWN

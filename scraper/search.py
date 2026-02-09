@@ -1,26 +1,29 @@
 import re
 import json
-import time
 from logger import setup_logger
 from scraper.user import scrape_user_single_tab
+from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 
 logger = setup_logger()
 
 HASHTAG_REGEX = r"#(\w+)"
 
+# -----------------------------
+# SELECTORS
+# -----------------------------
+VIDEOS_TAB_SELECTOR = (
+    "button[data-testid='tux-web-tab-bar'] span:has-text(\"Video's\"), "
+    "button[data-testid='tux-web-tab-bar'] span:has-text('Videos'), "
+    "button[data-testid='tux-web-tab-bar'] span:has-text('Video')"
+)
 
-async def scroll_until_no_new_results(page, max_scrolls=30, wait=1500):
-    last_height = 0
-    for i in range(max_scrolls):
-        await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
-        await page.wait_for_timeout(wait)
-        height = await page.evaluate("document.body.scrollHeight")
-        if height == last_height:
-            logger.info(f"🔚 No new results after {i} scrolls")
-            break
-        last_height = height
+FIRST_VIDEO_SELECTOR = "#grid-item-container-0 a[href*='/video/']"
+VIDEO_LIST_SELECTOR = "#search_video-item-list div[id^='grid-item-container-']"
 
 
+# -----------------------------
+# Helpers
+# -----------------------------
 async def safe_text(el):
     if not el:
         return ""
@@ -32,6 +35,121 @@ async def safe_text(el):
 
 def extract_hashtags(text: str):
     return re.findall(HASHTAG_REGEX, text or "")
+
+
+# -----------------------------
+# Click Videos tab
+# -----------------------------
+async def click_videos_tab(page):
+    print("[INFO] Clicking Videos tab…")
+    try:
+        locator = page.locator(VIDEOS_TAB_SELECTOR).first
+        await locator.click(timeout=5000)
+        await page.wait_for_timeout(800)
+        print("[INFO] Videos tab clicked.")
+    except Exception as e:
+        print(f"[ERROR] Could not click Videos tab: {e}")
+        raise
+
+
+# -----------------------------
+# Click first video
+# -----------------------------
+async def click_first_video(page):
+    print("[INFO] Clicking first video…")
+    try:
+        first_video = page.locator(FIRST_VIDEO_SELECTOR).first
+        await first_video.click(timeout=5000)
+        await page.wait_for_timeout(2000)
+        print("[INFO] First video opened.")
+    except Exception as e:
+        print(f"[ERROR] Could not click first video: {e}")
+        raise
+
+
+# -----------------------------
+# REAL TikTok scroll (Videos tab)
+# -----------------------------
+async def scroll_until_all_videos_loaded(page, max_videos=500):
+    print("[INFO] Starting window scroll for VIDEO tab…")
+
+    # Wacht tot de lijst er is
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+
+    last_count = 0
+    stable_rounds = 0
+
+    while True:
+        # Scroll in stappen zoals een echte gebruiker
+        await page.evaluate("window.scrollBy(0, window.innerHeight)")
+        await page.wait_for_timeout(1800)
+
+        cards = page.locator(VIDEO_LIST_SELECTOR)
+        count = await cards.count()
+
+        print(f"[INFO] Loaded {count} videos…")
+
+        if count >= max_videos:
+            print("[INFO] max_videos reached.")
+            break
+
+        if count == last_count:
+            stable_rounds += 1
+        else:
+            stable_rounds = 0
+
+        last_count = count
+
+        if stable_rounds >= 5:
+            print("[INFO] No new videos loaded — stopping scroll.")
+            break
+
+    print(f"[INFO] Final video count: {last_count}")
+    return last_count
+
+
+# -----------------------------
+# Extract video items (Videos tab)
+# -----------------------------
+async def build_video_items_from_video_tab(page, max_videos=None):
+    print("[INFO] Collecting video anchors from VIDEO tab…")
+
+    cards = page.locator(VIDEO_LIST_SELECTOR)
+    total = await cards.count()
+    print(f"[INFO] Found {total} cards.")
+
+    limit = total if max_videos is None else min(total, max_videos)
+    video_items = []
+
+    for i in range(limit):
+        card = cards.nth(i)
+        link = card.locator("a[href*='/video/']").first
+
+        href = await link.get_attribute("href")
+        if href.startswith("/"):
+            href = "https://www.tiktok.com" + href
+
+        video_id = href.split("/video/")[1].split("?")[0]
+
+        username = ""
+        if "/@" in href:
+            username = href.split("/@")[1].split("/")[0]
+
+        desc = await safe_text(card.locator("[data-e2e='search-card-video-caption'] span"))
+        hashtags_search = extract_hashtags(desc)
+
+        video_items.append({
+            "idx": i + 1,
+            "href": href,
+            "video_id": video_id,
+            "desc": desc,
+            "username": username,
+            "views_search": "",
+            "hashtags_search": hashtags_search,
+        })
+
+    print(f"[INFO] VIDEO tab produced {len(video_items)} items.")
+    return video_items
 
 
 # -----------------------------
@@ -51,17 +169,10 @@ def parse_from_universal_data(data):
         author = item.get("author", {}) or {}
         music = item.get("music", {}) or {}
 
-        description = item.get("desc", "") or ""
-        hashtags = [
-            h.get("hashtagName")
-            for h in item.get("textExtra", [])
-            if h.get("hashtagName")
-        ]
-
         return {
             "video_id": item.get("id"),
-            "description": description,
-            "hashtags": hashtags,
+            "description": item.get("desc", ""),
+            "hashtags": [h.get("hashtagName") for h in item.get("textExtra", []) if h.get("hashtagName")],
             "create_time": item.get("createTime"),
             "duration": item.get("video", {}).get("duration"),
             "stats": {
@@ -88,15 +199,13 @@ def parse_from_universal_data(data):
                 "play_url": music.get("playUrl"),
             },
         }
-    except Exception as e:
-        logger.warning(f"UNIVERSAL_PARSE_FAIL | {e}")
+    except:
         return None
 
 
 def parse_from_sigi_state(data, video_id):
     try:
-        item_module = data.get("ItemModule", {})
-        item = item_module.get(str(video_id)) or item_module.get(video_id)
+        item = data.get("ItemModule", {}).get(str(video_id))
         if not item:
             return None
 
@@ -104,17 +213,10 @@ def parse_from_sigi_state(data, video_id):
         author = item.get("author", {}) or {}
         music = item.get("music", {}) or {}
 
-        description = item.get("desc", "") or ""
-        hashtags = [
-            h.get("hashtagName")
-            for h in item.get("textExtra", [])
-            if h.get("hashtagName")
-        ]
-
         return {
             "video_id": item.get("id"),
-            "description": description,
-            "hashtags": hashtags,
+            "description": item.get("desc", ""),
+            "hashtags": [h.get("hashtagName") for h in item.get("textExtra", []) if h.get("hashtagName")],
             "create_time": item.get("createTime"),
             "duration": item.get("video", {}).get("duration"),
             "stats": {
@@ -141,66 +243,37 @@ def parse_from_sigi_state(data, video_id):
                 "play_url": music.get("playUrl"),
             },
         }
-    except Exception as e:
-        logger.warning(f"SIGI_PARSE_FAIL | {e}")
+    except:
         return None
 
 
 # -----------------------------
-# Video stats in dedicated tab
+# Fetch video stats
 # -----------------------------
 async def fetch_video_stats(context, video_url, fallback_video_id=None):
     page = await context.new_page()
     try:
+        print(f"[INFO] Fetching stats for video: {video_url}")
         await page.goto(video_url, timeout=60000)
-
-        await page.bring_to_front()
-        await page.wait_for_timeout(500)
-
-        await page.evaluate("window.scrollTo(0, 300)")
-        await page.wait_for_timeout(500)
-
-        await page.wait_for_timeout(4500)
+        await page.wait_for_timeout(3000)
 
         try:
             universal_data = await page.evaluate("() => window.__UNIVERSAL_DATA__ || null")
-        except Exception:
-            universal_data = None
-
-        if universal_data:
-            parsed = parse_from_universal_data(universal_data)
-            if parsed:
-                return parsed
-
-        try:
-            sigi_text = await page.evaluate(
-                "() => document.querySelector('#SIGI_STATE')?.innerText || null"
-            )
-            if sigi_text:
-                sigi_data = json.loads(sigi_text)
-                parsed = parse_from_sigi_state(sigi_data, fallback_video_id)
+            if universal_data:
+                parsed = parse_from_universal_data(universal_data)
                 if parsed:
                     return parsed
-        except Exception as e:
-            logger.warning(f"SIGI_STATE_READ_FAIL | url={video_url} | {e}")
-
-        stats = {}
+        except:
+            pass
 
         try:
-            views_el = await page.query_selector(
-                "[data-e2e='video-views'] strong, [data-e2e='video-views']"
-            )
-            stats["views"] = await views_el.inner_text() if views_el else None
-        except Exception:
-            stats["views"] = None
-
-        try:
-            likes_el = await page.query_selector(
-                "strong[data-e2e='like-count'], button[data-e2e='like-icon'] strong"
-            )
-            stats["likes"] = await likes_el.inner_text() if likes_el else None
-        except Exception:
-            stats["likes"] = None
+            sigi_text = await page.evaluate("() => document.querySelector('#SIGI_STATE')?.innerText || null")
+            if sigi_text:
+                parsed = parse_from_sigi_state(json.loads(sigi_text), fallback_video_id)
+                if parsed:
+                    return parsed
+        except:
+            pass
 
         return {
             "video_id": fallback_video_id,
@@ -208,15 +281,7 @@ async def fetch_video_stats(context, video_url, fallback_video_id=None):
             "hashtags": [],
             "create_time": None,
             "duration": None,
-            "stats": {
-                "views": stats.get("views"),
-                "likes": stats.get("likes"),
-                "comments": None,
-                "shares": None,
-                "saves": None,
-                "downloads": None,
-                "forwards": None,
-            },
+            "stats": {},
             "author_info": {},
             "music_info": {},
         }
@@ -226,170 +291,77 @@ async def fetch_video_stats(context, video_url, fallback_video_id=None):
 
 
 # -----------------------------
-# Main search function
+# MAIN SEARCH FUNCTION
 # -----------------------------
 async def search_keyword(search_page, keyword: str, max_videos=None, max_profiles=None):
-    start_time = time.time()
-    logger.info(f"SEARCH_START | keyword={keyword}")
+    print(f"\n[SEARCH] Starting search for keyword: {keyword}")
 
     context = search_page.context
-    search_url = f"https://www.tiktok.com/search?q={keyword}"
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}", timeout=60000)
+    await search_page.wait_for_timeout(3000)
 
-    await search_page.goto(search_url, timeout=60000)
-    await search_page.wait_for_timeout(4000)
+    # 1) Klik Video’s tab
+    await click_videos_tab(search_page)
 
-    await scroll_until_no_new_results(search_page)
+    # 2) Scroll eerst ALLE video’s in
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
 
-    selectors = [
-        "div[data-e2e='search-card']",
-        "div[data-e2e='search-video-card']",
-        "div[id^='grid-item-container-']",
-        "div[data-e2e='search-item']",
-    ]
+    # 3) Extract video items
+    video_items = await build_video_items_from_video_tab(search_page, max_videos)
 
-    cards = []
-    for sel in selectors:
-        cards = await search_page.query_selector_all(sel)
-        if cards:
-            logger.info(f"Selector matched: {sel}")
-            break
+    print(f"[INFO] Total video items to deep-scrape: {len(video_items)}")
 
-    logger.info(f"CARDS_FOUND | keyword={keyword} | count={len(cards)}")
-
-    video_items = []
-    for idx, card in enumerate(cards, start=1):
-        link_el = await card.query_selector("a[href*='/video/']")
-        href = await link_el.get_attribute("href") if link_el else None
-        if not href:
-            continue
-        if href.startswith("/"):
-            href = "https://www.tiktok.com" + href
-
-        video_id = href.split("/video/")[-1].split("?")[0]
-
-        desc = await safe_text(
-            await card.query_selector("[data-e2e='search-card-video-caption']")
-        )
-        if not desc:
-            desc = await safe_text(await card.query_selector("span"))
-
-        username = await safe_text(
-            await card.query_selector("[data-e2e='search-card-user-unique-id']")
-        )
-        if not username:
-            try:
-                username = href.split("@")[1].split("/")[0]
-            except Exception:
-                username = ""
-
-        views_search = await safe_text(
-            await card.query_selector("[data-e2e='video-views']")
-        )
-
-        hashtags_search = extract_hashtags(desc)
-
-        video_items.append(
-            {
-                "idx": idx,
-                "href": href,
-                "video_id": video_id,
-                "desc": desc,
-                "username": username,
-                "views_search": views_search,
-                "hashtags_search": hashtags_search,
-            }
-        )
+    # 4) Klik eerste video (variant C)
+    await click_first_video(search_page)
+    await search_page.go_back()
+    await search_page.wait_for_timeout(1500)
 
     results = []
-    profile_count = 0
 
+    # 5) Deep scrape
     for item in video_items:
         idx = item["idx"]
-
         href = item["href"]
-        video_id = item["video_id"]
-        desc = item["desc"]
         username = item["username"]
-        views_search = item["views_search"]
-        hashtags_search = item["hashtags_search"]
 
-        try:
-            video_data = await fetch_video_stats(
-                context,
-                href,
-                fallback_video_id=video_id,
-            )
+        print(f"[VIDEO] Processing {idx}/{len(video_items)} | url={href}")
 
-            stats = video_data.get("stats", {}) or {}
-            author_info = video_data.get("author_info", {}) or {}
-            music_info = video_data.get("music_info", {}) or {}
+        video_data = await fetch_video_stats(context, href, item["video_id"])
 
-            final_desc = video_data.get("description") or desc
-            final_hashtags = video_data.get("hashtags") or hashtags_search
+        bio_links = []
+        if username:
+            try:
+                profile_page = await context.new_page()
+                await profile_page.goto(f"https://www.tiktok.com/@{username}", timeout=60000)
+                await profile_page.wait_for_timeout(2000)
+                extracted = await scrape_user_single_tab(profile_page)
+                if extracted:
+                    bio_links = list(set(extracted))
+                await profile_page.close()
+            except:
+                pass
 
-            bio_links = []
+        result = {
+            "keyword": keyword,
+            "video_id": video_data.get("video_id"),
+            "video_url": href,
+            "desc": video_data.get("description") or item["desc"],
+            "views": video_data.get("stats", {}).get("views"),
+            "likes": video_data.get("stats", {}).get("likes"),
+            "comments": video_data.get("stats", {}).get("comments"),
+            "shares": video_data.get("stats", {}).get("shares"),
+            "saves": video_data.get("stats", {}).get("saves"),
+            "downloads": video_data.get("stats", {}).get("downloads"),
+            "forwards": video_data.get("stats", {}).get("forwards"),
+            "author": username,
+            "bio_links": bio_links,
+            "hashtags": video_data.get("hashtags"),
+            "create_time": video_data.get("create_time"),
+            "duration": video_data.get("duration"),
+        }
 
-            # PROFILE SCRAPE — limiter verwijderd
-            if username:
-                try:
-                    profile_url = f"https://www.tiktok.com/@{username}"
-                    profile_page = await context.new_page()
-                    await profile_page.goto(profile_url, timeout=60000)
-                    await profile_page.wait_for_timeout(2000)
+        results.append(result)
+        print(f"[OK] VIDEO_OK | idx={idx} | id={result['video_id']}")
 
-                    extracted_links = await scrape_user_single_tab(profile_page)
-                    if extracted_links:
-                        bio_links.extend(list(set(extracted_links)))
-
-                    await profile_page.close()
-
-                except Exception as e:
-                    logger.warning(f"PROFILE_FAIL | {username} | {e}")
-
-            result = {
-                "keyword": keyword,
-                "video_id": video_data.get("video_id") or video_id,
-                "video_url": href,
-                "desc": final_desc,
-                "views": stats.get("views") or views_search,
-                "likes": stats.get("likes"),
-                "comments": stats.get("comments"),
-                "shares": stats.get("shares"),
-                "saves": stats.get("saves"),
-                "downloads": stats.get("downloads"),
-                "forwards": stats.get("forwards"),
-                "author": username or author_info.get("username"),
-                "author_username": author_info.get("username"),
-                "author_nickname": author_info.get("nickname"),
-                "author_avatar": author_info.get("avatar"),
-                "author_followers": author_info.get("followers"),
-                "author_following": author_info.get("following"),
-                "author_heart": author_info.get("heart"),
-                "bio_links": list(set(bio_links)),
-                "hashtags": final_hashtags,
-                "create_time": video_data.get("create_time"),
-                "duration": video_data.get("duration"),
-                "music_id": music_info.get("id"),
-                "music_title": music_info.get("title"),
-                "music_author": music_info.get("author"),
-                "music_play_url": music_info.get("playUrl")
-                if "playUrl" in music_info
-                else music_info.get("play_url"),
-            }
-
-            results.append(result)
-
-            logger.info(
-                f"VIDEO_OK | idx={idx} | id={result['video_id']} | user={result['author']}"
-            )
-
-        except Exception as e:
-            logger.exception(f"VIDEO_ERROR | idx={idx} | {e}")
-            continue
-
-    duration = round(time.time() - start_time, 2)
-    logger.info(
-        f"SEARCH_DONE | keyword={keyword} | results={len(results)} | duration={duration}s"
-    )
-
+    print(f"[SEARCH_DONE] keyword={keyword} | results={len(results)}")
     return results

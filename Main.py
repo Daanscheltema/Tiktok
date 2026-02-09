@@ -4,7 +4,7 @@ import os
 import pandas as pd
 
 from scraper.browser import get_browser
-from scraper.search import search_keyword
+from scraper.search import search_keyword   # <-- DIT IS DE JUISTE FUNCTIE
 from config import PROXY
 from logger import setup_logger
 
@@ -25,12 +25,10 @@ async def run():
     print("Browser started.")
 
     # Voeg hier meerdere keywords toe
-    keywords = ["Buttons","Switch","Glock Switch","Switchy", "Auto sear", "Button", "Switches", "G switch", "3D switch", "3D glock switch",
-                "Glock STL files", "STL Glock","3D auto sear"
-                ]
+    keywords = ["Ado Den Haag"]
 
     # CSV-bestand waar alles in komt
-    csv_path = "tiktok_results.csv"
+    csv_path = "tiktok_results_testmeerkaarten.csv"
 
     for kw in keywords:
         logger.info(f"KEYWORD_START | keyword={kw}")
@@ -39,10 +37,13 @@ async def run():
         start_time = time.time()
 
         try:
+            # -----------------------------
+            # JUISTE SCRAPER CALL
+            # -----------------------------
             results = await search_keyword(
                 page,
                 kw,
-                max_videos=None,
+                max_videos=200,   # <-- pas aan wat je wilt
                 max_profiles=None
             )
 
@@ -61,12 +62,8 @@ async def run():
                 print(
                     f"- Video {r.get('video_id')} | "
                     f"Views: {r.get('views')} | "
-                    f"Likes: {r.get('likes')} | "
-                    f"Comments: {r.get('comments')} | "
-                    f"Shares: {r.get('shares')} | "
                     f"User: {r.get('author')} | "
-                    f"Bio links: {r.get('bio_links')} | "
-                    f"Hashtags: {r.get('hashtags')}"
+                    f"Bio links: {r.get('bio_links')}"
                 )
 
             # -----------------------------
