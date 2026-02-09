@@ -10557,3 +10557,553 @@ Call log:
 2026-02-09 09:40:07 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=158.48s
 2026-02-09 09:40:07 | INFO | SCRAPER_SHUTDOWN
 2026-02-09 09:40:07 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:50:01 | INFO | SCRAPER_START
+2026-02-09 09:50:01 | INFO | SCRAPER_START
+2026-02-09 09:50:12 | INFO | SCRAPER_START
+2026-02-09 09:50:12 | INFO | SCRAPER_START
+2026-02-09 09:50:44 | INFO | SCRAPER_START
+2026-02-09 09:50:44 | INFO | SCRAPER_START
+2026-02-09 09:50:45 | INFO | BROWSER_STARTED
+2026-02-09 09:50:45 | INFO | BROWSER_STARTED
+2026-02-09 09:50:45 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:50:45 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:52:31 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 09:52:31 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 09:52:32 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=106.94s
+2026-02-09 09:52:32 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=106.94s
+2026-02-09 09:52:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:52:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:02:28 | INFO | SCRAPER_START
+2026-02-09 10:02:28 | INFO | SCRAPER_START
+2026-02-09 10:02:29 | INFO | BROWSER_STARTED
+2026-02-09 10:02:29 | INFO | BROWSER_STARTED
+2026-02-09 10:02:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:02:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:04:02 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 10:04:02 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 10:04:02 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=93.76s
+2026-02-09 10:04:02 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=93.76s
+2026-02-09 10:04:02 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:04:02 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:12:28 | INFO | SCRAPER_START
+2026-02-09 10:12:28 | INFO | SCRAPER_START
+2026-02-09 10:12:31 | INFO | BROWSER_STARTED
+2026-02-09 10:12:31 | INFO | BROWSER_STARTED
+2026-02-09 10:12:31 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:12:31 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:12:36 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 169, in search_keyword
+    await search_page.wait_for_timeout(3000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 10:12:36 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 169, in search_keyword
+    await search_page.wait_for_timeout(3000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 10:12:36 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=4.46s
+2026-02-09 10:12:36 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=4.46s
+2026-02-09 10:12:36 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:12:36 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:14:18 | INFO | SCRAPER_START
+2026-02-09 10:14:18 | INFO | SCRAPER_START
+2026-02-09 10:14:19 | INFO | BROWSER_STARTED
+2026-02-09 10:14:19 | INFO | BROWSER_STARTED
+2026-02-09 10:14:19 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:14:19 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:15:56 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 10:15:56 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 10:15:56 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=96.65s
+2026-02-09 10:15:56 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=96.65s
+2026-02-09 10:15:56 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:15:56 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:24:56 | INFO | SCRAPER_START
+2026-02-09 10:24:56 | INFO | SCRAPER_START
+2026-02-09 10:24:58 | INFO | BROWSER_STARTED
+2026-02-09 10:24:58 | INFO | BROWSER_STARTED
+2026-02-09 10:24:58 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:24:58 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:26:56 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 188, in search_keyword
+    stats = await scrape_video_stats(context, item["video_url"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 145, in scrape_video_stats
+    page = await context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 12876, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser_context.py", line 331, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2026-02-09 10:26:56 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=BrowserContext.new_page: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 188, in search_keyword
+    stats = await scrape_video_stats(context, item["video_url"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 145, in scrape_video_stats
+    page = await context.new_page()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 12876, in new_page
+    return mapping.from_impl(await self._impl_obj.new_page())
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_browser_context.py", line 331, in new_page
+    return from_channel(await self._channel.send("newPage", None))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.new_page: Target page, context or browser has been closed
+2026-02-09 10:26:56 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=117.96s
+2026-02-09 10:26:56 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=117.96s
+2026-02-09 10:26:56 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:26:56 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 10:55:49 | INFO | SCRAPER_START
+2026-02-09 10:55:49 | INFO | SCRAPER_START
+2026-02-09 10:55:50 | INFO | BROWSER_STARTED
+2026-02-09 10:55:50 | INFO | BROWSER_STARTED
+2026-02-09 10:55:50 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 10:55:50 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:00:53 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 11:00:53 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 11:00:53 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=303.24s
+2026-02-09 11:00:53 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=303.24s
+2026-02-09 11:00:53 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:00:53 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:07:05 | INFO | SCRAPER_START
+2026-02-09 11:07:05 | INFO | SCRAPER_START
+2026-02-09 11:07:08 | INFO | BROWSER_STARTED
+2026-02-09 11:07:08 | INFO | BROWSER_STARTED
+2026-02-09 11:07:08 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:07:08 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:09:36 | WARNING | profile scrape fail omroepwestsport: 'list' object has no attribute 'get'
+2026-02-09 11:09:36 | WARNING | profile scrape fail omroepwestsport: 'list' object has no attribute 'get'
+2026-02-09 11:10:25 | WARNING | profile scrape fail adodenhaag: 'list' object has no attribute 'get'
+2026-02-09 11:10:25 | WARNING | profile scrape fail adodenhaag: 'list' object has no attribute 'get'
+2026-02-09 11:10:25 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 11:10:25 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=2
+2026-02-09 11:10:25 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=197.33s
+2026-02-09 11:10:25 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=197.33s
+2026-02-09 11:10:25 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:10:25 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:13:07 | INFO | SCRAPER_START
+2026-02-09 11:13:07 | INFO | SCRAPER_START
+2026-02-09 11:13:08 | INFO | BROWSER_STARTED
+2026-02-09 11:13:08 | INFO | BROWSER_STARTED
+2026-02-09 11:13:08 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:13:08 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:16:22 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@krillaq/video/7351741233426992417", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 351, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 279, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@krillaq/video/7351741233426992417", waiting until "load"
+
+2026-02-09 11:16:22 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@krillaq/video/7351741233426992417", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 351, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 279, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@krillaq/video/7351741233426992417", waiting until "load"
+
+2026-02-09 11:16:22 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=193.64s
+2026-02-09 11:16:22 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=193.64s
+2026-02-09 11:16:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:16:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:19:37 | INFO | SCRAPER_START
+2026-02-09 11:19:37 | INFO | SCRAPER_START
+2026-02-09 11:20:46 | INFO | SCRAPER_START
+2026-02-09 11:20:46 | INFO | SCRAPER_START
+2026-02-09 11:20:47 | INFO | BROWSER_STARTED
+2026-02-09 11:20:47 | INFO | BROWSER_STARTED
+2026-02-09 11:20:47 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:20:47 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:24:13 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 11:24:13 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 11:24:13 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=206.26s
+2026-02-09 11:24:13 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=206.26s
+2026-02-09 11:24:13 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:24:13 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:31:37 | INFO | SCRAPER_START
+2026-02-09 11:31:37 | INFO | SCRAPER_START
+2026-02-09 11:31:41 | INFO | BROWSER_STARTED
+2026-02-09 11:31:41 | INFO | BROWSER_STARTED
+2026-02-09 11:31:41 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:31:41 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:32:04 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 222, in search_keyword
+    await click_first_video(search_page)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 74, in click_first_video
+    await page.wait_for_timeout(2000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 11:32:04 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 222, in search_keyword
+    await click_first_video(search_page)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 74, in click_first_video
+    await page.wait_for_timeout(2000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 11:32:04 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=23.05s
+2026-02-09 11:32:04 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=23.05s
+2026-02-09 11:32:04 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:32:04 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:32:09 | INFO | SCRAPER_START
+2026-02-09 11:32:09 | INFO | SCRAPER_START
+2026-02-09 11:32:51 | INFO | SCRAPER_START
+2026-02-09 11:32:51 | INFO | SCRAPER_START
+2026-02-09 11:32:52 | INFO | BROWSER_STARTED
+2026-02-09 11:32:52 | INFO | BROWSER_STARTED
+2026-02-09 11:32:52 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:32:52 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:33:35 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("strong[data-e2e='browse-like-count']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 234, in search_keyword
+    stats = await fetch_video_stats(context, item["href"], item["video_id"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 190, in fetch_video_stats
+    likes, comments, bookmarks = await scrape_dom_video_stats(page)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 149, in scrape_dom_video_stats
+    await page.wait_for_selector("strong[data-e2e='browse-like-count']", timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("strong[data-e2e='browse-like-count']") to be visible
+
+2026-02-09 11:33:35 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("strong[data-e2e='browse-like-count']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 234, in search_keyword
+    stats = await fetch_video_stats(context, item["href"], item["video_id"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 190, in fetch_video_stats
+    likes, comments, bookmarks = await scrape_dom_video_stats(page)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 149, in scrape_dom_video_stats
+    await page.wait_for_selector("strong[data-e2e='browse-like-count']", timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("strong[data-e2e='browse-like-count']") to be visible
+
+2026-02-09 11:33:35 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=42.77s
+2026-02-09 11:33:35 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=42.77s
+2026-02-09 11:33:35 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:33:35 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:34:03 | INFO | SCRAPER_START
+2026-02-09 11:34:03 | INFO | SCRAPER_START
+2026-02-09 11:34:05 | INFO | BROWSER_STARTED
+2026-02-09 11:34:05 | INFO | BROWSER_STARTED
+2026-02-09 11:34:05 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:34:05 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 11:34:21 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Locator.count: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 288, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 111, in scroll_until_all_videos_loaded
+    count = await cards.count()
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 16829, in count
+    return mapping.from_maybe_impl(await self._impl_obj.count())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_locator.py", line 423, in count
+    return await self._frame._query_count(self._selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 136, in _query_count
+    return await self._channel.send("queryCount", None, {"selector": selector})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.count: Target page, context or browser has been closed
+2026-02-09 11:34:21 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Locator.count: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 288, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 111, in scroll_until_all_videos_loaded
+    count = await cards.count()
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 16829, in count
+    return mapping.from_maybe_impl(await self._impl_obj.count())
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_locator.py", line 423, in count
+    return await self._frame._query_count(self._selector)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 136, in _query_count
+    return await self._channel.send("queryCount", None, {"selector": selector})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Locator.count: Target page, context or browser has been closed
+2026-02-09 11:34:21 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=16.04s
+2026-02-09 11:34:21 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=16.04s
+2026-02-09 11:34:21 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 11:34:21 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 15:37:52 | INFO | SCRAPER_START
+2026-02-09 15:37:52 | INFO | SCRAPER_START
+2026-02-09 15:37:53 | INFO | BROWSER_STARTED
+2026-02-09 15:37:53 | INFO | BROWSER_STARTED
+2026-02-09 15:37:53 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 15:37:53 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 15:40:48 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 15:40:48 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 15:40:48 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=175.24s
+2026-02-09 15:40:48 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=175.24s
+2026-02-09 15:40:48 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 15:40:48 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 15:51:59 | INFO | SCRAPER_START
+2026-02-09 15:51:59 | INFO | SCRAPER_START
+2026-02-09 15:52:00 | INFO | BROWSER_STARTED
+2026-02-09 15:52:00 | INFO | BROWSER_STARTED
+2026-02-09 15:52:00 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 15:52:00 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 15:54:50 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 15:54:50 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 15:54:50 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=170.3s
+2026-02-09 15:54:50 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=170.3s
+2026-02-09 15:54:50 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 15:54:50 | INFO | SCRAPER_SHUTDOWN

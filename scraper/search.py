@@ -1,12 +1,17 @@
 import re
 import json
+import urllib.parse
 from logger import setup_logger
-from scraper.user import scrape_user_single_tab
 from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 
 logger = setup_logger()
 
 HASHTAG_REGEX = r"#(\w+)"
+
+# -----------------------------
+# TEMP TEST LIMIT (REMOVE AFTER TEST)
+# -----------------------------
+TEST_MAX_RESULTS = 3  # zet op None om uit te zetten
 
 # -----------------------------
 # SELECTORS
@@ -35,6 +40,51 @@ async def safe_text(el):
 
 def extract_hashtags(text: str):
     return re.findall(HASHTAG_REGEX, text or "")
+
+
+# -----------------------------
+# NEW: Extract ONLY bio links
+# -----------------------------
+async def extract_bio_links(page):
+    """
+    Extract ONLY the real bio links from the TikTok profile header.
+    These are inside the DivShareLinks container.
+    """
+    links = []
+
+    try:
+        container = page.locator("div.css-8ak5ua-7937d88b--DivShareLinks")
+
+        if await container.count() == 0:
+            return []
+
+        anchors = container.locator("a[data-e2e='user-link']")
+        count = await anchors.count()
+
+        for i in range(count):
+            a = anchors.nth(i)
+
+            href = await a.get_attribute("href")
+            real_url = href
+
+            # Decode TikTok redirect wrapper
+            if "target=" in href:
+                try:
+                    parsed = urllib.parse.urlparse(href)
+                    qs = urllib.parse.parse_qs(parsed.query)
+                    target = qs.get("target", [None])[0]
+                    if target:
+                        real_url = urllib.parse.unquote(target)
+                except:
+                    pass
+
+            links.append(real_url)
+
+        return list(set(links))
+
+    except Exception as e:
+        print(f"[ERROR] extract_bio_links failed: {e}")
+        return []
 
 
 # -----------------------------
@@ -68,8 +118,7 @@ async def click_first_video(page):
 
 
 # -----------------------------
-# REAL TikTok scroll (Videos tab)
-# with keep-alive click bottom-right
+# REAL TikTok scroll
 # -----------------------------
 async def scroll_until_all_videos_loaded(page, max_videos=500):
     print("[INFO] Starting window scroll for VIDEO tab…")
@@ -81,27 +130,24 @@ async def scroll_until_all_videos_loaded(page, max_videos=500):
     scroll_round = 0
 
     while True:
-        # Scroll zoals een echte gebruiker
         await page.evaluate("window.scrollBy(0, window.innerHeight)")
         await page.wait_for_timeout(1800)
 
         scroll_round += 1
 
-        # Elke 2 scrolls → klik rechts-onderin
         if scroll_round % 2 == 0:
             try:
-                # Dynamisch viewport ophalen
-                viewport = await page.evaluate("({width: window.innerWidth, height: window.innerHeight})")
+                viewport = await page.evaluate(
+                    "({width: window.innerWidth, height: window.innerHeight})"
+                )
                 click_x = viewport["width"] - 5
                 click_y = viewport["height"] - 5
 
-                # Kleine muisbeweging (menselijk gedrag)
                 await page.mouse.move(click_x - 3, click_y - 3)
                 await page.mouse.move(click_x, click_y)
-
                 await page.mouse.click(click_x, click_y)
-                print(f"[INFO] Keep-alive click at ({click_x}, {click_y})")
 
+                print(f"[INFO] Keep-alive click at ({click_x}, {click_y})")
                 await page.wait_for_timeout(500)
             except Exception as e:
                 print(f"[WARN] Click failed: {e}")
@@ -131,7 +177,7 @@ async def scroll_until_all_videos_loaded(page, max_videos=500):
 
 
 # -----------------------------
-# Extract video items (Videos tab)
+# Extract video items
 # -----------------------------
 async def build_video_items_from_video_tab(page, max_videos=None):
     print("[INFO] Collecting video anchors from VIDEO tab…")
@@ -157,7 +203,9 @@ async def build_video_items_from_video_tab(page, max_videos=None):
         if "/@" in href:
             username = href.split("/@")[1].split("/")[0]
 
-        desc = await safe_text(card.locator("[data-e2e='search-card-video-caption'] span"))
+        desc = await safe_text(
+            card.locator("[data-e2e='search-card-video-caption'] span")
+        )
         hashtags_search = extract_hashtags(desc)
 
         video_items.append({
@@ -181,15 +229,12 @@ def parse_from_universal_data(data):
     try:
         scope = data.get("__DEFAULT_SCOPE__", {})
         video_detail = scope.get("webapp.video-detail", {})
-        item_info = video_detail.get("itemInfo", {})
-        item = item_info.get("itemStruct", {})
+        item = video_detail.get("itemInfo", {}).get("itemStruct", {})
 
         if not item:
             return None
 
         stats = item.get("stats", {}) or {}
-        author = item.get("author", {}) or {}
-        music = item.get("music", {}) or {}
 
         return {
             "video_id": item.get("id"),
@@ -205,20 +250,6 @@ def parse_from_universal_data(data):
                 "saves": stats.get("collectCount"),
                 "downloads": stats.get("downloadCount"),
                 "forwards": stats.get("forwardCount"),
-            },
-            "author_info": {
-                "username": author.get("uniqueId"),
-                "nickname": author.get("nickname"),
-                "avatar": author.get("avatarThumb"),
-                "followers": author.get("followerCount"),
-                "following": author.get("followingCount"),
-                "heart": author.get("heart"),
-            },
-            "music_info": {
-                "id": music.get("id"),
-                "title": music.get("title"),
-                "author": music.get("authorName"),
-                "play_url": music.get("playUrl"),
             },
         }
     except:
@@ -232,8 +263,6 @@ def parse_from_sigi_state(data, video_id):
             return None
 
         stats = item.get("stats", {}) or {}
-        author = item.get("author", {}) or {}
-        music = item.get("music", {}) or {}
 
         return {
             "video_id": item.get("id"),
@@ -249,20 +278,6 @@ def parse_from_sigi_state(data, video_id):
                 "saves": stats.get("collectCount"),
                 "downloads": stats.get("downloadCount"),
                 "forwards": stats.get("forwardCount"),
-            },
-            "author_info": {
-                "username": author.get("uniqueId"),
-                "nickname": author.get("nickname"),
-                "avatar": author.get("avatarThumb"),
-                "followers": author.get("followerCount"),
-                "following": author.get("followingCount"),
-                "heart": author.get("heart"),
-            },
-            "music_info": {
-                "id": music.get("id"),
-                "title": music.get("title"),
-                "author": music.get("authorName"),
-                "play_url": music.get("playUrl"),
             },
         }
     except:
@@ -280,16 +295,17 @@ async def fetch_video_stats(context, video_url, fallback_video_id=None):
         await page.wait_for_timeout(3000)
 
         try:
-            universal_data = await page.evaluate("() => window.__UNIVERSAL_DATA__ || null")
-            if universal_data:
-                parsed = parse_from_universal_data(universal_data)
-                if parsed:
-                    return parsed
+            data = await page.evaluate("() => window.__UNIVERSAL_DATA__ || null")
+            parsed = parse_from_universal_data(data) if data else None
+            if parsed:
+                return parsed
         except:
             pass
 
         try:
-            sigi_text = await page.evaluate("() => document.querySelector('#SIGI_STATE')?.innerText || null")
+            sigi_text = await page.evaluate(
+                "() => document.querySelector('#SIGI_STATE')?.innerText || null"
+            )
             if sigi_text:
                 parsed = parse_from_sigi_state(json.loads(sigi_text), fallback_video_id)
                 if parsed:
@@ -297,16 +313,7 @@ async def fetch_video_stats(context, video_url, fallback_video_id=None):
         except:
             pass
 
-        return {
-            "video_id": fallback_video_id,
-            "description": "",
-            "hashtags": [],
-            "create_time": None,
-            "duration": None,
-            "stats": {},
-            "author_info": {},
-            "music_info": {},
-        }
+        return {"video_id": fallback_video_id, "stats": {}}
 
     finally:
         await page.close()
@@ -322,26 +329,23 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
     await search_page.goto(f"https://www.tiktok.com/search?q={keyword}", timeout=60000)
     await search_page.wait_for_timeout(3000)
 
-    # 1) Klik Video’s tab
     await click_videos_tab(search_page)
-
-    # 2) Scroll eerst ALLE video’s in
     await scroll_until_all_videos_loaded(search_page, max_videos or 200)
 
-    # 3) Extract video items
     video_items = await build_video_items_from_video_tab(search_page, max_videos)
 
-    print(f"[INFO] Total video items to deep-scrape: {len(video_items)}")
-
-    # 4) Klik eerste video (variant C)
     await click_first_video(search_page)
     await search_page.go_back()
     await search_page.wait_for_timeout(1500)
 
     results = []
 
-    # 5) Deep scrape
-    for item in video_items:
+    for i, item in enumerate(video_items):
+
+        if TEST_MAX_RESULTS is not None and i >= TEST_MAX_RESULTS:
+            print(f"[TEST] Max test results reached ({TEST_MAX_RESULTS}) — stopping early.")
+            break
+
         idx = item["idx"]
         href = item["href"]
         username = item["username"]
@@ -350,20 +354,23 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
 
         video_data = await fetch_video_stats(context, href, item["video_id"])
 
+        # -----------------------------
+        # NEW: extract ONLY bio links
+        # -----------------------------
         bio_links = []
         if username:
             try:
                 profile_page = await context.new_page()
                 await profile_page.goto(f"https://www.tiktok.com/@{username}", timeout=60000)
                 await profile_page.wait_for_timeout(2000)
-                extracted = await scrape_user_single_tab(profile_page)
-                if extracted:
-                    bio_links = list(set(extracted))
+
+                bio_links = await extract_bio_links(profile_page)
+
                 await profile_page.close()
             except:
                 pass
 
-        result = {
+        results.append({
             "keyword": keyword,
             "video_id": video_data.get("video_id"),
             "video_url": href,
@@ -380,10 +387,9 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
             "hashtags": video_data.get("hashtags"),
             "create_time": video_data.get("create_time"),
             "duration": video_data.get("duration"),
-        }
+        })
 
-        results.append(result)
-        print(f"[OK] VIDEO_OK | idx={idx} | id={result['video_id']}")
+        print(f"[OK] VIDEO_OK | idx={idx}")
 
     print(f"[SEARCH_DONE] keyword={keyword} | results={len(results)}")
     return results
