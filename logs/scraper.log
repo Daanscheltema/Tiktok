@@ -10465,3 +10465,95 @@ TypeError: 'NoneType' object is not subscriptable
 2026-02-09 09:28:12 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=6.54s
 2026-02-09 09:28:12 | INFO | SCRAPER_SHUTDOWN
 2026-02-09 09:28:12 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:34:27 | INFO | SCRAPER_START
+2026-02-09 09:34:27 | INFO | SCRAPER_START
+2026-02-09 09:34:29 | INFO | BROWSER_STARTED
+2026-02-09 09:34:29 | INFO | BROWSER_STARTED
+2026-02-09 09:34:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:34:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:37:27 | INFO | SCRAPER_START
+2026-02-09 09:37:27 | INFO | SCRAPER_START
+2026-02-09 09:37:28 | INFO | BROWSER_STARTED
+2026-02-09 09:37:28 | INFO | BROWSER_STARTED
+2026-02-09 09:37:28 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:37:28 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 09:40:07 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@adodenhaag/video/7370631996298595616", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 351, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 279, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@adodenhaag/video/7370631996298595616", waiting until "load"
+
+2026-02-09 09:40:07 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@adodenhaag/video/7370631996298595616", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 351, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 279, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@adodenhaag/video/7370631996298595616", waiting until "load"
+
+2026-02-09 09:40:07 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=158.48s
+2026-02-09 09:40:07 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=158.48s
+2026-02-09 09:40:07 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 09:40:07 | INFO | SCRAPER_SHUTDOWN

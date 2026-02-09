@@ -69,20 +69,42 @@ async def click_first_video(page):
 
 # -----------------------------
 # REAL TikTok scroll (Videos tab)
+# with keep-alive click bottom-right
 # -----------------------------
 async def scroll_until_all_videos_loaded(page, max_videos=500):
     print("[INFO] Starting window scroll for VIDEO tab…")
 
-    # Wacht tot de lijst er is
     await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
 
     last_count = 0
     stable_rounds = 0
+    scroll_round = 0
 
     while True:
-        # Scroll in stappen zoals een echte gebruiker
+        # Scroll zoals een echte gebruiker
         await page.evaluate("window.scrollBy(0, window.innerHeight)")
         await page.wait_for_timeout(1800)
+
+        scroll_round += 1
+
+        # Elke 2 scrolls → klik rechts-onderin
+        if scroll_round % 2 == 0:
+            try:
+                # Dynamisch viewport ophalen
+                viewport = await page.evaluate("({width: window.innerWidth, height: window.innerHeight})")
+                click_x = viewport["width"] - 5
+                click_y = viewport["height"] - 5
+
+                # Kleine muisbeweging (menselijk gedrag)
+                await page.mouse.move(click_x - 3, click_y - 3)
+                await page.mouse.move(click_x, click_y)
+
+                await page.mouse.click(click_x, click_y)
+                print(f"[INFO] Keep-alive click at ({click_x}, {click_y})")
+
+                await page.wait_for_timeout(500)
+            except Exception as e:
+                print(f"[WARN] Click failed: {e}")
 
         cards = page.locator(VIDEO_LIST_SELECTOR)
         count = await cards.count()
