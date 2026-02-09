@@ -14,7 +14,7 @@ HASHTAG_REGEX = r"#(\w+)"
 TEST_MAX_RESULTS = 3  # zet op None om uit te zetten
 
 # -----------------------------
-# SELECTORS
+# SELECTORS (leave as-is to avoid changing working flow)
 # -----------------------------
 VIDEOS_TAB_SELECTOR = (
     "button[data-testid='tux-web-tab-bar'] span:has-text(\"Video's\"), "
@@ -103,13 +103,15 @@ async def click_videos_tab(page):
 
 
 # -----------------------------
-# Click first video
+# Click first video (kept minimal)
 # -----------------------------
 async def click_first_video(page):
     print("[INFO] Clicking first video…")
     try:
         first_video = page.locator(FIRST_VIDEO_SELECTOR).first
-        await first_video.click(timeout=5000)
+        await first_video.scroll_into_view_if_needed()
+        await first_video.wait_for(state="visible", timeout=5000)
+        await first_video.click(timeout=5000, force=True)
         await page.wait_for_timeout(2000)
         print("[INFO] First video opened.")
     except Exception as e:
@@ -182,30 +184,62 @@ async def scroll_until_all_videos_loaded(page, max_videos=500):
 async def build_video_items_from_video_tab(page, max_videos=None):
     print("[INFO] Collecting video anchors from VIDEO tab…")
 
-    cards = page.locator(VIDEO_LIST_SELECTOR)
-    total = await cards.count()
-    print(f"[INFO] Found {total} cards.")
+    # Run a single JS evaluation to extract stable data from the DOM
+    js = """
+    (maxCount) => {
+        const cards = Array.from(document.querySelectorAll("#search_video-item-list div[id^='grid-item-container-'], div[data-e2e='search_video-item'], div[data-e2e='search-card']"));
+        const out = [];
+        for (let i = 0; i < cards.length && (maxCount === null || i < maxCount); i++) {
+            try {
+                const card = cards[i];
+                const a = card.querySelector("a[href*='/video/']");
+                const descEl = card.querySelector("[data-e2e='search-card-video-caption'] span");
+                const href = a ? a.getAttribute("href") : null;
+                const desc = descEl ? descEl.innerText : "";
+                out.push({
+                    idx: i + 1,
+                    href: href,
+                    desc: desc
+                });
+            } catch (e) {
+                // skip problematic card
+            }
+        }
+        return out;
+    }
+    """
 
-    limit = total if max_videos is None else min(total, max_videos)
+    try:
+        max_count_arg = None if max_videos is None else int(max_videos)
+        raw_items = await page.evaluate(js, max_count_arg)
+    except Exception as e:
+        print(f"[ERROR] JS extraction failed: {e}")
+        return []
+
     video_items = []
+    for i, it in enumerate(raw_items):
+        href = it.get("href")
+        if not href:
+            print(f"[WARN] extracted card {i} has no href — skipping")
+            continue
 
-    for i in range(limit):
-        card = cards.nth(i)
-        link = card.locator("a[href*='/video/']").first
-
-        href = await link.get_attribute("href")
         if href.startswith("/"):
             href = "https://www.tiktok.com" + href
 
-        video_id = href.split("/video/")[1].split("?")[0]
+        # defensive parsing
+        try:
+            video_id = href.split("/video/")[1].split("?")[0]
+        except Exception:
+            video_id = None
 
         username = ""
         if "/@" in href:
-            username = href.split("/@")[1].split("/")[0]
+            try:
+                username = href.split("/@")[1].split("/")[0]
+            except:
+                username = ""
 
-        desc = await safe_text(
-            card.locator("[data-e2e='search-card-video-caption'] span")
-        )
+        desc = it.get("desc") or ""
         hashtags_search = extract_hashtags(desc)
 
         video_items.append({
@@ -220,7 +254,6 @@ async def build_video_items_from_video_tab(page, max_videos=None):
 
     print(f"[INFO] VIDEO tab produced {len(video_items)} items.")
     return video_items
-
 
 # -----------------------------
 # JSON parsers
@@ -320,7 +353,7 @@ async def fetch_video_stats(context, video_url, fallback_video_id=None):
 
 
 # -----------------------------
-# MAIN SEARCH FUNCTION
+# MAIN SEARCH FUNCTION (with debug lines)
 # -----------------------------
 async def search_keyword(search_page, keyword: str, max_videos=None, max_profiles=None):
     print(f"\n[SEARCH] Starting search for keyword: {keyword}")
@@ -332,11 +365,74 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
     await click_videos_tab(search_page)
     await scroll_until_all_videos_loaded(search_page, max_videos or 200)
 
+    # -----------------------------
+    # DEBUG: inspect page state after scroll
+    # -----------------------------
+    try:
+        current_url = await search_page.url
+    except Exception:
+        current_url = "ERROR_READING_URL"
+    print(f"[DEBUG] After scroll, page.url = {current_url}")
+
+    try:
+        cards = search_page.locator(VIDEO_LIST_SELECTOR)
+        card_count = await cards.count()
+    except Exception as e:
+        card_count = -1
+        print(f"[ERROR] Could not count cards: {e}")
+
+    print(f"[DEBUG] cards.count() = {card_count}")
+
+    # print first 10 hrefs (or fewer) for debugging
+    for i in range(min(10, max(0, card_count))):
+        try:
+            href = await cards.nth(i).locator("a[href*='/video/']").first.get_attribute("href")
+        except Exception as e:
+            href = f"ERROR: {e}"
+        print(f"[DEBUG] card {i} href = {href}")
+
+    # check for overlays/modals that might block interactions
+    try:
+        overlays = await search_page.locator("div[role='dialog'], div[class*='overlay'], div[class*='modal']").count()
+    except Exception:
+        overlays = 0
+    print(f"[DEBUG] overlays/modals found = {overlays}")
+    if overlays > 0:
+        try:
+            o = search_page.locator("div[role='dialog'], div[class*='overlay'], div[class*='modal']").first
+            snippet = (await o.inner_html())[:1000]
+            print("[DEBUG] overlay outerHTML snippet:", snippet)
+        except Exception:
+            pass
+
+    # -----------------------------
+    # Build items (with safe href checks)
+    # -----------------------------
     video_items = await build_video_items_from_video_tab(search_page, max_videos)
 
-    await click_first_video(search_page)
-    await search_page.go_back()
-    await search_page.wait_for_timeout(1500)
+    # -----------------------------
+    # TEMP DEBUG: test fetch_video_stats on first item (if present)
+    # -----------------------------
+    if video_items:
+        test_href = video_items[0].get("href")
+        print("[DEBUG] Testing fetch_video_stats on first collected href:", test_href)
+        try:
+            td = await fetch_video_stats(context, test_href, video_items[0].get("video_id"))
+            print("[DEBUG] fetch_video_stats returned keys:", list(td.keys()))
+        except Exception as e:
+            print("[ERROR] fetch_video_stats test failed:", e)
+    else:
+        print("[DEBUG] No video_items collected to test fetch_video_stats.")
+
+    # -----------------------------
+    # OPTIONAL: click first video (kept for compatibility with older flow)
+    # -----------------------------
+    try:
+        await click_first_video(search_page)
+        await search_page.go_back()
+        await search_page.wait_for_timeout(1500)
+    except Exception as e:
+        print(f"[WARN] click_first_video/go_back failed or skipped: {e}")
 
     results = []
 
@@ -367,7 +463,8 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
                 bio_links = await extract_bio_links(profile_page)
 
                 await profile_page.close()
-            except:
+            except Exception as e:
+                print(f"[WARN] Failed to extract bio links for {username}: {e}")
                 pass
 
         results.append({

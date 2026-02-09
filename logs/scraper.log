@@ -11107,3 +11107,529 @@ playwright._impl._errors.TargetClosedError: Locator.count: Target page, context 
 2026-02-09 15:54:50 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=170.3s
 2026-02-09 15:54:50 | INFO | SCRAPER_SHUTDOWN
 2026-02-09 15:54:50 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:03:28 | INFO | SCRAPER_START
+2026-02-09 16:03:28 | INFO | SCRAPER_START
+2026-02-09 16:03:29 | INFO | BROWSER_STARTED
+2026-02-09 16:03:29 | INFO | BROWSER_STARTED
+2026-02-09 16:03:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 16:03:29 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 16:05:58 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=argument of type 'coroutine' is not a container or iterable
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 415, in search_keyword
+    video_data = await fetch_video_stats_network(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 208, in fetch_video_stats_network
+    if "aweme_detail" in stats_json:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'coroutine' is not a container or iterable
+2026-02-09 16:05:58 | ERROR | KEYWORD_ERROR | keyword=Ado Den Haag | error=argument of type 'coroutine' is not a container or iterable
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 415, in search_keyword
+    video_data = await fetch_video_stats_network(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 208, in fetch_video_stats_network
+    if "aweme_detail" in stats_json:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument of type 'coroutine' is not a container or iterable
+2026-02-09 16:05:58 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=148.72s
+2026-02-09 16:05:58 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=148.72s
+2026-02-09 16:05:58 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:05:58 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:10:01 | INFO | SCRAPER_START
+2026-02-09 16:10:01 | INFO | SCRAPER_START
+2026-02-09 16:10:02 | INFO | BROWSER_STARTED
+2026-02-09 16:10:02 | INFO | BROWSER_STARTED
+2026-02-09 16:10:02 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 16:10:02 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 16:12:55 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 16:12:55 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 16:12:55 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=173.05s
+2026-02-09 16:12:55 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=173.05s
+2026-02-09 16:12:55 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:12:55 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:15:39 | INFO | SCRAPER_START
+2026-02-09 16:15:39 | INFO | SCRAPER_START
+2026-02-09 16:15:42 | INFO | BROWSER_STARTED
+2026-02-09 16:15:42 | INFO | BROWSER_STARTED
+2026-02-09 16:15:42 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 16:15:42 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 16:25:48 | INFO | SCRAPER_START
+2026-02-09 16:25:48 | INFO | SCRAPER_START
+2026-02-09 16:25:49 | INFO | BROWSER_STARTED
+2026-02-09 16:25:49 | INFO | BROWSER_STARTED
+2026-02-09 16:25:49 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 16:25:49 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 16:29:19 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 16:29:19 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 16:29:19 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=210.51s
+2026-02-09 16:29:19 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=210.51s
+2026-02-09 16:29:19 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:29:19 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:30:15 | INFO | SCRAPER_START
+2026-02-09 16:30:15 | INFO | SCRAPER_START
+2026-02-09 16:30:17 | INFO | BROWSER_STARTED
+2026-02-09 16:30:17 | INFO | BROWSER_STARTED
+2026-02-09 16:30:17 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:30:17 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:30:31 | INFO | SCRAPER_START
+2026-02-09 16:30:31 | INFO | SCRAPER_START
+2026-02-09 16:30:32 | INFO | BROWSER_STARTED
+2026-02-09 16:30:32 | INFO | BROWSER_STARTED
+2026-02-09 16:30:32 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:30:32 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:38:11 | INFO | SCRAPER_START
+2026-02-09 16:38:11 | INFO | SCRAPER_START
+2026-02-09 16:38:13 | INFO | BROWSER_STARTED
+2026-02-09 16:38:13 | INFO | BROWSER_STARTED
+2026-02-09 16:38:13 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:38:13 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:38:21 | ERROR | KEYWORD_ERROR | keyword=Glockswitch | error=Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-'], div[data-e2e='search_video-item'], div[data-e2e='search-card']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 437, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 135, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-'], div[data-e2e='search_video-item'], div[data-e2e='search-card']") to be visible
+
+2026-02-09 16:38:21 | ERROR | KEYWORD_ERROR | keyword=Glockswitch | error=Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-'], div[data-e2e='search_video-item'], div[data-e2e='search-card']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 437, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 135, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-'], div[data-e2e='search_video-item'], div[data-e2e='search-card']") to be visible
+
+2026-02-09 16:38:21 | INFO | KEYWORD_DONE | keyword=Glockswitch | duration=8.16s
+2026-02-09 16:38:21 | INFO | KEYWORD_DONE | keyword=Glockswitch | duration=8.16s
+2026-02-09 16:38:21 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:38:21 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 16:38:50 | INFO | SCRAPER_START
+2026-02-09 16:38:50 | INFO | SCRAPER_START
+2026-02-09 16:38:50 | INFO | BROWSER_STARTED
+2026-02-09 16:38:50 | INFO | BROWSER_STARTED
+2026-02-09 16:38:50 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:38:50 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:44:02 | INFO | SCRAPER_START
+2026-02-09 16:44:02 | INFO | SCRAPER_START
+2026-02-09 16:44:03 | INFO | BROWSER_STARTED
+2026-02-09 16:44:03 | INFO | BROWSER_STARTED
+2026-02-09 16:44:03 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:44:03 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:58:45 | INFO | SCRAPER_START
+2026-02-09 16:58:45 | INFO | SCRAPER_START
+2026-02-09 16:58:50 | INFO | BROWSER_STARTED
+2026-02-09 16:58:50 | INFO | BROWSER_STARTED
+2026-02-09 16:58:50 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 16:58:50 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 17:08:08 | INFO | SCRAPER_START
+2026-02-09 17:08:08 | INFO | SCRAPER_START
+2026-02-09 17:08:09 | INFO | BROWSER_STARTED
+2026-02-09 17:08:09 | INFO | BROWSER_STARTED
+2026-02-09 17:08:09 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 17:08:09 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 17:08:24 | INFO | SCRAPER_START
+2026-02-09 17:08:24 | INFO | SCRAPER_START
+2026-02-09 17:08:25 | INFO | BROWSER_STARTED
+2026-02-09 17:08:25 | INFO | BROWSER_STARTED
+2026-02-09 17:08:25 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 17:08:25 | INFO | KEYWORD_START | keyword=Glockswitch
+2026-02-09 17:10:32 | INFO | SCRAPER_START
+2026-02-09 17:10:32 | INFO | SCRAPER_START
+2026-02-09 17:10:33 | INFO | BROWSER_STARTED
+2026-02-09 17:10:33 | INFO | BROWSER_STARTED
+2026-02-09 17:10:33 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:10:33 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:18:25 | INFO | SCRAPER_START
+2026-02-09 17:18:25 | INFO | SCRAPER_START
+2026-02-09 17:18:26 | INFO | BROWSER_STARTED
+2026-02-09 17:18:26 | INFO | BROWSER_STARTED
+2026-02-09 17:18:26 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:18:26 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:26:06 | INFO | SCRAPER_START
+2026-02-09 17:26:06 | INFO | SCRAPER_START
+2026-02-09 17:26:07 | INFO | BROWSER_STARTED
+2026-02-09 17:26:07 | INFO | BROWSER_STARTED
+2026-02-09 17:26:07 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:26:07 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:26:56 | INFO | SCRAPER_START
+2026-02-09 17:26:56 | INFO | SCRAPER_START
+2026-02-09 17:26:57 | INFO | BROWSER_STARTED
+2026-02-09 17:26:57 | INFO | BROWSER_STARTED
+2026-02-09 17:26:57 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:26:57 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:34:51 | INFO | SCRAPER_START
+2026-02-09 17:34:51 | INFO | SCRAPER_START
+2026-02-09 17:34:52 | INFO | BROWSER_STARTED
+2026-02-09 17:34:52 | INFO | BROWSER_STARTED
+2026-02-09 17:34:52 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:34:52 | INFO | KEYWORD_START | keyword=Ado Den Haag
+2026-02-09 17:36:28 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 17:36:28 | INFO | KEYWORD_OK | keyword=Ado Den Haag | results=3
+2026-02-09 17:36:28 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=95.58s
+2026-02-09 17:36:28 | INFO | KEYWORD_DONE | keyword=Ado Den Haag | duration=95.58s
+2026-02-09 17:36:28 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 17:36:28 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 17:37:46 | INFO | SCRAPER_START
+2026-02-09 17:37:46 | INFO | SCRAPER_START
+2026-02-09 17:37:47 | INFO | BROWSER_STARTED
+2026-02-09 17:37:47 | INFO | BROWSER_STARTED
+2026-02-09 17:37:47 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 17:37:47 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 17:44:35 | INFO | SCRAPER_START
+2026-02-09 17:44:35 | INFO | SCRAPER_START
+2026-02-09 17:44:36 | INFO | BROWSER_STARTED
+2026-02-09 17:44:36 | INFO | BROWSER_STARTED
+2026-02-09 17:44:36 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 17:44:36 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 17:44:51 | INFO | SCRAPER_START
+2026-02-09 17:44:51 | INFO | SCRAPER_START
+2026-02-09 17:44:52 | INFO | BROWSER_STARTED
+2026-02-09 17:44:52 | INFO | BROWSER_STARTED
+2026-02-09 17:44:52 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 17:44:52 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 17:46:17 | INFO | SCRAPER_START
+2026-02-09 17:46:17 | INFO | SCRAPER_START
+2026-02-09 17:46:17 | INFO | BROWSER_STARTED
+2026-02-09 17:46:17 | INFO | BROWSER_STARTED
+2026-02-09 17:46:17 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 17:46:17 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 17:48:15 | INFO | KEYWORD_OK | keyword=Ajax | results=3
+2026-02-09 17:48:15 | INFO | KEYWORD_OK | keyword=Ajax | results=3
+2026-02-09 17:48:15 | INFO | KEYWORD_DONE | keyword=Ajax | duration=117.57s
+2026-02-09 17:48:15 | INFO | KEYWORD_DONE | keyword=Ajax | duration=117.57s
+2026-02-09 17:48:15 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 17:48:15 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 17:49:38 | INFO | SCRAPER_START
+2026-02-09 17:49:38 | INFO | SCRAPER_START
+2026-02-09 17:49:40 | INFO | BROWSER_STARTED
+2026-02-09 17:49:40 | INFO | BROWSER_STARTED
+2026-02-09 17:49:40 | INFO | KEYWORD_START | keyword=Dog
+2026-02-09 17:49:40 | INFO | KEYWORD_START | keyword=Dog
+2026-02-09 17:51:17 | ERROR | KEYWORD_ERROR | keyword=Dog | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 355, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 295, in fetch_video_stats
+    await page.wait_for_timeout(3000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 17:51:17 | ERROR | KEYWORD_ERROR | keyword=Dog | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 355, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 295, in fetch_video_stats
+    await page.wait_for_timeout(3000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 17:51:17 | INFO | KEYWORD_DONE | keyword=Dog | duration=97.75s
+2026-02-09 17:51:17 | INFO | KEYWORD_DONE | keyword=Dog | duration=97.75s
+2026-02-09 17:51:17 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 17:51:17 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 17:51:28 | INFO | SCRAPER_START
+2026-02-09 17:51:28 | INFO | SCRAPER_START
+2026-02-09 17:51:29 | INFO | BROWSER_STARTED
+2026-02-09 17:51:29 | INFO | BROWSER_STARTED
+2026-02-09 17:51:29 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 17:51:29 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 17:53:37 | INFO | SCRAPER_START
+2026-02-09 17:53:37 | INFO | SCRAPER_START
+2026-02-09 17:53:38 | INFO | BROWSER_STARTED
+2026-02-09 17:53:38 | INFO | BROWSER_STARTED
+2026-02-09 17:53:38 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 17:53:38 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 17:58:53 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-09 17:58:53 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-09 17:58:53 | INFO | KEYWORD_DONE | keyword=Buttons | duration=314.39s
+2026-02-09 17:58:53 | INFO | KEYWORD_DONE | keyword=Buttons | duration=314.39s
+2026-02-09 17:58:53 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 17:58:53 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 18:01:13 | INFO | SCRAPER_START
+2026-02-09 18:01:13 | INFO | SCRAPER_START
+2026-02-09 18:01:16 | INFO | BROWSER_STARTED
+2026-02-09 18:01:16 | INFO | BROWSER_STARTED
+2026-02-09 18:01:16 | INFO | KEYWORD_START | keyword=Auto Sear
+2026-02-09 18:01:16 | INFO | KEYWORD_START | keyword=Auto Sear
+2026-02-09 18:01:19 | ERROR | KEYWORD_ERROR | keyword=Auto Sear | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 340, in search_keyword
+    await search_page.wait_for_timeout(3000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 18:01:19 | ERROR | KEYWORD_ERROR | keyword=Auto Sear | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 43, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 340, in search_keyword
+    await search_page.wait_for_timeout(3000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-09 18:01:19 | INFO | KEYWORD_DONE | keyword=Auto Sear | duration=3.65s
+2026-02-09 18:01:19 | INFO | KEYWORD_DONE | keyword=Auto Sear | duration=3.65s
+2026-02-09 18:01:19 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 18:01:19 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 18:02:02 | INFO | SCRAPER_START
+2026-02-09 18:02:02 | INFO | SCRAPER_START
+2026-02-09 18:02:02 | INFO | BROWSER_STARTED
+2026-02-09 18:02:02 | INFO | BROWSER_STARTED
+2026-02-09 18:02:02 | INFO | KEYWORD_START | keyword=Auto Sear
+2026-02-09 18:02:02 | INFO | KEYWORD_START | keyword=Auto Sear
+2026-02-09 18:03:34 | INFO | SCRAPER_START
+2026-02-09 18:03:34 | INFO | SCRAPER_START
+2026-02-09 18:03:35 | INFO | BROWSER_STARTED
+2026-02-09 18:03:35 | INFO | BROWSER_STARTED
+2026-02-09 18:03:35 | INFO | KEYWORD_START | keyword=Dance
+2026-02-09 18:03:35 | INFO | KEYWORD_START | keyword=Dance
+2026-02-09 18:05:30 | INFO | SCRAPER_START
+2026-02-09 18:05:30 | INFO | SCRAPER_START
+2026-02-09 18:05:31 | INFO | BROWSER_STARTED
+2026-02-09 18:05:31 | INFO | BROWSER_STARTED
+2026-02-09 18:05:31 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 18:05:31 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 18:13:07 | INFO | SCRAPER_START
+2026-02-09 18:13:07 | INFO | SCRAPER_START
+2026-02-09 18:13:07 | INFO | BROWSER_STARTED
+2026-02-09 18:13:07 | INFO | BROWSER_STARTED
+2026-02-09 18:13:07 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 18:13:07 | INFO | KEYWORD_START | keyword=Glock Switch
+2026-02-09 18:15:06 | INFO | SCRAPER_START
+2026-02-09 18:15:06 | INFO | SCRAPER_START
+2026-02-09 18:15:06 | INFO | BROWSER_STARTED
+2026-02-09 18:15:06 | INFO | BROWSER_STARTED
+2026-02-09 18:15:06 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:15:06 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:18:18 | INFO | SCRAPER_START
+2026-02-09 18:18:18 | INFO | SCRAPER_START
+2026-02-09 18:18:18 | INFO | BROWSER_STARTED
+2026-02-09 18:18:18 | INFO | BROWSER_STARTED
+2026-02-09 18:18:18 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:18:18 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:20:13 | INFO | KEYWORD_OK | keyword=Ajax | results=3
+2026-02-09 18:20:13 | INFO | KEYWORD_OK | keyword=Ajax | results=3
+2026-02-09 18:20:13 | INFO | KEYWORD_DONE | keyword=Ajax | duration=114.99s
+2026-02-09 18:20:13 | INFO | KEYWORD_DONE | keyword=Ajax | duration=114.99s
+2026-02-09 18:20:13 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 18:20:13 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 18:25:26 | INFO | SCRAPER_START
+2026-02-09 18:25:26 | INFO | SCRAPER_START
+2026-02-09 18:25:27 | INFO | BROWSER_STARTED
+2026-02-09 18:25:27 | INFO | BROWSER_STARTED
+2026-02-09 18:25:27 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:25:27 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:30:18 | INFO | SCRAPER_START
+2026-02-09 18:30:18 | INFO | SCRAPER_START
+2026-02-09 18:30:18 | INFO | BROWSER_STARTED
+2026-02-09 18:30:18 | INFO | BROWSER_STARTED
+2026-02-09 18:30:18 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:30:18 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:39:21 | INFO | SCRAPER_START
+2026-02-09 18:39:21 | INFO | SCRAPER_START
+2026-02-09 18:39:23 | INFO | BROWSER_STARTED
+2026-02-09 18:39:23 | INFO | BROWSER_STARTED
+2026-02-09 18:39:23 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:39:23 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:39:37 | INFO | SCRAPER_START
+2026-02-09 18:39:37 | INFO | SCRAPER_START
+2026-02-09 18:39:38 | INFO | BROWSER_STARTED
+2026-02-09 18:39:38 | INFO | BROWSER_STARTED
+2026-02-09 18:39:38 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:39:38 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:49:01 | INFO | SCRAPER_START
+2026-02-09 18:49:01 | INFO | SCRAPER_START
+2026-02-09 18:49:02 | INFO | BROWSER_STARTED
+2026-02-09 18:49:02 | INFO | BROWSER_STARTED
+2026-02-09 18:49:02 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:49:02 | INFO | KEYWORD_START | keyword=Ajax
+2026-02-09 18:51:28 | INFO | KEYWORD_OK | keyword=Ajax | results=3
+2026-02-09 18:51:28 | INFO | KEYWORD_OK | keyword=Ajax | results=3
+2026-02-09 18:51:28 | INFO | KEYWORD_DONE | keyword=Ajax | duration=146.17s
+2026-02-09 18:51:28 | INFO | KEYWORD_DONE | keyword=Ajax | duration=146.17s
+2026-02-09 18:51:28 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 18:51:28 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 18:53:17 | INFO | SCRAPER_START
+2026-02-09 18:53:17 | INFO | SCRAPER_START
+2026-02-09 18:53:18 | INFO | BROWSER_STARTED
+2026-02-09 18:53:18 | INFO | BROWSER_STARTED
+2026-02-09 18:53:18 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 18:53:18 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 18:55:37 | INFO | SCRAPER_START
+2026-02-09 18:55:37 | INFO | SCRAPER_START
+2026-02-09 18:55:37 | INFO | BROWSER_STARTED
+2026-02-09 18:55:37 | INFO | BROWSER_STARTED
+2026-02-09 18:55:37 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 18:55:37 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 18:59:53 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-09 18:59:53 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-09 18:59:53 | INFO | KEYWORD_DONE | keyword=Buttons | duration=255.45s
+2026-02-09 18:59:53 | INFO | KEYWORD_DONE | keyword=Buttons | duration=255.45s
+2026-02-09 18:59:53 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 18:59:53 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 19:01:55 | INFO | SCRAPER_START
+2026-02-09 19:01:55 | INFO | SCRAPER_START
+2026-02-09 19:01:56 | INFO | BROWSER_STARTED
+2026-02-09 19:01:56 | INFO | BROWSER_STARTED
+2026-02-09 19:01:56 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 19:01:56 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-09 19:03:51 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-09 19:03:51 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-09 19:03:51 | INFO | KEYWORD_DONE | keyword=Buttons | duration=115.06s
+2026-02-09 19:03:51 | INFO | KEYWORD_DONE | keyword=Buttons | duration=115.06s
+2026-02-09 19:03:51 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 19:03:51 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 19:04:21 | INFO | SCRAPER_START
+2026-02-09 19:04:21 | INFO | SCRAPER_START
+2026-02-09 19:04:22 | INFO | BROWSER_STARTED
+2026-02-09 19:04:22 | INFO | BROWSER_STARTED
+2026-02-09 19:04:22 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-09 19:04:22 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-09 19:06:25 | INFO | KEYWORD_OK | keyword=Glock switch | results=3
+2026-02-09 19:06:25 | INFO | KEYWORD_OK | keyword=Glock switch | results=3
+2026-02-09 19:06:25 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=122.86s
+2026-02-09 19:06:25 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=122.86s
+2026-02-09 19:06:25 | INFO | SCRAPER_SHUTDOWN
+2026-02-09 19:06:25 | INFO | SCRAPER_SHUTDOWN

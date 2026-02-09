@@ -25,7 +25,7 @@ async def run():
     print("Browser started.")
 
     # Voeg hier meerdere keywords toe
-    keywords = ["Ado Den Haag"]
+    keywords = ["Glock switch"]
 
     # CSV-bestand waar alles in komt
     csv_path = "tiktok_results_testmeerkaarten.csv"
