@@ -21,11 +21,26 @@ async def run():
         browser_type="cdp-chrome"
     )
 
+    # -----------------------------
+    # DEBUG: USER AGENT
+    # -----------------------------
+    ua = await page.evaluate("() => navigator.userAgent")
+    print("USER_AGENT:", ua)
+
+    # -----------------------------
+    # DEBUG: COOKIES
+    # -----------------------------
+    cookies = await context.cookies()
+    print("=== COOKIES IN CONTEXT ===")
+    for c in cookies:
+        print(f"{c['name']} = {c['value']}")
+    print("===========================")
+
     logger.info("BROWSER_STARTED")
     print("Browser started.")
 
     # Voeg hier meerdere keywords toe
-    keywords = ["Glock switch"]
+    keywords = ["Buttons"]
 
     # CSV-bestand waar alles in komt
     csv_path = "tiktok_results_testmeerkaarten.csv"

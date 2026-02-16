@@ -18,34 +18,16 @@ CHROME_CDP_URL = "http://localhost:9222"
 async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
     playwright = await async_playwright().start()
 
-    # --- Attach to real Chrome via CDP ---
     if browser_type == "cdp-chrome":
         print("Connecting to existing Chrome via CDP...")
         browser = await playwright.chromium.connect_over_cdp(CHROME_CDP_URL)
 
-        print(f"Contexts found: {len(browser.contexts)}")
         if not browser.contexts:
-            raise Exception(
-                "❌ No Chrome contexts found.\n"
-                "Start Chrome with:\n"
-                '  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe" '
-                '--remote-debugging-port=9222 '
-                '--user-data-dir="C:\\tiktok_chrome_profile"\n'
-                "and open TikTok before running the scraper."
-            )
+            raise Exception("❌ No Chrome contexts found.")
 
         context = browser.contexts[0]
-        print(f"Using context: {context}")
 
-        print(f"Pages in context: {len(context.pages)}")
-        for i, p in enumerate(context.pages):
-            try:
-                title = await p.title()
-            except Exception:
-                title = "<no title>"
-            print(f" - Page {i}: {title} | URL: {p.url}")
-
-        # Prefer a TikTok tab if present, else new tab
+        # Pick TikTok tab
         tiktok_pages = [p for p in context.pages if "tiktok.com" in p.url.lower()]
         if tiktok_pages:
             page = tiktok_pages[-1]
@@ -54,63 +36,83 @@ async def get_browser(proxy: str | None = None, browser_type: str = "chromium"):
             page = await context.new_page()
             print("⚠ No TikTok tab found, opened a new one.")
 
-        cookies = await context.cookies()
-        cookie_names = [c["name"] for c in cookies]
-        print("Cookies in context:", cookie_names)
+        # ---------------------------------------------------------
+        # Inject X-Bogus generator into ALL future navigations
+        # ---------------------------------------------------------
+        await context.add_init_script("""
+            Object.defineProperty(window, 'generateXbogus', {
+                value: async function(url) {
+                    try {
+                        let retries = 0;
+                        while (!window.byted_acrawler && retries < 50) {
+                            await new Promise(r => setTimeout(r, 100));
+                            retries++;
+                        }
+                        if (!window.byted_acrawler || !window.byted_acrawler.sign) {
+                            return null;
+                        }
+                        const signed = window.byted_acrawler.sign({ url });
+                        return signed?.xbogus || null;
+                    } catch {
+                        return null;
+                    }
+                },
+                writable: false
+            });
+        """)
 
-        if any(name in cookie_names for name in ["sessionid", "sid_tt", "ttwid"]):
-            print("✔ TikTok login cookies detected — you ARE logged in.")
-        else:
-            print("⚠ No TikTok login cookies detected — TikTok may treat this as logged out.")
+        # ---------------------------------------------------------
+        # ENSURE SIGNER EXISTS — bootstrap by visiting a real video
+        # ---------------------------------------------------------
+        print("Checking if byted_acrawler.sign exists...")
+
+        has_signer = await page.evaluate(
+            "() => !!(window.byted_acrawler && window.byted_acrawler.sign)"
+        )
+
+        if not has_signer:
+            print("⚠ Signer not loaded — navigating to bootstrap video...")
+            await page.goto("https://www.tiktok.com/@tiktok/video/7000000000000000000")
+            await page.wait_for_timeout(3000)
+
+            has_signer = await page.evaluate(
+                "() => !!(window.byted_acrawler && window.byted_acrawler.sign)"
+            )
+            print("Signer after bootstrap:", has_signer)
+
+        # ---------------------------------------------------------
+        # Inject into existing page (NOW signer exists)
+        # ---------------------------------------------------------
+        await page.evaluate("""
+            if (!window.generateXbogus) {
+                Object.defineProperty(window, 'generateXbogus', {
+                    value: async function(url) {
+                        try {
+                            let retries = 0;
+                            while (!window.byted_acrawler && retries < 50) {
+                                await new Promise(r => setTimeout(r, 100));
+                                retries++;
+                            }
+                            if (!window.byted_acrawler || !window.byted_acrawler.sign) {
+                                return null;
+                            }
+                            const signed = window.byted_acrawler.sign({ url });
+                            return signed?.xbogus || null;
+                        } catch {
+                            return null;
+                        }
+                    },
+                    writable: false
+                });
+            }
+        """)
+
+        print("✔ X-Bogus generator injected and signer is ready.")
 
         return playwright, browser, context, page
 
-    # --- Normal Playwright launch path ---
-    launch_args = [
-        "--disable-blink-features=AutomationControlled",
-        "--disable-web-security",
-        "--disable-features=IsolateOrigins,site-per-process",
-        "--disable-infobars",
-        "--no-sandbox",
-        "--disable-setuid-sandbox",
-        "--disable-dev-shm-usage",
-        "--disable-gpu",
-    ]
-
-    browser = await playwright.chromium.launch(
-        headless=False,  # visible
-        args=launch_args,
-        proxy={"server": proxy} if proxy else None,
-    )
-
-    context = await browser.new_context(
-        **DESKTOP,
-        locale="en-US",
-        timezone_id="Europe/Amsterdam",
-        geolocation={"longitude": 4.899, "latitude": 52.372},
-        permissions=["geolocation"],
-    )
-
-    await context.add_init_script(
-        """
-        Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-        Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5] });
-        Object.defineProperty(navigator, 'languages', { get: () => ['en-US', 'en'] });
-        Object.defineProperty(navigator, 'platform', { get: () => 'Win32' });
-        const originalQuery = window.navigator.permissions.query;
-        window.navigator.permissions.query = (parameters) => (
-            parameters.name === 'notifications'
-                ? Promise.resolve({ state: Notification.permission })
-                : originalQuery(parameters)
-        );
-        const getParameter = WebGLRenderingContext.prototype.getParameter;
-        WebGLRenderingContext.prototype.getParameter = function(parameter) {
-            if (parameter === 37445) return 'Intel Inc.';
-            if (parameter === 37446) return 'Intel Iris OpenGL Engine';
-            return getParameter(parameter);
-        };
-        """
-    )
-
+    # Normal Playwright launch
+    browser = await playwright.chromium.launch(headless=False)
+    context = await browser.new_context(**DESKTOP)
     page = await context.new_page()
     return playwright, browser, context, page

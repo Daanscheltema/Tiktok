@@ -46,10 +46,6 @@ def extract_hashtags(text: str):
 # NEW: Extract ONLY bio links
 # -----------------------------
 async def extract_bio_links(page):
-    """
-    Extract ONLY the real bio links from the TikTok profile header.
-    These are inside the DivShareLinks container.
-    """
     links = []
 
     try:
@@ -67,7 +63,6 @@ async def extract_bio_links(page):
             href = await a.get_attribute("href")
             real_url = href
 
-            # Decode TikTok redirect wrapper
             if "target=" in href:
                 try:
                     parsed = urllib.parse.urlparse(href)
@@ -184,7 +179,6 @@ async def scroll_until_all_videos_loaded(page, max_videos=500):
 async def build_video_items_from_video_tab(page, max_videos=None):
     print("[INFO] Collecting video anchors from VIDEO tab…")
 
-    # Run a single JS evaluation to extract stable data from the DOM
     js = """
     (maxCount) => {
         const cards = Array.from(document.querySelectorAll("#search_video-item-list div[id^='grid-item-container-'], div[data-e2e='search_video-item'], div[data-e2e='search-card']"));
@@ -201,9 +195,7 @@ async def build_video_items_from_video_tab(page, max_videos=None):
                     href: href,
                     desc: desc
                 });
-            } catch (e) {
-                // skip problematic card
-            }
+            } catch (e) {}
         }
         return out;
     }
@@ -226,7 +218,6 @@ async def build_video_items_from_video_tab(page, max_videos=None):
         if href.startswith("/"):
             href = "https://www.tiktok.com" + href
 
-        # defensive parsing
         try:
             video_id = href.split("/video/")[1].split("?")[0]
         except Exception:
@@ -254,6 +245,7 @@ async def build_video_items_from_video_tab(page, max_videos=None):
 
     print(f"[INFO] VIDEO tab produced {len(video_items)} items.")
     return video_items
+
 
 # -----------------------------
 # JSON parsers
@@ -353,7 +345,7 @@ async def fetch_video_stats(context, video_url, fallback_video_id=None):
 
 
 # -----------------------------
-# MAIN SEARCH FUNCTION (with debug lines)
+# MAIN SEARCH FUNCTION
 # -----------------------------
 async def search_keyword(search_page, keyword: str, max_videos=None, max_profiles=None):
     print(f"\n[SEARCH] Starting search for keyword: {keyword}")
@@ -365,9 +357,7 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
     await click_videos_tab(search_page)
     await scroll_until_all_videos_loaded(search_page, max_videos or 200)
 
-    # -----------------------------
-    # DEBUG: inspect page state after scroll
-    # -----------------------------
+    # Debug info
     try:
         current_url = await search_page.url
     except Exception:
@@ -383,7 +373,6 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
 
     print(f"[DEBUG] cards.count() = {card_count}")
 
-    # print first 10 hrefs (or fewer) for debugging
     for i in range(min(10, max(0, card_count))):
         try:
             href = await cards.nth(i).locator("a[href*='/video/']").first.get_attribute("href")
@@ -391,12 +380,12 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
             href = f"ERROR: {e}"
         print(f"[DEBUG] card {i} href = {href}")
 
-    # check for overlays/modals that might block interactions
     try:
         overlays = await search_page.locator("div[role='dialog'], div[class*='overlay'], div[class*='modal']").count()
     except Exception:
         overlays = 0
     print(f"[DEBUG] overlays/modals found = {overlays}")
+
     if overlays > 0:
         try:
             o = search_page.locator("div[role='dialog'], div[class*='overlay'], div[class*='modal']").first
@@ -405,14 +394,10 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
         except Exception:
             pass
 
-    # -----------------------------
-    # Build items (with safe href checks)
-    # -----------------------------
+    # Build items
     video_items = await build_video_items_from_video_tab(search_page, max_videos)
 
-    # -----------------------------
-    # TEMP DEBUG: test fetch_video_stats on first item (if present)
-    # -----------------------------
+    # Test stats on first item
     if video_items:
         test_href = video_items[0].get("href")
         print("[DEBUG] Testing fetch_video_stats on first collected href:", test_href)
@@ -425,14 +410,8 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
         print("[DEBUG] No video_items collected to test fetch_video_stats.")
 
     # -----------------------------
-    # OPTIONAL: click first video (kept for compatibility with older flow)
+    # WARM-UP CLICK REMOVED HERE
     # -----------------------------
-    try:
-        await click_first_video(search_page)
-        await search_page.go_back()
-        await search_page.wait_for_timeout(1500)
-    except Exception as e:
-        print(f"[WARN] click_first_video/go_back failed or skipped: {e}")
 
     results = []
 
@@ -450,9 +429,6 @@ async def search_keyword(search_page, keyword: str, max_videos=None, max_profile
 
         video_data = await fetch_video_stats(context, href, item["video_id"])
 
-        # -----------------------------
-        # NEW: extract ONLY bio links
-        # -----------------------------
         bio_links = []
         if username:
             try:

@@ -3,3 +3,5 @@
   --user-data-dir="C:\tiktok_chrome_profile"
 
   https://www.tiktok.com/foryou
+
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\tiktok_chrome_profile" --proxy-server="http://nl1.4g.iproyal.com:7263"
