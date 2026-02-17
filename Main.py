@@ -39,7 +39,7 @@ async def run():
     logger.info("BROWSER_STARTED")
     print("Browser started.")
 
-    keywords = ["Buttons"]
+    keywords = ["Glock switch"]
     csv_path = "tiktok_results_testmeerkaarten.csv"
 
     for kw in keywords:
@@ -52,7 +52,7 @@ async def run():
             results = await search_keyword(
                 page,
                 kw,
-                max_videos=200,
+                max_videos=None,
                 max_profiles=None
             )
 
