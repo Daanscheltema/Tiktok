@@ -14538,3 +14538,559 @@ Call log:
 2026-02-16 21:23:34 | INFO | KEYWORD_DONE | keyword=Buttons | duration=159.54s
 2026-02-16 21:23:34 | INFO | SCRAPER_SHUTDOWN
 2026-02-16 21:23:34 | INFO | SCRAPER_SHUTDOWN
+2026-02-16 21:38:29 | INFO | SCRAPER_START
+2026-02-16 21:38:29 | INFO | SCRAPER_START
+2026-02-16 21:38:36 | INFO | BROWSER_STARTED
+2026-02-16 21:38:36 | INFO | BROWSER_STARTED
+2026-02-16 21:38:36 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-16 21:38:36 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-16 21:40:54 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-16 21:40:54 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-16 21:40:54 | INFO | KEYWORD_DONE | keyword=Buttons | duration=138.29s
+2026-02-16 21:40:54 | INFO | KEYWORD_DONE | keyword=Buttons | duration=138.29s
+2026-02-16 21:40:54 | INFO | SCRAPER_SHUTDOWN
+2026-02-16 21:40:54 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:42:57 | INFO | SCRAPER_START
+2026-02-17 13:42:57 | INFO | SCRAPER_START
+2026-02-17 13:44:26 | INFO | SCRAPER_START
+2026-02-17 13:44:26 | INFO | SCRAPER_START
+2026-02-17 13:44:32 | INFO | BROWSER_STARTED
+2026-02-17 13:44:32 | INFO | BROWSER_STARTED
+2026-02-17 13:44:32 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:44:32 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:44:37 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='str' object can't be awaited
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 391, in search_keyword
+    print("[DEBUG][search_keyword] Page loaded:", await search_page.url)
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object can't be awaited
+2026-02-17 13:44:37 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='str' object can't be awaited
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 391, in search_keyword
+    print("[DEBUG][search_keyword] Page loaded:", await search_page.url)
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object can't be awaited
+2026-02-17 13:44:37 | INFO | KEYWORD_DONE | keyword=Buttons | duration=5.21s
+2026-02-17 13:44:37 | INFO | KEYWORD_DONE | keyword=Buttons | duration=5.21s
+2026-02-17 13:44:37 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:44:37 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:44:48 | INFO | SCRAPER_START
+2026-02-17 13:44:48 | INFO | SCRAPER_START
+2026-02-17 13:44:53 | INFO | BROWSER_STARTED
+2026-02-17 13:44:53 | INFO | BROWSER_STARTED
+2026-02-17 13:44:53 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:44:53 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:44:58 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='str' object can't be awaited
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 391, in search_keyword
+    print("[DEBUG][search_keyword] Page loaded:", await search_page.url)
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object can't be awaited
+2026-02-17 13:44:58 | ERROR | KEYWORD_ERROR | keyword=Buttons | error='str' object can't be awaited
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 391, in search_keyword
+    print("[DEBUG][search_keyword] Page loaded:", await search_page.url)
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object can't be awaited
+2026-02-17 13:44:58 | INFO | KEYWORD_DONE | keyword=Buttons | duration=4.67s
+2026-02-17 13:44:58 | INFO | KEYWORD_DONE | keyword=Buttons | duration=4.67s
+2026-02-17 13:44:58 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:44:58 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:45:34 | INFO | SCRAPER_START
+2026-02-17 13:45:34 | INFO | SCRAPER_START
+2026-02-17 13:45:43 | INFO | BROWSER_STARTED
+2026-02-17 13:45:43 | INFO | BROWSER_STARTED
+2026-02-17 13:45:43 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:45:43 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:48:32 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 13:48:32 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 13:48:32 | INFO | KEYWORD_DONE | keyword=Buttons | duration=168.95s
+2026-02-17 13:48:32 | INFO | KEYWORD_DONE | keyword=Buttons | duration=168.95s
+2026-02-17 13:48:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:48:32 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:53:53 | INFO | SCRAPER_START
+2026-02-17 13:53:53 | INFO | SCRAPER_START
+2026-02-17 13:54:04 | INFO | BROWSER_STARTED
+2026-02-17 13:54:04 | INFO | BROWSER_STARTED
+2026-02-17 13:54:04 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:54:04 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 13:56:13 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 13:56:13 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 13:56:13 | INFO | KEYWORD_DONE | keyword=Buttons | duration=129.12s
+2026-02-17 13:56:13 | INFO | KEYWORD_DONE | keyword=Buttons | duration=129.12s
+2026-02-17 13:56:13 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 13:56:13 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 14:04:44 | INFO | SCRAPER_START
+2026-02-17 14:04:44 | INFO | SCRAPER_START
+2026-02-17 14:04:51 | INFO | BROWSER_STARTED
+2026-02-17 14:04:51 | INFO | BROWSER_STARTED
+2026-02-17 14:04:51 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 14:04:51 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 14:06:58 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 14:06:58 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 14:06:58 | INFO | KEYWORD_DONE | keyword=Buttons | duration=127.04s
+2026-02-17 14:06:58 | INFO | KEYWORD_DONE | keyword=Buttons | duration=127.04s
+2026-02-17 14:06:58 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 14:06:58 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 14:15:33 | INFO | SCRAPER_START
+2026-02-17 14:15:33 | INFO | SCRAPER_START
+2026-02-17 14:15:40 | INFO | BROWSER_STARTED
+2026-02-17 14:15:40 | INFO | BROWSER_STARTED
+2026-02-17 14:15:40 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 14:15:40 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 14:17:34 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 14:17:34 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 14:17:34 | INFO | KEYWORD_DONE | keyword=Buttons | duration=113.7s
+2026-02-17 14:17:34 | INFO | KEYWORD_DONE | keyword=Buttons | duration=113.7s
+2026-02-17 14:17:34 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 14:17:34 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 18:49:15 | INFO | SCRAPER_START
+2026-02-17 18:49:15 | INFO | SCRAPER_START
+2026-02-17 18:49:22 | INFO | BROWSER_STARTED
+2026-02-17 18:49:22 | INFO | BROWSER_STARTED
+2026-02-17 18:49:22 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 18:49:22 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 18:52:06 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 18:52:06 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 18:52:06 | INFO | KEYWORD_DONE | keyword=Buttons | duration=163.3s
+2026-02-17 18:52:06 | INFO | KEYWORD_DONE | keyword=Buttons | duration=163.3s
+2026-02-17 18:52:06 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 18:52:06 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 18:55:45 | INFO | SCRAPER_START
+2026-02-17 18:55:45 | INFO | SCRAPER_START
+2026-02-17 18:55:55 | INFO | BROWSER_STARTED
+2026-02-17 18:55:55 | INFO | BROWSER_STARTED
+2026-02-17 18:55:55 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 18:55:55 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 18:57:55 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.tiktok.com/@kickclip9/video/7570479640007970079
+Call log:
+  - navigating to "https://www.tiktok.com/@kickclip9/video/7570479640007970079", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 487, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 386, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.tiktok.com/@kickclip9/video/7570479640007970079
+Call log:
+  - navigating to "https://www.tiktok.com/@kickclip9/video/7570479640007970079", waiting until "load"
+
+2026-02-17 18:57:55 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.tiktok.com/@kickclip9/video/7570479640007970079
+Call log:
+  - navigating to "https://www.tiktok.com/@kickclip9/video/7570479640007970079", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 487, in search_keyword
+    video_data = await fetch_video_stats(context, href, item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 386, in fetch_video_stats
+    await page.goto(video_url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://www.tiktok.com/@kickclip9/video/7570479640007970079
+Call log:
+  - navigating to "https://www.tiktok.com/@kickclip9/video/7570479640007970079", waiting until "load"
+
+2026-02-17 18:57:55 | INFO | KEYWORD_DONE | keyword=Buttons | duration=120.31s
+2026-02-17 18:57:55 | INFO | KEYWORD_DONE | keyword=Buttons | duration=120.31s
+2026-02-17 18:57:55 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 18:57:55 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:04:18 | INFO | SCRAPER_START
+2026-02-17 19:04:18 | INFO | SCRAPER_START
+2026-02-17 19:04:28 | INFO | BROWSER_STARTED
+2026-02-17 19:04:28 | INFO | BROWSER_STARTED
+2026-02-17 19:04:28 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:04:28 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:05:16 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.evaluate: Execution context was destroyed, most likely because of a navigation
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 315, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 192, in fetch_video_stats
+    data = await page.evaluate("() => window.__UNIVERSAL_DATA__ || null")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8563, in evaluate
+    await self._impl_obj.evaluate(
+        expression=expression, arg=mapping.to_impl(arg)
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 464, in evaluate
+    return await self._main_frame.evaluate(expression, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 320, in evaluate
+    await self._channel.send(
+    ...<6 lines>...
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-02-17 19:05:16 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.evaluate: Execution context was destroyed, most likely because of a navigation
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 315, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 192, in fetch_video_stats
+    data = await page.evaluate("() => window.__UNIVERSAL_DATA__ || null")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8563, in evaluate
+    await self._impl_obj.evaluate(
+        expression=expression, arg=mapping.to_impl(arg)
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 464, in evaluate
+    return await self._main_frame.evaluate(expression, arg)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 320, in evaluate
+    await self._channel.send(
+    ...<6 lines>...
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.evaluate: Execution context was destroyed, most likely because of a navigation
+2026-02-17 19:05:16 | INFO | KEYWORD_DONE | keyword=Buttons | duration=47.49s
+2026-02-17 19:05:16 | INFO | KEYWORD_DONE | keyword=Buttons | duration=47.49s
+2026-02-17 19:05:16 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:05:16 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:12:30 | INFO | SCRAPER_START
+2026-02-17 19:12:30 | INFO | SCRAPER_START
+2026-02-17 19:12:39 | INFO | BROWSER_STARTED
+2026-02-17 19:12:39 | INFO | BROWSER_STARTED
+2026-02-17 19:12:39 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:12:39 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:12:39 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 297, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+
+2026-02-17 19:12:39 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 297, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+
+2026-02-17 19:12:39 | INFO | KEYWORD_DONE | keyword=Buttons | duration=0.14s
+2026-02-17 19:12:39 | INFO | KEYWORD_DONE | keyword=Buttons | duration=0.14s
+2026-02-17 19:12:39 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:12:39 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:15:51 | INFO | SCRAPER_START
+2026-02-17 19:15:51 | INFO | SCRAPER_START
+2026-02-17 19:17:47 | INFO | SCRAPER_START
+2026-02-17 19:17:47 | INFO | SCRAPER_START
+2026-02-17 19:17:52 | INFO | BROWSER_STARTED
+2026-02-17 19:17:52 | INFO | BROWSER_STARTED
+2026-02-17 19:17:52 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:17:52 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:18:41 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:18:41 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:18:41 | INFO | KEYWORD_DONE | keyword=Buttons | duration=49.39s
+2026-02-17 19:18:41 | INFO | KEYWORD_DONE | keyword=Buttons | duration=49.39s
+2026-02-17 19:18:41 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:18:41 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:23:24 | INFO | SCRAPER_START
+2026-02-17 19:23:24 | INFO | SCRAPER_START
+2026-02-17 19:23:28 | INFO | BROWSER_STARTED
+2026-02-17 19:23:28 | INFO | BROWSER_STARTED
+2026-02-17 19:23:28 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:23:28 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:25:03 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:25:03 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:25:03 | INFO | KEYWORD_DONE | keyword=Buttons | duration=94.5s
+2026-02-17 19:25:03 | INFO | KEYWORD_DONE | keyword=Buttons | duration=94.5s
+2026-02-17 19:25:03 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:25:03 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:32:25 | INFO | SCRAPER_START
+2026-02-17 19:32:25 | INFO | SCRAPER_START
+2026-02-17 19:32:31 | INFO | BROWSER_STARTED
+2026-02-17 19:32:31 | INFO | BROWSER_STARTED
+2026-02-17 19:32:31 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:32:31 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:34:38 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:34:38 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:34:38 | INFO | KEYWORD_DONE | keyword=Buttons | duration=126.3s
+2026-02-17 19:34:38 | INFO | KEYWORD_DONE | keyword=Buttons | duration=126.3s
+2026-02-17 19:34:38 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:34:38 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:44:34 | INFO | SCRAPER_START
+2026-02-17 19:44:34 | INFO | SCRAPER_START
+2026-02-17 19:44:40 | INFO | BROWSER_STARTED
+2026-02-17 19:44:40 | INFO | BROWSER_STARTED
+2026-02-17 19:44:40 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:44:40 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:46:49 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:46:49 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:46:49 | INFO | KEYWORD_DONE | keyword=Buttons | duration=129.67s
+2026-02-17 19:46:49 | INFO | KEYWORD_DONE | keyword=Buttons | duration=129.67s
+2026-02-17 19:46:49 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:46:49 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:52:15 | INFO | SCRAPER_START
+2026-02-17 19:52:15 | INFO | SCRAPER_START
+2026-02-17 19:52:20 | INFO | BROWSER_STARTED
+2026-02-17 19:52:20 | INFO | BROWSER_STARTED
+2026-02-17 19:52:20 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:52:20 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 19:54:20 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:54:20 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 19:54:20 | INFO | KEYWORD_DONE | keyword=Buttons | duration=119.59s
+2026-02-17 19:54:20 | INFO | KEYWORD_DONE | keyword=Buttons | duration=119.59s
+2026-02-17 19:54:20 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 19:54:20 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:04:52 | INFO | SCRAPER_START
+2026-02-17 20:04:52 | INFO | SCRAPER_START
+2026-02-17 20:04:57 | INFO | BROWSER_STARTED
+2026-02-17 20:04:57 | INFO | BROWSER_STARTED
+2026-02-17 20:04:57 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:04:57 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:05:16 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 406, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 303, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-17 20:05:16 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 406, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 303, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-17 20:05:16 | INFO | KEYWORD_DONE | keyword=Buttons | duration=18.33s
+2026-02-17 20:05:16 | INFO | KEYWORD_DONE | keyword=Buttons | duration=18.33s
+2026-02-17 20:05:16 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:05:16 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:07:55 | INFO | SCRAPER_START
+2026-02-17 20:07:55 | INFO | SCRAPER_START
+2026-02-17 20:08:19 | INFO | BROWSER_STARTED
+2026-02-17 20:08:19 | INFO | BROWSER_STARTED
+2026-02-17 20:08:19 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:08:19 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:10:29 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:10:29 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:10:29 | INFO | KEYWORD_DONE | keyword=Buttons | duration=129.7s
+2026-02-17 20:10:29 | INFO | KEYWORD_DONE | keyword=Buttons | duration=129.7s
+2026-02-17 20:10:29 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:10:29 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:19:47 | INFO | SCRAPER_START
+2026-02-17 20:19:47 | INFO | SCRAPER_START
+2026-02-17 20:19:55 | INFO | BROWSER_STARTED
+2026-02-17 20:19:55 | INFO | BROWSER_STARTED
+2026-02-17 20:19:55 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:19:55 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:22:30 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:22:30 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:22:30 | INFO | KEYWORD_DONE | keyword=Buttons | duration=154.77s
+2026-02-17 20:22:30 | INFO | KEYWORD_DONE | keyword=Buttons | duration=154.77s
+2026-02-17 20:22:30 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:22:30 | INFO | SCRAPER_SHUTDOWN

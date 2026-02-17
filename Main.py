@@ -58,7 +58,7 @@ async def run():
             results = await search_keyword(
                 page,
                 kw,
-                max_videos=200,   # <-- pas aan wat je wilt
+                max_videos=200,
                 max_profiles=None
             )
 
@@ -72,12 +72,24 @@ async def run():
             print("\n========== RESULTS ==========")
             print(f"Total: {len(results)}\n")
 
-            # Print resultaten in console
+            # -----------------------------
+            # CONSOLE OUTPUT (UITGEBREID)
+            # -----------------------------
             for r in results:
+                profile_stats = r.get("profile_stats") or {}
+
                 print(
                     f"- Video {r.get('video_id')} | "
                     f"Views: {r.get('views')} | "
+                    f"Likes: {r.get('likes')} | "
+                    f"Comments: {r.get('comments')} | "
+                    f"Shares: {r.get('shares')} | "
+                    f"Saves: {r.get('saves')} | "
                     f"User: {r.get('author')} | "
+                    f"Followers: {profile_stats.get('followers')} | "
+                    f"Following: {profile_stats.get('following')} | "
+                    f"Profile Likes: {profile_stats.get('likes')} | "
+                    f"Videos: {profile_stats.get('videos')} | "
                     f"Bio links: {r.get('bio_links')}"
                 )
 
