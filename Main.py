@@ -4,7 +4,7 @@ import os
 import pandas as pd
 
 from scraper.browser import get_browser
-from scraper.search import search_keyword   # <-- DIT IS DE JUISTE FUNCTIE
+from scraper.search import search_keyword
 from config import PROXY
 from logger import setup_logger
 
@@ -39,10 +39,7 @@ async def run():
     logger.info("BROWSER_STARTED")
     print("Browser started.")
 
-    # Voeg hier meerdere keywords toe
     keywords = ["Buttons"]
-
-    # CSV-bestand waar alles in komt
     csv_path = "tiktok_results_testmeerkaarten.csv"
 
     for kw in keywords:
@@ -52,9 +49,6 @@ async def run():
         start_time = time.time()
 
         try:
-            # -----------------------------
-            # JUISTE SCRAPER CALL
-            # -----------------------------
             results = await search_keyword(
                 page,
                 kw,
@@ -73,35 +67,34 @@ async def run():
             print(f"Total: {len(results)}\n")
 
             # -----------------------------
-            # CONSOLE OUTPUT (UITGEBREID)
+            # CONSOLE OUTPUT (VOLLEDIG)
             # -----------------------------
             for r in results:
                 profile_stats = r.get("profile_stats") or {}
 
                 print(
-                    f"- Video {r.get('video_id')} | "
-                    f"Views: {r.get('views')} | "
+                    f"- Video {r.get('video_id')}\n"
+                    f"  Views: {r.get('views')} | "
                     f"Likes: {r.get('likes')} | "
                     f"Comments: {r.get('comments')} | "
                     f"Shares: {r.get('shares')} | "
-                    f"Saves: {r.get('saves')} | "
-                    f"User: {r.get('author')} | "
+                    f"Saves: {r.get('saves')}\n"
+                    f"  User: {r.get('author')} | "
                     f"Followers: {profile_stats.get('followers')} | "
                     f"Following: {profile_stats.get('following')} | "
                     f"Profile Likes: {profile_stats.get('likes')} | "
-                    f"Videos: {profile_stats.get('videos')} | "
-                    f"Bio links: {r.get('bio_links')}"
+                    f"Videos: {profile_stats.get('videos')}\n"
+                    f"  Profile bio: {r.get('profile_bio')}\n"
+                    f"  Video desc: {r.get('desc')}\n"
+                    f"  Bio links: {r.get('bio_links')}\n"
                 )
 
             # -----------------------------
             # CSV EXPORT
             # -----------------------------
             df = pd.DataFrame(results)
-
-            # Zorg dat keyword altijd in de CSV staat
             df["keyword"] = kw
 
-            # Als CSV al bestaat → append zonder header
             if os.path.exists(csv_path):
                 df.to_csv(csv_path, mode="a", index=False, header=False)
             else:

@@ -15094,3 +15094,107 @@ Call log:
 2026-02-17 20:22:30 | INFO | KEYWORD_DONE | keyword=Buttons | duration=154.77s
 2026-02-17 20:22:30 | INFO | SCRAPER_SHUTDOWN
 2026-02-17 20:22:30 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:30:47 | INFO | SCRAPER_START
+2026-02-17 20:30:47 | INFO | SCRAPER_START
+2026-02-17 20:30:54 | INFO | BROWSER_STARTED
+2026-02-17 20:30:54 | INFO | BROWSER_STARTED
+2026-02-17 20:30:54 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:30:54 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:33:43 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:33:43 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:33:43 | INFO | KEYWORD_DONE | keyword=Buttons | duration=168.78s
+2026-02-17 20:33:43 | INFO | KEYWORD_DONE | keyword=Buttons | duration=168.78s
+2026-02-17 20:33:43 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:33:43 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:45:44 | INFO | SCRAPER_START
+2026-02-17 20:45:44 | INFO | SCRAPER_START
+2026-02-17 20:45:55 | INFO | BROWSER_STARTED
+2026-02-17 20:45:55 | INFO | BROWSER_STARTED
+2026-02-17 20:45:55 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:45:55 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:45:59 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 360, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+
+2026-02-17 20:45:59 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 58, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 360, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/search?q=Buttons
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Buttons", waiting until "load"
+
+2026-02-17 20:45:59 | INFO | KEYWORD_DONE | keyword=Buttons | duration=4.18s
+2026-02-17 20:45:59 | INFO | KEYWORD_DONE | keyword=Buttons | duration=4.18s
+2026-02-17 20:45:59 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:45:59 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:49:20 | INFO | SCRAPER_START
+2026-02-17 20:49:20 | INFO | SCRAPER_START
+2026-02-17 20:49:26 | INFO | BROWSER_STARTED
+2026-02-17 20:49:26 | INFO | BROWSER_STARTED
+2026-02-17 20:49:26 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:49:26 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-17 20:51:29 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:51:29 | INFO | KEYWORD_OK | keyword=Buttons | results=3
+2026-02-17 20:51:29 | INFO | KEYWORD_DONE | keyword=Buttons | duration=122.91s
+2026-02-17 20:51:29 | INFO | KEYWORD_DONE | keyword=Buttons | duration=122.91s
+2026-02-17 20:51:29 | INFO | SCRAPER_SHUTDOWN
+2026-02-17 20:51:29 | INFO | SCRAPER_SHUTDOWN
