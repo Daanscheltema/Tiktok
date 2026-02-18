@@ -7,7 +7,7 @@ from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 logger = setup_logger()
 
 HASHTAG_REGEX = r"#(\w+)"
-TEST_MAX_RESULTS = 3  # zet op None om uit te zetten
+TEST_MAX_RESULTS = None  # zet op None om uit te zetten
 
 VIDEOS_TAB_SELECTOR = (
     "button[data-testid='tux-web-tab-bar'] span:has-text(\"Video's\"), "

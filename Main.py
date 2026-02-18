@@ -40,7 +40,7 @@ async def run():
     print("Browser started.")
 
     keywords = ["Glock switch"]
-    csv_path = "tiktok_results_testmeerkaarten.csv"
+    csv_path = "tiktok_results_testdoehetnuhopelijk2.csv"
 
     for kw in keywords:
         logger.info(f"KEYWORD_START | keyword={kw}")
@@ -91,15 +91,74 @@ async def run():
                 )
 
             # -----------------------------
-            # CSV EXPORT
+            # CSV EXPORT (CLEAN & FLAT)
             # -----------------------------
-            df = pd.DataFrame(results)
-            df["keyword"] = kw
+            rows = []
 
-            if os.path.exists(csv_path):
-                df.to_csv(csv_path, mode="a", index=False, header=False)
-            else:
-                df.to_csv(csv_path, index=False)
+            for r in results:
+                profile_stats = r.get("profile_stats") or {}
+
+                rows.append({
+                    # --- META ---
+                    "keyword": kw,
+
+                    # --- VIDEO ---
+                    "video_id": r.get("video_id"),
+                    "video_url": r.get("video_url"),
+                    "views": r.get("views"),
+                    "likes": r.get("likes"),
+                    "comments": r.get("comments"),
+                    "shares": r.get("shares"),
+                    "saves": r.get("saves"),
+
+                    # --- AUTHOR ---
+                    "author": r.get("author"),
+                    "followers": profile_stats.get("followers"),
+                    "following": profile_stats.get("following"),
+                    "profile_likes": profile_stats.get("likes"),
+                    "total_videos": profile_stats.get("videos"),
+                    "profile_bio": r.get("profile_bio"),
+
+                    # --- CONTENT ---
+                    "video_desc": r.get("desc"),
+                    "hashtags": ",".join(r.get("hashtags") or []),
+                    "bio_links": " | ".join(r.get("bio_links") or []),
+
+                })
+
+            df = pd.DataFrame(rows)
+
+            # vaste kolomvolgorde (belangrijk bij append)
+            columns = [
+                "keyword",
+                "video_id",
+                "video_url",
+                "views",
+                "likes",
+                "comments",
+                "shares",
+                "saves",
+                "author",
+                "followers",
+                "following",
+                "profile_likes",
+                "total_videos",
+                "profile_bio",
+                "video_desc",
+                "hashtags",
+                "bio_links",
+            ]
+
+            df = df.reindex(columns=columns)
+
+            # ✅ FIX: Excel (NL) wil ; als separator, anders 1 kolom
+            df.to_csv(
+                csv_path,
+                mode="a",
+                index=False,
+                header=not os.path.exists(csv_path),
+                sep=";"
+            )
 
             print(f"📁 CSV bijgewerkt: {csv_path}")
 
