@@ -15258,3 +15258,895 @@ Call log:
 2026-02-18 01:30:36 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=198.0s
 2026-02-18 01:30:36 | INFO | SCRAPER_SHUTDOWN
 2026-02-18 01:30:36 | INFO | SCRAPER_SHUTDOWN
+2026-02-18 02:05:04 | INFO | SCRAPER_START
+2026-02-18 02:05:04 | INFO | SCRAPER_START
+2026-02-18 02:05:10 | INFO | BROWSER_STARTED
+2026-02-18 02:05:10 | INFO | BROWSER_STARTED
+2026-02-18 02:05:10 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-18 02:05:10 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-18 02:47:04 | INFO | KEYWORD_OK | keyword=Glock switch | results=196
+2026-02-18 02:47:04 | INFO | KEYWORD_OK | keyword=Glock switch | results=196
+2026-02-18 02:47:04 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=2514.09s
+2026-02-18 02:47:04 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=2514.09s
+2026-02-18 02:47:04 | INFO | KEYWORD_START | keyword=G switch
+2026-02-18 02:47:04 | INFO | KEYWORD_START | keyword=G switch
+2026-02-18 03:30:44 | INFO | KEYWORD_OK | keyword=G switch | results=204
+2026-02-18 03:30:44 | INFO | KEYWORD_OK | keyword=G switch | results=204
+2026-02-18 03:30:44 | INFO | KEYWORD_DONE | keyword=G switch | duration=2619.54s
+2026-02-18 03:30:44 | INFO | KEYWORD_DONE | keyword=G switch | duration=2619.54s
+2026-02-18 03:30:44 | INFO | KEYWORD_START | keyword=Auto sear
+2026-02-18 03:30:44 | INFO | KEYWORD_START | keyword=Auto sear
+2026-02-18 04:15:37 | INFO | KEYWORD_OK | keyword=Auto sear | results=204
+2026-02-18 04:15:37 | INFO | KEYWORD_OK | keyword=Auto sear | results=204
+2026-02-18 04:15:37 | INFO | KEYWORD_DONE | keyword=Auto sear | duration=2692.88s
+2026-02-18 04:15:37 | INFO | KEYWORD_DONE | keyword=Auto sear | duration=2692.88s
+2026-02-18 04:15:37 | INFO | KEYWORD_START | keyword=AR-15 Auto sear
+2026-02-18 04:15:37 | INFO | KEYWORD_START | keyword=AR-15 Auto sear
+2026-02-18 04:50:56 | INFO | KEYWORD_OK | keyword=AR-15 Auto sear | results=161
+2026-02-18 04:50:56 | INFO | KEYWORD_OK | keyword=AR-15 Auto sear | results=161
+2026-02-18 04:50:56 | INFO | KEYWORD_DONE | keyword=AR-15 Auto sear | duration=2119.31s
+2026-02-18 04:50:56 | INFO | KEYWORD_DONE | keyword=AR-15 Auto sear | duration=2119.31s
+2026-02-18 04:50:56 | INFO | KEYWORD_START | keyword=3d switch
+2026-02-18 04:50:56 | INFO | KEYWORD_START | keyword=3d switch
+2026-02-18 05:34:24 | INFO | KEYWORD_OK | keyword=3d switch | results=203
+2026-02-18 05:34:24 | INFO | KEYWORD_OK | keyword=3d switch | results=203
+2026-02-18 05:34:24 | INFO | KEYWORD_DONE | keyword=3d switch | duration=2607.85s
+2026-02-18 05:34:24 | INFO | KEYWORD_DONE | keyword=3d switch | duration=2607.85s
+2026-02-18 05:34:24 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-18 05:34:24 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-18 06:14:16 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=180
+2026-02-18 06:14:16 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=180
+2026-02-18 06:14:17 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=2392.78s
+2026-02-18 06:14:17 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=2392.78s
+2026-02-18 06:14:17 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-18 06:14:17 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-18 06:44:45 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 399, in search_keyword
+    await profile_page.close()
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9843, in close
+    await self._impl_obj.close(runBeforeUnload=run_before_unload, reason=reason)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 835, in close
+    raise e
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 830, in close
+    await self._channel.send("close", None, locals_to_params(locals()))
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.close: Connection closed while reading from the driver
+2026-02-18 06:44:45 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 399, in search_keyword
+    await profile_page.close()
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9843, in close
+    await self._impl_obj.close(runBeforeUnload=run_before_unload, reason=reason)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 835, in close
+    raise e
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 830, in close
+    await self._channel.send("close", None, locals_to_params(locals()))
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.close: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=1829.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=1829.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Auto switch
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Auto switch
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Auto switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Auto switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Auto switch | duration=0.01s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Auto switch | duration=0.01s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Chip
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Chip
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Chip | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Chip | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Chip | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Chip | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Switchy
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Switchy
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Switchy | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Switchy | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Switchy | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Switchy | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=swift link
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=swift link
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=swift link | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=swift link | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=swift link | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=swift link | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=lightning link
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=lightning link
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=lightning link | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=lightning link | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=lightning link | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=lightning link | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Yankee Boogle
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Yankee Boogle
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Yankee Boogle | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Yankee Boogle | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Yankee Boogle | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Yankee Boogle | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Giggle switch
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Giggle switch
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Giggle switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Giggle switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Giggle switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Giggle switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Ghost switch
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Ghost switch
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Ghost switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Ghost switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Ghost switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Ghost switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Plastic switch
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Plastic switch
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Plastic switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Plastic switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Plastic switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Plastic switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Metal switch
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Metal switch
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Metal switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Metal switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Metal switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Metal switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Draco switch
+2026-02-18 06:44:46 | INFO | KEYWORD_START | keyword=Draco switch
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Draco switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | ERROR | KEYWORD_ERROR | keyword=Draco switch | error=Page.goto: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 72, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.goto: Connection closed while reading from the driver
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Draco switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | KEYWORD_DONE | keyword=Draco switch | duration=0.0s
+2026-02-18 06:44:46 | INFO | SCRAPER_SHUTDOWN
+2026-02-18 06:44:46 | INFO | SCRAPER_SHUTDOWN
+2026-02-18 11:36:50 | INFO | SCRAPER_START
+2026-02-18 11:36:50 | INFO | SCRAPER_START
+2026-02-18 11:36:56 | INFO | BROWSER_STARTED
+2026-02-18 11:36:56 | INFO | BROWSER_STARTED
+2026-02-18 11:36:56 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-18 11:36:56 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-18 12:13:18 | INFO | KEYWORD_OK | keyword=Glock switch | results=197
+2026-02-18 12:13:18 | INFO | KEYWORD_OK | keyword=Glock switch | results=197
+2026-02-18 12:13:19 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=2183.02s
+2026-02-18 12:13:19 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=2183.02s
+2026-02-18 12:13:19 | INFO | KEYWORD_START | keyword=G switch
+2026-02-18 12:13:19 | INFO | KEYWORD_START | keyword=G switch
+2026-02-18 12:55:11 | INFO | KEYWORD_OK | keyword=G switch | results=229
+2026-02-18 12:55:11 | INFO | KEYWORD_OK | keyword=G switch | results=229
+2026-02-18 12:55:12 | INFO | KEYWORD_DONE | keyword=G switch | duration=2513.25s
+2026-02-18 12:55:12 | INFO | KEYWORD_DONE | keyword=G switch | duration=2513.25s
+2026-02-18 12:55:12 | INFO | KEYWORD_START | keyword=Auto sear
+2026-02-18 12:55:12 | INFO | KEYWORD_START | keyword=Auto sear
+2026-02-18 13:42:14 | INFO | KEYWORD_OK | keyword=Auto sear | results=256
+2026-02-18 13:42:14 | INFO | KEYWORD_OK | keyword=Auto sear | results=256
+2026-02-18 13:42:14 | INFO | KEYWORD_DONE | keyword=Auto sear | duration=2822.65s
+2026-02-18 13:42:14 | INFO | KEYWORD_DONE | keyword=Auto sear | duration=2822.65s
+2026-02-18 13:42:14 | INFO | KEYWORD_START | keyword=AR-15 Auto sear
+2026-02-18 13:42:14 | INFO | KEYWORD_START | keyword=AR-15 Auto sear
+2026-02-18 14:12:34 | INFO | KEYWORD_OK | keyword=AR-15 Auto sear | results=157
+2026-02-18 14:12:34 | INFO | KEYWORD_OK | keyword=AR-15 Auto sear | results=157
+2026-02-18 14:12:35 | INFO | KEYWORD_DONE | keyword=AR-15 Auto sear | duration=1820.18s
+2026-02-18 14:12:35 | INFO | KEYWORD_DONE | keyword=AR-15 Auto sear | duration=1820.18s
+2026-02-18 14:12:35 | INFO | KEYWORD_START | keyword=3d switch
+2026-02-18 14:12:35 | INFO | KEYWORD_START | keyword=3d switch
+2026-02-18 15:10:56 | INFO | KEYWORD_OK | keyword=3d switch | results=296
+2026-02-18 15:10:56 | INFO | KEYWORD_OK | keyword=3d switch | results=296
+2026-02-18 15:10:56 | INFO | KEYWORD_DONE | keyword=3d switch | duration=3501.76s
+2026-02-18 15:10:56 | INFO | KEYWORD_DONE | keyword=3d switch | duration=3501.76s
+2026-02-18 15:10:56 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-18 15:10:56 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-18 15:38:18 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 277, in fetch_video_stats
+    await page.close()
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9843, in close
+    await self._impl_obj.close(runBeforeUnload=run_before_unload, reason=reason)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 835, in close
+    raise e
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 830, in close
+    await self._channel.send("close", None, locals_to_params(locals()))
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.close: Connection closed while reading from the driver
+2026-02-18 15:38:18 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.close: Connection closed while reading from the driver
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 277, in fetch_video_stats
+    await page.close()
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9843, in close
+    await self._impl_obj.close(runBeforeUnload=run_before_unload, reason=reason)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 835, in close
+    raise e
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 830, in close
+    await self._channel.send("close", None, locals_to_params(locals()))
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+Exception: Page.close: Connection closed while reading from the driver

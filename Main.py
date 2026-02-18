@@ -12,6 +12,17 @@ print("cwd", os.getcwd())
 logger = setup_logger()
 
 
+def append_row_to_csv(csv_path: str, row: dict, columns: list[str]):
+    df = pd.DataFrame([row]).reindex(columns=columns)
+    df.to_csv(
+        csv_path,
+        mode="a",
+        index=False,
+        header=not os.path.exists(csv_path),
+        sep=";"
+    )
+
+
 async def run():
     logger.info("SCRAPER_START")
     print("Starting browser...")
@@ -39,20 +50,63 @@ async def run():
     logger.info("BROWSER_STARTED")
     print("Browser started.")
 
-    keywords = ["Glock switch"]
-    csv_path = "tiktok_results_testdoehetnuhopelijk2.csv"
+    keywords = [
+        "Glock switch",
+        "G switch",
+        "Auto sear",
+        "AR-15 Auto sear",
+        "3d switch",
+        "3d Glock switch",
+        "Full-auto sear",
+        "Auto switch",
+        "Chip",
+        "Switchy",
+        "swift link",
+        "lightning link",
+        "Yankee Boogle",
+        "Giggle switch",
+        "Ghost switch",
+        "Plastic switch",
+        "Metal switch",
+        "Draco switch",
+    ]
+
+    csv_path = "tiktok_results_bigscrape2.csv"
+
+    # vaste kolomvolgorde (belangrijk bij append)
+    columns = [
+        "keyword",
+        "video_id",
+        "video_url",
+        "views",
+        "likes",
+        "comments",
+        "shares",
+        "saves",
+        "author",
+        "followers",
+        "following",
+        "profile_likes",
+        "total_videos",
+        "profile_bio",
+        "video_desc",
+        "hashtags",
+        "bio_links",
+    ]
 
     for kw in keywords:
         logger.info(f"KEYWORD_START | keyword={kw}")
         print(f"\n🔎 Searching for keyword: {kw}")
 
         start_time = time.time()
+        results = None
 
+        kw_page = await context.new_page()  # ✅ new page per keyword
         try:
             results = await search_keyword(
-                page,
+                kw_page,
                 kw,
-                max_videos=None,
+                max_videos=300,   # ✅ hard cap
                 max_profiles=None
             )
 
@@ -90,15 +144,10 @@ async def run():
                     f"  Bio links: {r.get('bio_links')}\n"
                 )
 
-            # -----------------------------
-            # CSV EXPORT (CLEAN & FLAT)
-            # -----------------------------
-            rows = []
-
-            for r in results:
-                profile_stats = r.get("profile_stats") or {}
-
-                rows.append({
+                # -----------------------------
+                # CSV EXPORT (CLEAN & FLAT) - STREAMING
+                # -----------------------------
+                row = {
                     # --- META ---
                     "keyword": kw,
 
@@ -123,50 +172,19 @@ async def run():
                     "video_desc": r.get("desc"),
                     "hashtags": ",".join(r.get("hashtags") or []),
                     "bio_links": " | ".join(r.get("bio_links") or []),
+                }
 
-                })
-
-            df = pd.DataFrame(rows)
-
-            # vaste kolomvolgorde (belangrijk bij append)
-            columns = [
-                "keyword",
-                "video_id",
-                "video_url",
-                "views",
-                "likes",
-                "comments",
-                "shares",
-                "saves",
-                "author",
-                "followers",
-                "following",
-                "profile_likes",
-                "total_videos",
-                "profile_bio",
-                "video_desc",
-                "hashtags",
-                "bio_links",
-            ]
-
-            df = df.reindex(columns=columns)
-
-            # ✅ FIX: Excel (NL) wil ; als separator, anders 1 kolom
-            df.to_csv(
-                csv_path,
-                mode="a",
-                index=False,
-                header=not os.path.exists(csv_path),
-                sep=";"
-            )
+                append_row_to_csv(csv_path, row, columns)
 
             print(f"📁 CSV bijgewerkt: {csv_path}")
 
         except Exception as e:
             logger.exception(f"KEYWORD_ERROR | keyword={kw} | error={e}")
 
-        duration = round(time.time() - start_time, 2)
-        logger.info(f"KEYWORD_DONE | keyword={kw} | duration={duration}s")
+        finally:
+            await kw_page.close()  # ✅ important: close page no matter what
+            duration = round(time.time() - start_time, 2)
+            logger.info(f"KEYWORD_DONE | keyword={kw} | duration={duration}s")
 
     logger.info("SCRAPER_SHUTDOWN")
     await browser.close()
