@@ -32,7 +32,8 @@ async def safe_text(el):
 
 
 def extract_hashtags(text: str):
-    return re.findall(HASHTAG_REGEX, text or "")
+    return re.findall(r"#(\w+)", text or "")
+
 
 
 # -----------------------------
@@ -124,6 +125,8 @@ async def extract_profile_stats(page):
 # -----------------------------
 # Video parsing helpers
 # -----------------------------
+
+
 def _find_item_struct(obj):
     if isinstance(obj, dict):
         if {"id", "desc", "video", "stats"} <= set(obj.keys()):
@@ -215,6 +218,12 @@ def parse_video_from_rehydration(data, target_id=None):
         }
     except:
         return None
+
+def strip_hashtags(text: str):
+    if not text:
+        return text
+    return re.sub(r"#\w+", "", text).strip()
+
 
 
 # -----------------------------
@@ -389,24 +398,36 @@ async def search_keyword(search_page, keyword, max_videos=None, max_profiles=Non
             finally:
                 await profile_page.close()
 
-        results.append({
-            "keyword": keyword,
-            "video_id": video_data.get("video_id"),
-            "video_url": item["href"],
-            "desc": video_data.get("description") or item["desc"],
-            "views": video_data.get("stats", {}).get("views"),
-            "likes": video_data.get("stats", {}).get("likes"),
-            "comments": video_data.get("stats", {}).get("comments"),
-            "shares": video_data.get("stats", {}).get("shares"),
-            "saves": video_data.get("stats", {}).get("saves"),
-            "author": item["username"],
-            "profile_bio": profile_bio,
-            "bio_links": bio_links,
-            "profile_stats": profile_stats,
-            "hashtags": video_data.get("hashtags"),
-            "create_time": video_data.get("create_time"),
-            "duration": video_data.get("duration"),
-        })
+            # -----------------------------
+            # DESCRIPTION + HASHTAGS SPLIT
+            # -----------------------------
+            raw_desc = video_data.get("description") or item.get("desc") or ""
+
+            # hashtags: eerst JSON, anders fallback regex
+            json_hashtags = video_data.get("hashtags") or []
+            final_hashtags = json_hashtags if json_hashtags else extract_hashtags(raw_desc)
+
+            # description opschonen (hashtags eruit)
+            clean_desc = strip_hashtags(raw_desc)
+
+            results.append({
+                "keyword": keyword,
+                "video_id": video_data.get("video_id"),
+                "video_url": item["href"],
+                "desc": clean_desc,
+                "views": video_data.get("stats", {}).get("views"),
+                "likes": video_data.get("stats", {}).get("likes"),
+                "comments": video_data.get("stats", {}).get("comments"),
+                "shares": video_data.get("stats", {}).get("shares"),
+                "saves": video_data.get("stats", {}).get("saves"),
+                "author": item["username"],
+                "profile_bio": profile_bio,
+                "bio_links": bio_links,
+                "profile_stats": profile_stats,
+                "hashtags": final_hashtags,
+                "create_time": video_data.get("create_time"),
+                "duration": video_data.get("duration"),
+            })
 
     print("[DONE]", len(results))
     return results

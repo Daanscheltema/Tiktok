@@ -86,6 +86,7 @@ async def run():
                     f"Videos: {profile_stats.get('videos')}\n"
                     f"  Profile bio: {r.get('profile_bio')}\n"
                     f"  Video desc: {r.get('desc')}\n"
+                    f"  Hashtags: {r.get('hashtags')}\n"
                     f"  Bio links: {r.get('bio_links')}\n"
                 )
 
