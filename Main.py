@@ -12,13 +12,42 @@ print("cwd", os.getcwd())
 logger = setup_logger()
 
 
-def append_row_to_csv(csv_path: str, row: dict, columns: list[str]):
-    df = pd.DataFrame([row]).reindex(columns=columns)
+CSV_PATH = "tiktok_results_lastscrape.csv"
+
+COLUMNS = [
+    "keyword",
+    "video_id",
+    "video_url",
+    "views",
+    "likes",
+    "comments",
+    "shares",
+    "saves",
+    "author",
+    "followers",
+    "following",
+    "profile_likes",
+    "total_videos",
+    "profile_bio",
+    "video_desc",
+    "hashtags",
+    "bio_links",
+]
+
+def append_rows_to_csv(rows, csv_path=CSV_PATH):
+    """Append rows (list[dict]) to CSV with fixed columns and ; separator."""
+    if not rows:
+        return
+
+    df = pd.DataFrame(rows).reindex(columns=COLUMNS)
+
+    file_exists = os.path.exists(csv_path)
+
     df.to_csv(
         csv_path,
         mode="a",
         index=False,
-        header=not os.path.exists(csv_path),
+        header=not file_exists,
         sep=";"
     )
 
@@ -32,15 +61,9 @@ async def run():
         browser_type="cdp-chrome"
     )
 
-    # -----------------------------
-    # DEBUG: USER AGENT
-    # -----------------------------
     ua = await page.evaluate("() => navigator.userAgent")
     print("USER_AGENT:", ua)
 
-    # -----------------------------
-    # DEBUG: COOKIES
-    # -----------------------------
     cookies = await context.cookies()
     print("=== COOKIES IN CONTEXT ===")
     for c in cookies:
@@ -51,47 +74,15 @@ async def run():
     print("Browser started.")
 
     keywords = [
-        "Glock switch",
-        "G switch",
-        "Auto sear",
-        "AR-15 Auto sear",
-        "3d switch",
-        "3d Glock switch",
-        "Full-auto sear",
-        "Auto switch",
         "Chip",
         "Switchy",
         "swift link",
         "lightning link",
         "Yankee Boogle",
         "Giggle switch",
-        "Ghost switch",
         "Plastic switch",
         "Metal switch",
         "Draco switch",
-    ]
-
-    csv_path = "tiktok_results_bigscrape2.csv"
-
-    # vaste kolomvolgorde (belangrijk bij append)
-    columns = [
-        "keyword",
-        "video_id",
-        "video_url",
-        "views",
-        "likes",
-        "comments",
-        "shares",
-        "saves",
-        "author",
-        "followers",
-        "following",
-        "profile_likes",
-        "total_videos",
-        "profile_bio",
-        "video_desc",
-        "hashtags",
-        "bio_links",
     ]
 
     for kw in keywords:
@@ -99,59 +90,31 @@ async def run():
         print(f"\n🔎 Searching for keyword: {kw}")
 
         start_time = time.time()
-        results = None
 
-        kw_page = await context.new_page()  # ✅ new page per keyword
         try:
             results = await search_keyword(
-                kw_page,
+                page,
                 kw,
-                max_videos=300,   # ✅ hard cap
+                max_videos=300,
                 max_profiles=None
             )
 
             if not results:
                 logger.warning(f"KEYWORD_EMPTY | keyword={kw}")
                 print("⚠ No results returned")
+                # Optioneel: niks schrijven bij empty
                 continue
 
             logger.info(f"KEYWORD_OK | keyword={kw} | results={len(results)}")
+            print(f"Total: {len(results)}")
 
-            print("\n========== RESULTS ==========")
-            print(f"Total: {len(results)}\n")
-
-            # -----------------------------
-            # CONSOLE OUTPUT (VOLLEDIG)
-            # -----------------------------
+            # --- maak rows voor CSV ---
+            rows = []
             for r in results:
                 profile_stats = r.get("profile_stats") or {}
-
-                print(
-                    f"- Video {r.get('video_id')}\n"
-                    f"  Views: {r.get('views')} | "
-                    f"Likes: {r.get('likes')} | "
-                    f"Comments: {r.get('comments')} | "
-                    f"Shares: {r.get('shares')} | "
-                    f"Saves: {r.get('saves')}\n"
-                    f"  User: {r.get('author')} | "
-                    f"Followers: {profile_stats.get('followers')} | "
-                    f"Following: {profile_stats.get('following')} | "
-                    f"Profile Likes: {profile_stats.get('likes')} | "
-                    f"Videos: {profile_stats.get('videos')}\n"
-                    f"  Profile bio: {r.get('profile_bio')}\n"
-                    f"  Video desc: {r.get('desc')}\n"
-                    f"  Hashtags: {r.get('hashtags')}\n"
-                    f"  Bio links: {r.get('bio_links')}\n"
-                )
-
-                # -----------------------------
-                # CSV EXPORT (CLEAN & FLAT) - STREAMING
-                # -----------------------------
-                row = {
-                    # --- META ---
+                rows.append({
                     "keyword": kw,
 
-                    # --- VIDEO ---
                     "video_id": r.get("video_id"),
                     "video_url": r.get("video_url"),
                     "views": r.get("views"),
@@ -160,7 +123,6 @@ async def run():
                     "shares": r.get("shares"),
                     "saves": r.get("saves"),
 
-                    # --- AUTHOR ---
                     "author": r.get("author"),
                     "followers": profile_stats.get("followers"),
                     "following": profile_stats.get("following"),
@@ -168,23 +130,20 @@ async def run():
                     "total_videos": profile_stats.get("videos"),
                     "profile_bio": r.get("profile_bio"),
 
-                    # --- CONTENT ---
                     "video_desc": r.get("desc"),
                     "hashtags": ",".join(r.get("hashtags") or []),
                     "bio_links": " | ".join(r.get("bio_links") or []),
-                }
+                })
 
-                append_row_to_csv(csv_path, row, columns)
-
-            print(f"📁 CSV bijgewerkt: {csv_path}")
+            # ✅ schrijf DIRECT na elk keyword (append naar dezelfde CSV)
+            append_rows_to_csv(rows, CSV_PATH)
+            print(f"📁 CSV bijgewerkt (append): {CSV_PATH}")
 
         except Exception as e:
             logger.exception(f"KEYWORD_ERROR | keyword={kw} | error={e}")
 
-        finally:
-            await kw_page.close()  # ✅ important: close page no matter what
-            duration = round(time.time() - start_time, 2)
-            logger.info(f"KEYWORD_DONE | keyword={kw} | duration={duration}s")
+        duration = round(time.time() - start_time, 2)
+        logger.info(f"KEYWORD_DONE | keyword={kw} | duration={duration}s")
 
     logger.info("SCRAPER_SHUTDOWN")
     await browser.close()

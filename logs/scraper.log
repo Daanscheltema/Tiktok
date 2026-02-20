@@ -16150,3 +16150,1941 @@ Traceback (most recent call last):
   File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
 Exception: Page.close: Connection closed while reading from the driver
+2026-02-19 00:42:08 | INFO | SCRAPER_START
+2026-02-19 00:42:08 | INFO | SCRAPER_START
+2026-02-19 00:42:15 | INFO | BROWSER_STARTED
+2026-02-19 00:42:15 | INFO | BROWSER_STARTED
+2026-02-19 00:42:15 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-19 00:42:15 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-19 00:42:40 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=25.57s
+2026-02-19 00:42:40 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=25.57s
+2026-02-19 00:43:03 | INFO | SCRAPER_START
+2026-02-19 00:43:03 | INFO | SCRAPER_START
+2026-02-19 00:43:09 | INFO | BROWSER_STARTED
+2026-02-19 00:43:09 | INFO | BROWSER_STARTED
+2026-02-19 00:43:09 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-19 00:43:09 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-19 00:53:12 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=603.45s
+2026-02-19 00:53:12 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=603.45s
+2026-02-19 01:03:35 | INFO | SCRAPER_START
+2026-02-19 01:03:35 | INFO | SCRAPER_START
+2026-02-19 01:03:41 | INFO | BROWSER_STARTED
+2026-02-19 01:03:41 | INFO | BROWSER_STARTED
+2026-02-19 01:03:41 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-19 01:03:41 | INFO | KEYWORD_START | keyword=Glock switch
+2026-02-19 01:59:37 | ERROR | KEYWORD_ERROR | keyword=Glock switch | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+
+2026-02-19 01:59:37 | ERROR | KEYWORD_ERROR | keyword=Glock switch | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+
+2026-02-19 01:59:37 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=3356.19s
+2026-02-19 01:59:37 | INFO | KEYWORD_DONE | keyword=Glock switch | duration=3356.19s
+2026-02-19 01:59:37 | INFO | KEYWORD_START | keyword=G switch
+2026-02-19 01:59:37 | INFO | KEYWORD_START | keyword=G switch
+2026-02-19 02:04:28 | ERROR | KEYWORD_ERROR | keyword=G switch | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+
+2026-02-19 02:04:28 | ERROR | KEYWORD_ERROR | keyword=G switch | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@cnchappyswitch", waiting until "load"
+
+2026-02-19 02:04:28 | INFO | KEYWORD_DONE | keyword=G switch | duration=291.06s
+2026-02-19 02:04:28 | INFO | KEYWORD_DONE | keyword=G switch | duration=291.06s
+2026-02-19 02:04:28 | INFO | KEYWORD_START | keyword=Auto sear
+2026-02-19 02:04:28 | INFO | KEYWORD_START | keyword=Auto sear
+2026-02-19 02:20:06 | ERROR | KEYWORD_ERROR | keyword=Auto sear | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@chileautos", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@chileautos", waiting until "load"
+
+2026-02-19 02:20:06 | ERROR | KEYWORD_ERROR | keyword=Auto sear | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@chileautos", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@chileautos", waiting until "load"
+
+2026-02-19 02:20:06 | INFO | KEYWORD_DONE | keyword=Auto sear | duration=937.68s
+2026-02-19 02:20:06 | INFO | KEYWORD_DONE | keyword=Auto sear | duration=937.68s
+2026-02-19 02:20:06 | INFO | KEYWORD_START | keyword=AR-15 Auto sear
+2026-02-19 02:20:06 | INFO | KEYWORD_START | keyword=AR-15 Auto sear
+2026-02-19 03:10:15 | INFO | KEYWORD_OK | keyword=AR-15 Auto sear | results=153
+2026-02-19 03:10:15 | INFO | KEYWORD_OK | keyword=AR-15 Auto sear | results=153
+2026-02-19 03:10:16 | INFO | KEYWORD_DONE | keyword=AR-15 Auto sear | duration=3009.5s
+2026-02-19 03:10:16 | INFO | KEYWORD_DONE | keyword=AR-15 Auto sear | duration=3009.5s
+2026-02-19 03:10:16 | INFO | KEYWORD_START | keyword=3d switch
+2026-02-19 03:10:16 | INFO | KEYWORD_START | keyword=3d switch
+2026-02-19 03:18:09 | ERROR | KEYWORD_ERROR | keyword=3d switch | error=Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.tiktok.com/@abc15arizona/video/7417908620681252142
+Call log:
+  - navigating to "https://www.tiktok.com/@abc15arizona/video/7417908620681252142", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.tiktok.com/@abc15arizona/video/7417908620681252142
+Call log:
+  - navigating to "https://www.tiktok.com/@abc15arizona/video/7417908620681252142", waiting until "load"
+
+2026-02-19 03:18:09 | ERROR | KEYWORD_ERROR | keyword=3d switch | error=Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.tiktok.com/@abc15arizona/video/7417908620681252142
+Call log:
+  - navigating to "https://www.tiktok.com/@abc15arizona/video/7417908620681252142", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.tiktok.com/@abc15arizona/video/7417908620681252142
+Call log:
+  - navigating to "https://www.tiktok.com/@abc15arizona/video/7417908620681252142", waiting until "load"
+
+2026-02-19 03:18:09 | INFO | KEYWORD_DONE | keyword=3d switch | duration=473.35s
+2026-02-19 03:18:09 | INFO | KEYWORD_DONE | keyword=3d switch | duration=473.35s
+2026-02-19 03:18:09 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 03:18:09 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 03:18:39 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=3d%20Glock%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=3d%20Glock%20switch", waiting until "load"
+
+2026-02-19 03:18:39 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=3d%20Glock%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=3d%20Glock%20switch", waiting until "load"
+
+2026-02-19 03:18:39 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=30.09s
+2026-02-19 03:18:39 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=30.09s
+2026-02-19 03:18:39 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 03:18:39 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 03:19:09 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Full-auto%20sear", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Full-auto%20sear", waiting until "load"
+
+2026-02-19 03:19:09 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Full-auto%20sear", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Full-auto%20sear", waiting until "load"
+
+2026-02-19 03:19:09 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=30.06s
+2026-02-19 03:19:09 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=30.06s
+2026-02-19 03:19:09 | INFO | KEYWORD_START | keyword=Auto switch
+2026-02-19 03:19:09 | INFO | KEYWORD_START | keyword=Auto switch
+2026-02-19 03:19:39 | ERROR | KEYWORD_ERROR | keyword=Auto switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Auto%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Auto%20switch", waiting until "load"
+
+2026-02-19 03:19:39 | ERROR | KEYWORD_ERROR | keyword=Auto switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Auto%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Auto%20switch", waiting until "load"
+
+2026-02-19 03:19:39 | INFO | KEYWORD_DONE | keyword=Auto switch | duration=30.07s
+2026-02-19 03:19:39 | INFO | KEYWORD_DONE | keyword=Auto switch | duration=30.07s
+2026-02-19 03:19:39 | INFO | KEYWORD_START | keyword=Chip
+2026-02-19 03:19:39 | INFO | KEYWORD_START | keyword=Chip
+2026-02-19 03:20:09 | ERROR | KEYWORD_ERROR | keyword=Chip | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Chip", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Chip", waiting until "load"
+
+2026-02-19 03:20:09 | ERROR | KEYWORD_ERROR | keyword=Chip | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Chip", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Chip", waiting until "load"
+
+2026-02-19 03:20:09 | INFO | KEYWORD_DONE | keyword=Chip | duration=30.06s
+2026-02-19 03:20:09 | INFO | KEYWORD_DONE | keyword=Chip | duration=30.06s
+2026-02-19 03:20:09 | INFO | KEYWORD_START | keyword=Switchy
+2026-02-19 03:20:09 | INFO | KEYWORD_START | keyword=Switchy
+2026-02-19 03:20:39 | ERROR | KEYWORD_ERROR | keyword=Switchy | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Switchy", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Switchy", waiting until "load"
+
+2026-02-19 03:20:39 | ERROR | KEYWORD_ERROR | keyword=Switchy | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Switchy", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Switchy", waiting until "load"
+
+2026-02-19 03:20:39 | INFO | KEYWORD_DONE | keyword=Switchy | duration=30.06s
+2026-02-19 03:20:39 | INFO | KEYWORD_DONE | keyword=Switchy | duration=30.06s
+2026-02-19 03:20:39 | INFO | KEYWORD_START | keyword=swift link
+2026-02-19 03:20:39 | INFO | KEYWORD_START | keyword=swift link
+2026-02-19 03:21:09 | ERROR | KEYWORD_ERROR | keyword=swift link | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=swift%20link", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=swift%20link", waiting until "load"
+
+2026-02-19 03:21:09 | ERROR | KEYWORD_ERROR | keyword=swift link | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=swift%20link", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=swift%20link", waiting until "load"
+
+2026-02-19 03:21:09 | INFO | KEYWORD_DONE | keyword=swift link | duration=30.07s
+2026-02-19 03:21:09 | INFO | KEYWORD_DONE | keyword=swift link | duration=30.07s
+2026-02-19 03:21:09 | INFO | KEYWORD_START | keyword=lightning link
+2026-02-19 03:21:09 | INFO | KEYWORD_START | keyword=lightning link
+2026-02-19 03:21:39 | ERROR | KEYWORD_ERROR | keyword=lightning link | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=lightning%20link", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=lightning%20link", waiting until "load"
+
+2026-02-19 03:21:39 | ERROR | KEYWORD_ERROR | keyword=lightning link | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=lightning%20link", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=lightning%20link", waiting until "load"
+
+2026-02-19 03:21:39 | INFO | KEYWORD_DONE | keyword=lightning link | duration=30.06s
+2026-02-19 03:21:39 | INFO | KEYWORD_DONE | keyword=lightning link | duration=30.06s
+2026-02-19 03:21:39 | INFO | KEYWORD_START | keyword=Yankee Boogle
+2026-02-19 03:21:39 | INFO | KEYWORD_START | keyword=Yankee Boogle
+2026-02-19 03:22:09 | ERROR | KEYWORD_ERROR | keyword=Yankee Boogle | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Yankee%20Boogle", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Yankee%20Boogle", waiting until "load"
+
+2026-02-19 03:22:09 | ERROR | KEYWORD_ERROR | keyword=Yankee Boogle | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Yankee%20Boogle", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Yankee%20Boogle", waiting until "load"
+
+2026-02-19 03:22:09 | INFO | KEYWORD_DONE | keyword=Yankee Boogle | duration=30.05s
+2026-02-19 03:22:09 | INFO | KEYWORD_DONE | keyword=Yankee Boogle | duration=30.05s
+2026-02-19 03:22:09 | INFO | KEYWORD_START | keyword=Giggle switch
+2026-02-19 03:22:09 | INFO | KEYWORD_START | keyword=Giggle switch
+2026-02-19 03:22:12 | ERROR | KEYWORD_ERROR | keyword=Giggle switch | error=Page.goto: net::ERR_CONNECTION_CLOSED at https://www.tiktok.com/search?q=Giggle%20switch
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Giggle%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://www.tiktok.com/search?q=Giggle%20switch
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Giggle%20switch", waiting until "load"
+
+2026-02-19 03:22:12 | ERROR | KEYWORD_ERROR | keyword=Giggle switch | error=Page.goto: net::ERR_CONNECTION_CLOSED at https://www.tiktok.com/search?q=Giggle%20switch
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Giggle%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_CONNECTION_CLOSED at https://www.tiktok.com/search?q=Giggle%20switch
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Giggle%20switch", waiting until "load"
+
+2026-02-19 03:22:12 | INFO | KEYWORD_DONE | keyword=Giggle switch | duration=2.43s
+2026-02-19 03:22:12 | INFO | KEYWORD_DONE | keyword=Giggle switch | duration=2.43s
+2026-02-19 03:22:12 | INFO | KEYWORD_START | keyword=Ghost switch
+2026-02-19 03:22:12 | INFO | KEYWORD_START | keyword=Ghost switch
+2026-02-19 03:22:42 | ERROR | KEYWORD_ERROR | keyword=Ghost switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ghost%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ghost%20switch", waiting until "load"
+
+2026-02-19 03:22:42 | ERROR | KEYWORD_ERROR | keyword=Ghost switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ghost%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Ghost%20switch", waiting until "load"
+
+2026-02-19 03:22:42 | INFO | KEYWORD_DONE | keyword=Ghost switch | duration=30.07s
+2026-02-19 03:22:42 | INFO | KEYWORD_DONE | keyword=Ghost switch | duration=30.07s
+2026-02-19 03:22:42 | INFO | KEYWORD_START | keyword=Plastic switch
+2026-02-19 03:22:42 | INFO | KEYWORD_START | keyword=Plastic switch
+2026-02-19 03:23:12 | ERROR | KEYWORD_ERROR | keyword=Plastic switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Plastic%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Plastic%20switch", waiting until "load"
+
+2026-02-19 03:23:12 | ERROR | KEYWORD_ERROR | keyword=Plastic switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Plastic%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Plastic%20switch", waiting until "load"
+
+2026-02-19 03:23:12 | INFO | KEYWORD_DONE | keyword=Plastic switch | duration=30.06s
+2026-02-19 03:23:12 | INFO | KEYWORD_DONE | keyword=Plastic switch | duration=30.06s
+2026-02-19 03:23:12 | INFO | KEYWORD_START | keyword=Metal switch
+2026-02-19 03:23:12 | INFO | KEYWORD_START | keyword=Metal switch
+2026-02-19 03:23:42 | ERROR | KEYWORD_ERROR | keyword=Metal switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Metal%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Metal%20switch", waiting until "load"
+
+2026-02-19 03:23:42 | ERROR | KEYWORD_ERROR | keyword=Metal switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Metal%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Metal%20switch", waiting until "load"
+
+2026-02-19 03:23:42 | INFO | KEYWORD_DONE | keyword=Metal switch | duration=30.07s
+2026-02-19 03:23:42 | INFO | KEYWORD_DONE | keyword=Metal switch | duration=30.07s
+2026-02-19 03:23:42 | INFO | KEYWORD_START | keyword=Draco switch
+2026-02-19 03:23:42 | INFO | KEYWORD_START | keyword=Draco switch
+2026-02-19 03:24:12 | ERROR | KEYWORD_ERROR | keyword=Draco switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Draco%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Draco%20switch", waiting until "load"
+
+2026-02-19 03:24:12 | ERROR | KEYWORD_ERROR | keyword=Draco switch | error=Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Draco%20switch", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 106, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 369, in search_keyword
+    await search_page.goto(f"https://www.tiktok.com/search?q={keyword}")
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/search?q=Draco%20switch", waiting until "load"
+
+2026-02-19 03:24:12 | INFO | KEYWORD_DONE | keyword=Draco switch | duration=30.05s
+2026-02-19 03:24:12 | INFO | KEYWORD_DONE | keyword=Draco switch | duration=30.05s
+2026-02-19 03:24:12 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 03:24:12 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 12:18:36 | INFO | SCRAPER_START
+2026-02-19 12:18:36 | INFO | SCRAPER_START
+2026-02-19 12:18:43 | INFO | BROWSER_STARTED
+2026-02-19 12:18:43 | INFO | BROWSER_STARTED
+2026-02-19 12:18:43 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 12:18:43 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:18:01 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@mrdaft/video/7508446061858458922", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@mrdaft/video/7508446061858458922", waiting until "load"
+
+2026-02-19 13:18:01 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@mrdaft/video/7508446061858458922", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://www.tiktok.com/@mrdaft/video/7508446061858458922", waiting until "load"
+
+2026-02-19 13:18:01 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=3557.17s
+2026-02-19 13:18:01 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=3557.17s
+2026-02-19 13:18:01 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 13:18:01 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 13:18:22 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 373, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 284, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-19 13:18:22 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 373, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 284, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=10000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-19 13:18:22 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=21.18s
+2026-02-19 13:18:22 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=21.18s
+2026-02-19 13:18:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:18:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:41:22 | INFO | SCRAPER_START
+2026-02-19 13:41:22 | INFO | SCRAPER_START
+2026-02-19 13:43:30 | INFO | SCRAPER_START
+2026-02-19 13:43:30 | INFO | SCRAPER_START
+2026-02-19 13:43:39 | INFO | BROWSER_STARTED
+2026-02-19 13:43:39 | INFO | BROWSER_STARTED
+2026-02-19 13:43:39 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:43:39 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:44:40 | WARNING | KEYWORD_EMPTY | keyword=3d Glock switch
+2026-02-19 13:44:40 | WARNING | KEYWORD_EMPTY | keyword=3d Glock switch
+2026-02-19 13:44:40 | INFO | KEYWORD_DONE | keyword=3d Glock switch | ok=True | duration=61.1s
+2026-02-19 13:44:40 | INFO | KEYWORD_DONE | keyword=3d Glock switch | ok=True | duration=61.1s
+2026-02-19 13:44:40 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 13:44:40 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 13:45:56 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 110, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 215, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 130, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=20000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-19 13:45:56 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 110, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 215, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 130, in scroll_until_all_videos_loaded
+    await page.wait_for_selector(VIDEO_LIST_SELECTOR, timeout=20000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 8230, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 419, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 369, in wait_for_selector
+    await self._channel.send(
+        "waitForSelector", self._timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("#search_video-item-list div[id^='grid-item-container-']") to be visible
+
+2026-02-19 13:45:56 | INFO | KEYWORD_DONE | keyword=Full-auto sear | ok=False | duration=75.69s
+2026-02-19 13:45:56 | INFO | KEYWORD_DONE | keyword=Full-auto sear | ok=False | duration=75.69s
+2026-02-19 13:45:56 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:45:56 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:50:31 | INFO | SCRAPER_START
+2026-02-19 13:50:31 | INFO | SCRAPER_START
+2026-02-19 13:50:38 | INFO | BROWSER_STARTED
+2026-02-19 13:50:38 | INFO | BROWSER_STARTED
+2026-02-19 13:50:38 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:50:38 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:52:40 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211
+Call log:
+  - navigating to "https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 91, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211
+Call log:
+  - navigating to "https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211", waiting until "load"
+
+2026-02-19 13:52:40 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211
+Call log:
+  - navigating to "https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 91, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211
+Call log:
+  - navigating to "https://www.tiktok.com/@bigbosssfat252/video/7181281847416999211", waiting until "load"
+
+2026-02-19 13:52:40 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=122.38s
+2026-02-19 13:52:40 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=122.38s
+2026-02-19 13:52:40 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:52:40 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:57:51 | INFO | SCRAPER_START
+2026-02-19 13:57:51 | INFO | SCRAPER_START
+2026-02-19 13:57:57 | INFO | BROWSER_STARTED
+2026-02-19 13:57:57 | INFO | BROWSER_STARTED
+2026-02-19 13:57:57 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:57:57 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:58:46 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=2
+2026-02-19 13:58:46 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=2
+2026-02-19 13:58:46 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=48.92s
+2026-02-19 13:58:46 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=48.92s
+2026-02-19 13:58:46 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:58:46 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 13:59:51 | INFO | SCRAPER_START
+2026-02-19 13:59:51 | INFO | SCRAPER_START
+2026-02-19 13:59:58 | INFO | BROWSER_STARTED
+2026-02-19 13:59:58 | INFO | BROWSER_STARTED
+2026-02-19 13:59:58 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 13:59:58 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 14:04:01 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@taylor5165/video/7603352128861605150
+Call log:
+  - navigating to "https://www.tiktok.com/@taylor5165/video/7603352128861605150", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 52, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@taylor5165/video/7603352128861605150
+Call log:
+  - navigating to "https://www.tiktok.com/@taylor5165/video/7603352128861605150", waiting until "load"
+
+2026-02-19 14:04:01 | ERROR | KEYWORD_ERROR | keyword=3d Glock switch | error=Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@taylor5165/video/7603352128861605150
+Call log:
+  - navigating to "https://www.tiktok.com/@taylor5165/video/7603352128861605150", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 52, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 383, in search_keyword
+    video_data = await fetch_video_stats(context, item["href"], item["video_id"])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 248, in fetch_video_stats
+    await page.goto(url, timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.goto: net::ERR_TUNNEL_CONNECTION_FAILED at https://www.tiktok.com/@taylor5165/video/7603352128861605150
+Call log:
+  - navigating to "https://www.tiktok.com/@taylor5165/video/7603352128861605150", waiting until "load"
+
+2026-02-19 14:04:01 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=243.06s
+2026-02-19 14:04:01 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=243.06s
+2026-02-19 14:04:01 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 14:04:01 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 15:25:48 | INFO | SCRAPER_START
+2026-02-19 15:25:48 | INFO | SCRAPER_START
+2026-02-19 15:25:54 | INFO | BROWSER_STARTED
+2026-02-19 15:25:54 | INFO | BROWSER_STARTED
+2026-02-19 15:25:54 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 15:25:54 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 15:26:33 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=2
+2026-02-19 15:26:33 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=2
+2026-02-19 15:26:33 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=39.67s
+2026-02-19 15:26:33 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=39.67s
+2026-02-19 15:26:33 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 15:26:33 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 15:27:37 | INFO | SCRAPER_START
+2026-02-19 15:27:37 | INFO | SCRAPER_START
+2026-02-19 15:27:43 | INFO | BROWSER_STARTED
+2026-02-19 15:27:43 | INFO | BROWSER_STARTED
+2026-02-19 15:27:43 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 15:27:43 | INFO | KEYWORD_START | keyword=3d Glock switch
+2026-02-19 16:09:22 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=183
+2026-02-19 16:09:22 | INFO | KEYWORD_OK | keyword=3d Glock switch | results=183
+2026-02-19 16:09:22 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=2498.58s
+2026-02-19 16:09:22 | INFO | KEYWORD_DONE | keyword=3d Glock switch | duration=2498.58s
+2026-02-19 16:09:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 16:09:22 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 17:27:17 | INFO | SCRAPER_START
+2026-02-19 17:27:17 | INFO | SCRAPER_START
+2026-02-19 17:27:28 | INFO | BROWSER_STARTED
+2026-02-19 17:27:28 | INFO | BROWSER_STARTED
+2026-02-19 17:27:28 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 17:27:28 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 18:14:07 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@trentk2211", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 52, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@trentk2211", waiting until "load"
+
+2026-02-19 18:14:07 | ERROR | KEYWORD_ERROR | keyword=Full-auto sear | error=Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@trentk2211", waiting until "load"
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 52, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 392, in search_keyword
+    await profile_page.goto(f"https://www.tiktok.com/@{item['username']}", timeout=60000)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 9041, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 153, in goto
+    await self._channel.send(
+        "goto", self._navigation_timeout, locals_to_params(locals())
+    )
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://www.tiktok.com/@trentk2211", waiting until "load"
+
+2026-02-19 18:14:07 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=2799.16s
+2026-02-19 18:14:07 | INFO | KEYWORD_DONE | keyword=Full-auto sear | duration=2799.16s
+2026-02-19 18:14:07 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 18:14:07 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 19:30:02 | INFO | SCRAPER_START
+2026-02-19 19:30:02 | INFO | SCRAPER_START
+2026-02-19 19:30:08 | INFO | BROWSER_STARTED
+2026-02-19 19:30:08 | INFO | BROWSER_STARTED
+2026-02-19 19:30:08 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 19:30:08 | INFO | KEYWORD_START | keyword=Full-auto sear
+2026-02-19 19:32:28 | INFO | SCRAPER_START
+2026-02-19 19:32:28 | INFO | SCRAPER_START
+2026-02-19 19:32:33 | INFO | BROWSER_STARTED
+2026-02-19 19:32:33 | INFO | BROWSER_STARTED
+2026-02-19 19:32:33 | INFO | KEYWORD_START | keyword=Full auto sear
+2026-02-19 19:32:33 | INFO | KEYWORD_START | keyword=Full auto sear
+2026-02-19 20:21:24 | INFO | KEYWORD_OK | keyword=Full auto sear | results=219
+2026-02-19 20:21:24 | INFO | KEYWORD_OK | keyword=Full auto sear | results=219
+2026-02-19 20:21:24 | INFO | KEYWORD_DONE | keyword=Full auto sear | duration=2930.39s
+2026-02-19 20:21:24 | INFO | KEYWORD_DONE | keyword=Full auto sear | duration=2930.39s
+2026-02-19 20:21:24 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 20:21:24 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 20:51:44 | INFO | SCRAPER_START
+2026-02-19 20:51:44 | INFO | SCRAPER_START
+2026-02-19 20:51:50 | INFO | BROWSER_STARTED
+2026-02-19 20:51:50 | INFO | BROWSER_STARTED
+2026-02-19 20:51:50 | INFO | KEYWORD_START | keyword=Auto switch
+2026-02-19 20:51:50 | INFO | KEYWORD_START | keyword=Auto switch
+2026-02-19 21:43:35 | INFO | KEYWORD_OK | keyword=Auto switch | results=250
+2026-02-19 21:43:35 | INFO | KEYWORD_OK | keyword=Auto switch | results=250
+2026-02-19 21:43:35 | INFO | KEYWORD_DONE | keyword=Auto switch | duration=3104.67s
+2026-02-19 21:43:35 | INFO | KEYWORD_DONE | keyword=Auto switch | duration=3104.67s
+2026-02-19 21:43:35 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 21:43:35 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 22:25:40 | INFO | SCRAPER_START
+2026-02-19 22:25:40 | INFO | SCRAPER_START
+2026-02-19 22:25:44 | INFO | BROWSER_STARTED
+2026-02-19 22:25:44 | INFO | BROWSER_STARTED
+2026-02-19 22:25:44 | INFO | KEYWORD_START | keyword=Ghost switch
+2026-02-19 22:25:44 | INFO | KEYWORD_START | keyword=Ghost switch
+2026-02-19 23:18:38 | INFO | KEYWORD_OK | keyword=Ghost switch | results=253
+2026-02-19 23:18:38 | INFO | KEYWORD_OK | keyword=Ghost switch | results=253
+2026-02-19 23:18:38 | INFO | KEYWORD_DONE | keyword=Ghost switch | duration=3173.92s
+2026-02-19 23:18:38 | INFO | KEYWORD_DONE | keyword=Ghost switch | duration=3173.92s
+2026-02-19 23:18:38 | INFO | SCRAPER_SHUTDOWN
+2026-02-19 23:18:38 | INFO | SCRAPER_SHUTDOWN
+2026-02-20 00:43:14 | INFO | SCRAPER_START
+2026-02-20 00:43:14 | INFO | SCRAPER_START
+2026-02-20 00:43:20 | INFO | BROWSER_STARTED
+2026-02-20 00:43:20 | INFO | BROWSER_STARTED
+2026-02-20 00:43:20 | INFO | KEYWORD_START | keyword=Chip
+2026-02-20 00:43:20 | INFO | KEYWORD_START | keyword=Chip
+2026-02-20 01:42:41 | INFO | KEYWORD_OK | keyword=Chip | results=291
+2026-02-20 01:42:41 | INFO | KEYWORD_OK | keyword=Chip | results=291
+2026-02-20 01:42:41 | INFO | KEYWORD_DONE | keyword=Chip | duration=3560.82s
+2026-02-20 01:42:41 | INFO | KEYWORD_DONE | keyword=Chip | duration=3560.82s
+2026-02-20 01:42:41 | INFO | KEYWORD_START | keyword=Switchy
+2026-02-20 01:42:41 | INFO | KEYWORD_START | keyword=Switchy
+2026-02-20 02:32:08 | INFO | KEYWORD_OK | keyword=Switchy | results=253
+2026-02-20 02:32:08 | INFO | KEYWORD_OK | keyword=Switchy | results=253
+2026-02-20 02:32:08 | INFO | KEYWORD_DONE | keyword=Switchy | duration=2967.43s
+2026-02-20 02:32:08 | INFO | KEYWORD_DONE | keyword=Switchy | duration=2967.43s
+2026-02-20 02:32:08 | INFO | KEYWORD_START | keyword=swift link
+2026-02-20 02:32:08 | INFO | KEYWORD_START | keyword=swift link
+2026-02-20 03:30:16 | INFO | KEYWORD_OK | keyword=swift link | results=293
+2026-02-20 03:30:16 | INFO | KEYWORD_OK | keyword=swift link | results=293
+2026-02-20 03:30:16 | INFO | KEYWORD_DONE | keyword=swift link | duration=3487.61s
+2026-02-20 03:30:16 | INFO | KEYWORD_DONE | keyword=swift link | duration=3487.61s
+2026-02-20 03:30:16 | INFO | KEYWORD_START | keyword=lightning link
+2026-02-20 03:30:16 | INFO | KEYWORD_START | keyword=lightning link
+2026-02-20 03:35:44 | INFO | KEYWORD_OK | keyword=lightning link | results=25
+2026-02-20 03:35:44 | INFO | KEYWORD_OK | keyword=lightning link | results=25
+2026-02-20 03:35:44 | INFO | KEYWORD_DONE | keyword=lightning link | duration=328.39s
+2026-02-20 03:35:44 | INFO | KEYWORD_DONE | keyword=lightning link | duration=328.39s
+2026-02-20 03:35:44 | INFO | KEYWORD_START | keyword=Yankee Boogle
+2026-02-20 03:35:44 | INFO | KEYWORD_START | keyword=Yankee Boogle
+2026-02-20 04:28:31 | INFO | KEYWORD_OK | keyword=Yankee Boogle | results=267
+2026-02-20 04:28:31 | INFO | KEYWORD_OK | keyword=Yankee Boogle | results=267
+2026-02-20 04:28:31 | INFO | KEYWORD_DONE | keyword=Yankee Boogle | duration=3167.08s
+2026-02-20 04:28:31 | INFO | KEYWORD_DONE | keyword=Yankee Boogle | duration=3167.08s
+2026-02-20 04:28:31 | INFO | KEYWORD_START | keyword=Giggle switch
+2026-02-20 04:28:31 | INFO | KEYWORD_START | keyword=Giggle switch
+2026-02-20 05:22:06 | INFO | KEYWORD_OK | keyword=Giggle switch | results=265
+2026-02-20 05:22:06 | INFO | KEYWORD_OK | keyword=Giggle switch | results=265
+2026-02-20 05:22:06 | INFO | KEYWORD_DONE | keyword=Giggle switch | duration=3214.77s
+2026-02-20 05:22:06 | INFO | KEYWORD_DONE | keyword=Giggle switch | duration=3214.77s
+2026-02-20 05:22:06 | INFO | KEYWORD_START | keyword=Plastic switch
+2026-02-20 05:22:06 | INFO | KEYWORD_START | keyword=Plastic switch
+2026-02-20 06:24:31 | INFO | KEYWORD_OK | keyword=Plastic switch | results=297
+2026-02-20 06:24:31 | INFO | KEYWORD_OK | keyword=Plastic switch | results=297
+2026-02-20 06:24:31 | INFO | KEYWORD_DONE | keyword=Plastic switch | duration=3745.15s
+2026-02-20 06:24:31 | INFO | KEYWORD_DONE | keyword=Plastic switch | duration=3745.15s
+2026-02-20 06:24:31 | INFO | KEYWORD_START | keyword=Metal switch
+2026-02-20 06:24:31 | INFO | KEYWORD_START | keyword=Metal switch
+2026-02-20 07:27:17 | INFO | KEYWORD_OK | keyword=Metal switch | results=297
+2026-02-20 07:27:17 | INFO | KEYWORD_OK | keyword=Metal switch | results=297
+2026-02-20 07:27:17 | INFO | KEYWORD_DONE | keyword=Metal switch | duration=3766.24s
+2026-02-20 07:27:17 | INFO | KEYWORD_DONE | keyword=Metal switch | duration=3766.24s
+2026-02-20 07:27:17 | INFO | KEYWORD_START | keyword=Draco switch
+2026-02-20 07:27:17 | INFO | KEYWORD_START | keyword=Draco switch
+2026-02-20 08:19:19 | INFO | KEYWORD_OK | keyword=Draco switch | results=251
+2026-02-20 08:19:19 | INFO | KEYWORD_OK | keyword=Draco switch | results=251
+2026-02-20 08:19:19 | INFO | KEYWORD_DONE | keyword=Draco switch | duration=3121.51s
+2026-02-20 08:19:19 | INFO | KEYWORD_DONE | keyword=Draco switch | duration=3121.51s
+2026-02-20 08:19:19 | INFO | SCRAPER_SHUTDOWN
+2026-02-20 08:19:19 | INFO | SCRAPER_SHUTDOWN

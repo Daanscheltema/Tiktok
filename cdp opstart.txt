@@ -1,5 +1,7 @@
 "C:\Program Files\Google\Chrome\Application\chrome.exe" ^
   --remote-debugging-port=9222 ^
+  --user-data-dir="C:\tiktok_chrome_profile""C:\Program Files\Google\Chrome\Application\chrome.exe" ^
+  --remote-debugging-port=9222 ^
   --user-data-dir="C:\tiktok_chrome_profile"
 
   https://www.tiktok.com/foryou
@@ -10,3 +12,11 @@
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\tiktok_chrome_profile" --proxy-server="http://nl1.4g.iproyal.com:7263"
 
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\tiktok_chrome_profile"
+
+"C:\Program Files\Google\Chrome\Application\chrome.exe" ^
+  --remote-debugging-port=9222 ^
+  --user-data-dir="C:\tiktok_chrome_profile" ^
+  --proxy-server="socks5://Nmqqwkh:TzwuhcNjm1uDqeL@nl1.4g.iproyal.com:3263"
+
+
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\tiktok_chrome_profile" --proxy-server="http://nl1.4g.iproyal.com:7263"
