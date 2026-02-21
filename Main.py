@@ -12,7 +12,7 @@ print("cwd", os.getcwd())
 logger = setup_logger()
 
 
-CSV_PATH = "tiktok_results_lastscrape.csv"
+CSV_PATH = "tiktok_results_buttons.csv"
 
 COLUMNS = [
     "keyword",
@@ -74,15 +74,7 @@ async def run():
     print("Browser started.")
 
     keywords = [
-        "Chip",
-        "Switchy",
-        "swift link",
-        "lightning link",
-        "Yankee Boogle",
-        "Giggle switch",
-        "Plastic switch",
-        "Metal switch",
-        "Draco switch",
+        "Button", "Buttons"
     ]
 
     for kw in keywords:
