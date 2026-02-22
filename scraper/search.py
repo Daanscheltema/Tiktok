@@ -2,11 +2,10 @@ import re
 import json
 import urllib.parse
 from logger import setup_logger
-from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 
 logger = setup_logger()
 
-HASHTAG_REGEX = r"#(\w+)"
+
 TEST_MAX_RESULTS = None  # zet op None om uit te zetten
 
 VIDEOS_TAB_SELECTOR = (
@@ -22,14 +21,6 @@ VIDEO_LIST_SELECTOR = "#search_video-item-list div[id^='grid-item-container-']"
 # -----------------------------
 # Helpers
 # -----------------------------
-async def safe_text(el):
-    if not el:
-        return ""
-    try:
-        return await el.inner_text()
-    except:
-        return ""
-
 
 def extract_hashtags(text: str):
     return re.findall(r"#(\w+)", text or "")

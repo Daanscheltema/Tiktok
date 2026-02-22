@@ -18102,3 +18102,249 @@ Call log:
 2026-02-21 14:28:55 | INFO | KEYWORD_DONE | keyword=Button | duration=3745.43s
 2026-02-21 14:28:55 | INFO | KEYWORD_START | keyword=Buttons
 2026-02-21 14:28:55 | INFO | KEYWORD_START | keyword=Buttons
+2026-02-21 15:33:44 | INFO | KEYWORD_OK | keyword=Buttons | results=296
+2026-02-21 15:33:44 | INFO | KEYWORD_OK | keyword=Buttons | results=296
+2026-02-21 15:33:44 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=[Errno 13] Permission denied: 'tiktok_results_buttons.csv'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 131, in run
+    append_rows_to_csv(rows, CSV_PATH)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 46, in append_rows_to_csv
+    df.to_csv(
+    ~~~~~~~~~^
+        csv_path,
+        ^^^^^^^^^
+    ...<3 lines>...
+        sep=";"
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\core\generic.py", line 3988, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\io\formats\format.py", line 1025, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'tiktok_results_buttons.csv'
+2026-02-21 15:33:44 | ERROR | KEYWORD_ERROR | keyword=Buttons | error=[Errno 13] Permission denied: 'tiktok_results_buttons.csv'
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 131, in run
+    append_rows_to_csv(rows, CSV_PATH)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 46, in append_rows_to_csv
+    df.to_csv(
+    ~~~~~~~~~^
+        csv_path,
+        ^^^^^^^^^
+    ...<3 lines>...
+        sep=";"
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\core\generic.py", line 3988, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\io\formats\format.py", line 1025, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\io\common.py", line 926, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'tiktok_results_buttons.csv'
+2026-02-21 15:33:44 | INFO | KEYWORD_DONE | keyword=Buttons | duration=3888.4s
+2026-02-21 15:33:44 | INFO | KEYWORD_DONE | keyword=Buttons | duration=3888.4s
+2026-02-21 15:33:44 | INFO | SCRAPER_SHUTDOWN
+2026-02-21 15:33:44 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:17:51 | INFO | SCRAPER_START
+2026-02-22 13:17:51 | INFO | SCRAPER_START
+2026-02-22 13:18:03 | INFO | BROWSER_STARTED
+2026-02-22 13:18:03 | INFO | BROWSER_STARTED
+2026-02-22 13:18:03 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:18:03 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:18:17 | ERROR | KEYWORD_ERROR | keyword=Button | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 373, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 292, in scroll_until_all_videos_loaded
+    await page.wait_for_timeout(1500)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-22 13:18:17 | ERROR | KEYWORD_ERROR | keyword=Button | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 373, in search_keyword
+    await scroll_until_all_videos_loaded(search_page, max_videos or 200)
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 292, in scroll_until_all_videos_loaded
+    await page.wait_for_timeout(1500)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-22 13:18:17 | INFO | KEYWORD_DONE | keyword=Button | duration=14.28s
+2026-02-22 13:18:17 | INFO | KEYWORD_DONE | keyword=Button | duration=14.28s
+2026-02-22 13:18:17 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:18:17 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:27:53 | INFO | SCRAPER_START
+2026-02-22 13:27:53 | INFO | SCRAPER_START
+2026-02-22 13:28:59 | INFO | SCRAPER_START
+2026-02-22 13:28:59 | INFO | SCRAPER_START
+2026-02-22 13:29:05 | INFO | BROWSER_STARTED
+2026-02-22 13:29:05 | INFO | BROWSER_STARTED
+2026-02-22 13:29:05 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:29:05 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:31:47 | ERROR | KEYWORD_ERROR | keyword=Button | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 384, in search_keyword
+    await profile_page.wait_for_timeout(3500)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-22 13:31:47 | ERROR | KEYWORD_ERROR | keyword=Button | error=Page.wait_for_timeout: Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "C:\Users\daans\PycharmProjects\Tiktok\Main.py", line 87, in run
+    results = await search_keyword(
+              ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\daans\PycharmProjects\Tiktok\scraper\search.py", line 384, in search_keyword
+    await profile_page.wait_for_timeout(3500)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\async_api\_generated.py", line 11467, in wait_for_timeout
+    await self._impl_obj.wait_for_timeout(timeout=timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_page.py", line 1101, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_frame.py", line 862, in wait_for_timeout
+    await self._channel.send("waitForTimeout", None, {"waitTimeout": timeout})
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\daans\AppData\Local\Programs\Python\Python314\Lib\site-packages\playwright\_impl\_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed
+2026-02-22 13:31:47 | INFO | KEYWORD_DONE | keyword=Button | duration=162.35s
+2026-02-22 13:31:47 | INFO | KEYWORD_DONE | keyword=Button | duration=162.35s
+2026-02-22 13:31:47 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:31:47 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:32:04 | INFO | SCRAPER_START
+2026-02-22 13:32:04 | INFO | SCRAPER_START
+2026-02-22 13:32:09 | INFO | BROWSER_STARTED
+2026-02-22 13:32:09 | INFO | BROWSER_STARTED
+2026-02-22 13:32:09 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:32:09 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:32:48 | INFO | KEYWORD_OK | keyword=Button | results=2
+2026-02-22 13:32:48 | INFO | KEYWORD_OK | keyword=Button | results=2
+2026-02-22 13:32:48 | INFO | KEYWORD_DONE | keyword=Button | duration=39.02s
+2026-02-22 13:32:48 | INFO | KEYWORD_DONE | keyword=Button | duration=39.02s
+2026-02-22 13:32:48 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:32:48 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:33:54 | INFO | SCRAPER_START
+2026-02-22 13:33:54 | INFO | SCRAPER_START
+2026-02-22 13:33:59 | INFO | BROWSER_STARTED
+2026-02-22 13:33:59 | INFO | BROWSER_STARTED
+2026-02-22 13:33:59 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:33:59 | INFO | KEYWORD_START | keyword=Button
+2026-02-22 13:34:36 | INFO | KEYWORD_OK | keyword=Button | results=2
+2026-02-22 13:34:36 | INFO | KEYWORD_OK | keyword=Button | results=2
+2026-02-22 13:34:36 | INFO | KEYWORD_DONE | keyword=Button | duration=37.55s
+2026-02-22 13:34:36 | INFO | KEYWORD_DONE | keyword=Button | duration=37.55s
+2026-02-22 13:34:36 | INFO | SCRAPER_SHUTDOWN
+2026-02-22 13:34:36 | INFO | SCRAPER_SHUTDOWN

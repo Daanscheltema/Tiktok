@@ -12,7 +12,7 @@ print("cwd", os.getcwd())
 logger = setup_logger()
 
 
-CSV_PATH = "tiktok_results_buttons.csv"
+CSV_PATH = "tiktok_results_button.csv"
 
 COLUMNS = [
     "keyword",
@@ -74,7 +74,7 @@ async def run():
     print("Browser started.")
 
     keywords = [
-        "Button", "Buttons"
+        "Button"
     ]
 
     for kw in keywords:
@@ -87,7 +87,7 @@ async def run():
             results = await search_keyword(
                 page,
                 kw,
-                max_videos=300,
+                max_videos=2,
                 max_profiles=None
             )
 

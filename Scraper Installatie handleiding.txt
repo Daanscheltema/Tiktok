@@ -1,0 +1,137 @@
+Scraper handleiding.
+Deze scraper is gebouwd op Python 3.14 op een Windows 11 Versie 25H2 operating systeem.
+Versie 145.0.7632.109 van chrome is gebruikt tijdens het maken van de scraper.
+
+De volgende dependencies zijn gebruikt voor het bouwen van de scraper:
+anyio==4.12.1
+argon2-cffi==25.1.0
+argon2-cffi-bindings==25.1.0
+arrow==1.4.0
+asttokens==3.0.1
+async-lru==2.2.0
+attrs==25.4.0
+babel==2.18.0
+beautifulsoup4==4.14.3
+bleach==6.3.0
+certifi==2026.1.4
+cffi==2.0.0
+charset-normalizer==3.4.4
+colorama==0.4.6
+comm==0.2.3
+debugpy==1.8.20
+decorator==5.2.1
+defusedxml==0.8.0rc2
+executing==2.2.1
+fastjsonschema==2.21.2
+fqdn==1.5.1
+greenlet==3.3.2
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.11
+ipykernel==7.2.0
+ipython==9.10.0
+ipython-pygments-lexers==1.1.1
+isoduration==20.11.0
+jedi==0.19.2
+jinja2==3.1.6
+json5==0.13.0
+jsonpointer==3.0.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+jupyter-client==8.8.0
+jupyter-core==5.9.1
+jupyter-events==0.12.0
+jupyter-lsp==2.3.0
+jupyter-server==2.17.0
+jupyter-server-terminals==0.5.4
+jupyterlab==4.5.4
+jupyterlab-pygments==0.3.0
+jupyterlab-server==2.28.0
+lark==1.3.1
+markupsafe==3.0.3
+matplotlib-inline==0.2.1
+mistune==3.2.0
+nbclient==0.10.4
+nbconvert==7.17.0
+nbformat==5.10.4
+nest-asyncio==1.6.0
+notebook==7.5.3
+notebook-shim==0.2.4
+numpy==2.4.2
+packaging==26.0
+pandas==3.0.1
+pandas-stubs==3.0.0.260204
+pandocfilters==1.5.1
+parso==0.8.6
+platformdirs==4.9.2
+playwright==1.58.0
+playwright-stealth==2.0.2
+prometheus-client==0.24.1
+prompt-toolkit==3.0.52
+proxyproviders==0.2.1
+psutil==7.2.2
+pure-eval==0.2.3
+pycparser==3.0
+pyee==13.0.1
+pygments==2.19.2
+python-dateutil==2.9.0.post0
+python-json-logger==4.0.0
+pywinpty==3.0.3
+pyyaml==6.0.3
+pyzmq==27.1.0
+referencing==0.37.0
+requests==2.32.5
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rfc3987-syntax==1.1.0
+rpds-py==0.30.0
+send2trash==2.1.0
+six==1.17.0
+soupsieve==2.8.3
+stack-data==0.6.3
+terminado==0.18.1
+tiktokapi==7.2.2
+tinycss2==1.5.1
+tornado==6.5.4
+traitlets==5.14.3
+typing-extensions==4.15.0
+tzdata==2025.3
+uri-template==1.3.0
+urllib3==2.6.3
+wcwidth==0.6.0
+webcolors==25.10.0
+webencodings==0.5.1
+websocket-client==1.9.0
+
+Je kan deze in een txt zetten en hem requirements.txt noemen en dan deze stappen volgen.
+1. cd pad/naar/jouw/project
+2. (Aanrader) venv\Scripts\activate
+3. pip install -r requirements.txt
+
+Omdat playwright gebruikt word is het noodzakelijk om na pipinstall nog dit te doen in je bash:
+playwright install
+
+Als alles goed geinstalleerd is kan je beginnen met scrappen.
+
+Stap 1. Start de CDP browser omgeving handmatig met de volgende cmd:
+  "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\tiktok_chrome_profile"
+
+Stap 2. Navigeer naar: "Tiktok.com/fyp"
+
+Stap 3. Log in op een tiktok account met QR inlog. Gebruik hiervoor een burner account.
+Het inloggen is noodzakelijk omdat tiktok je anders maar 5 videos per keyword search geeft.
+
+Stap 4. in Main.py vul de keywords = [] lijst in.
+Bijvoorbeeld: keywords = ["Kat"].
+
+Stap 5. Stel je csv pad in Main.py bij CSV_PATH =
+Zorg ervoor dat je bij elke scrape poging een nieuwe CSV naam aanmaakt hij schrijft het anders niet uit.
+
+Als al deze stappen correct worden gevolgd zou je nu Main.py kunnen runnen en zou je moeten zien dat in je chrome browser het scrape proces gestart wordt.
+
+Je zou moeten zien dat hij op je keyword zoekt, naar de video tab navigeert, scrollt om zo alle results in te laden en begint met videos en profiles te bezoeken om de data te scrappen.
+
+Om bot detectie te ontwijken hebben we menselijk gedrag moeten nabootsen daarom duurt het per keyword circa 1 uur voor 300 videos/ profiles.
+
+Veel succes met het installeren voor vragen kan je altijd s1156995@student.hsleiden mailen!
